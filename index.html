@@ -43,7 +43,7 @@
       <button class="tab" data-module="nodes" type="button">二、节点演变与容量分布</button>
       <button class="tab" data-module="economics" type="button">三、煤电度电经济参数</button>
       <button class="tab" data-module="regions" type="button">四、区域差异对比分析</button>
-      <button class="tab" data-module="scenarios" type="button">五、情景参数设置</button>
+      <button class="tab" data-module="scenarios" type="button">五、基准情景说明</button>
     </nav>
 
     <main>
@@ -364,10 +364,11 @@
       </section>
 
       <section id="module-scenarios" class="module" aria-labelledby="scenariosTitle">
-        <div class="section-heading section-heading--scenarios">
+        <div class="section-heading section-heading--scenarios scenario-hero-heading">
           <div>
-            <p class="eyebrow">Scenario assumptions</p>
-            <h2 id="scenariosTitle">情景参数设置与来源说明</h2>
+            <p class="eyebrow">Baseline scenario</p>
+            <h2 id="scenariosTitle">基准情景说明与关键参数</h2>
+            <p class="scenario-heading-note">围绕研究边界、路径推演、电量平衡、CCUS 布局、电源假设与经济环境参数，说明基准情景的主要设定逻辑。</p>
           </div>
           <div class="playbar">
             <button id="scenarioPlayButton" class="primary-button play-toggle" type="button">播放演示</button>
@@ -376,6 +377,97 @@
               <input id="scenarioYearSlider" type="range" min="2024" max="2060" value="2024" />
             </div>
           </div>
+        </div>
+
+        <div class="scenario-section scenario-section--overview">
+          <div class="scenario-narrative-card">
+            <span class="scenario-section-kicker">Scenario overview</span>
+            <h3>情景总览</h3>
+            <p id="scenarioOverviewLead">—</p>
+          </div>
+          <div class="kpi-grid scenario-kpis scenario-overview-kpis" id="scenarioOverviewKpis"></div>
+        </div>
+
+        <div class="scenario-boundary-grid">
+          <article class="report-card scenario-boundary-card">
+            <div class="card-title">
+              <span>研究边界</span>
+              <em>空间、时间、领域与颗粒度</em>
+            </div>
+            <div id="scenarioBoundaryCards" class="scenario-boundary-list"></div>
+          </article>
+          <article class="report-card scenario-timeline-card">
+            <div class="card-title">
+              <span>数据来源</span>
+            </div>
+            <div id="scenarioSourceTimeline" class="scenario-source-timeline"></div>
+          </article>
+        </div>
+
+        <article class="report-card scenario-pathway-card">
+          <div class="card-title">
+            <span>转型路径推演</span>
+          </div>
+          <div class="scenario-pathway-layout">
+            <figure class="scenario-word-figure" id="scenarioPathwayFigure"></figure>
+            <div class="scenario-pathway-steps" id="scenarioPathwaySteps"></div>
+          </div>
+        </article>
+
+        <div class="scenario-subsection-title">
+          <span>关键路径趋势</span>
+        </div>
+        <div class="scenario-chart-grid scenario-core-chart-grid">
+          <article class="report-card chart-card scenario-chart-card scenario-chart-card--with-insights">
+            <div class="scenario-chart-with-notes">
+              <div class="scenario-chart-pane">
+                <div class="card-title economics-title scenario-chart-title"><span>甘肃及西北发电总量占全国比例</span></div>
+                <div id="baselineGenerationShareChart" class="chart scenario-chart"></div>
+              </div>
+              <aside id="baselineGenerationShareNotes" class="scenario-chart-notes"></aside>
+            </div>
+          </article>
+          <article class="report-card chart-card scenario-chart-card scenario-chart-card--with-insights">
+            <div class="scenario-chart-with-notes">
+              <div class="scenario-chart-pane">
+                <div class="card-title economics-title scenario-chart-title"><span>甘肃及西北风光发电量占全国比例</span></div>
+                <div id="baselineRenewableShareChart" class="chart scenario-chart"></div>
+              </div>
+              <aside id="baselineRenewableShareNotes" class="scenario-chart-notes"></aside>
+            </div>
+          </article>
+          <article class="report-card chart-card scenario-chart-card scenario-chart-card--wide scenario-chart-card--with-insights">
+            <div class="scenario-chart-with-notes">
+              <div class="scenario-chart-pane">
+                <div class="card-title economics-title scenario-chart-title"><span>煤电机组 CCUS 改造装机容量</span></div>
+                <div id="baselineCcusChart" class="chart scenario-chart"></div>
+              </div>
+              <aside id="baselineCcusNotes" class="scenario-chart-notes"></aside>
+            </div>
+          </article>
+        </div>
+
+        <article class="report-card chart-card scenario-chart-card scenario-balance-card scenario-chart-card--with-insights">
+          <div class="scenario-chart-with-notes">
+            <div class="scenario-chart-pane">
+              <div class="card-title economics-title scenario-chart-title"><span>甘肃省电量平衡路径</span></div>
+              <div id="baselinePowerBalanceChart" class="chart scenario-chart"></div>
+            </div>
+            <aside id="baselinePowerBalanceNotes" class="scenario-chart-notes"></aside>
+          </div>
+        </article>
+
+        <article class="report-card scenario-assumption-panel">
+          <div class="card-title">
+            <span>电源关键假设</span>
+            <em>将关键设定口径转为简明卡片</em>
+          </div>
+          <div id="scenarioAssumptions" class="scenario-assumption-groups"></div>
+        </article>
+
+        <div class="scenario-subsection-title scenario-economics-title-block">
+          <span>经济与环境参数</span>
+          <em>沿用当前界面模型参数口径，不改动既有数据</em>
         </div>
 
         <div class="kpi-grid scenario-kpis" id="scenarioKpiGrid"></div>

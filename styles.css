@@ -1670,6 +1670,474 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
   line-height: 1.65;
 }
 
+.scenario-heading-note {
+  max-width: 780px;
+  margin: 10px 0 0;
+  color: rgba(20,32,51,.66);
+  font-size: 16px;
+  line-height: 1.68;
+  font-weight: 700;
+}
+
+.scenario-section--overview {
+  display: grid;
+  grid-template-columns: minmax(280px, .78fr) minmax(0, 1.22fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.scenario-narrative-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 28px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255,252,244,.94), rgba(255,248,232,.88)),
+    radial-gradient(circle at 88% 18%, rgba(201,154,46,.16), transparent 18rem);
+  box-shadow: var(--shadow);
+}
+
+.scenario-narrative-card::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: -110px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,154,46,.18);
+  background: radial-gradient(circle, rgba(201,154,46,.18), transparent 66%);
+}
+
+.scenario-section-kicker {
+  display: inline-flex;
+  padding: 8px 13px;
+  border-radius: 999px;
+  color: #8d6217;
+  background: rgba(255,209,102,.34);
+  border: 1px solid rgba(201,154,46,.24);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.scenario-narrative-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 18px 0 12px;
+  color: #111d32;
+  font-size: clamp(28px, 3vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+
+.scenario-narrative-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(20,32,51,.72);
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 720;
+}
+
+.scenario-boundary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr);
+  gap: 18px;
+  margin: 0 0 18px;
+}
+
+.scenario-boundary-card,
+.scenario-timeline-card,
+.scenario-pathway-card,
+.scenario-assumption-panel {
+  background:
+    linear-gradient(180deg, rgba(255,252,244,.93), rgba(255,248,232,.88)),
+    radial-gradient(circle at 12% 0%, rgba(201,154,46,.13), transparent 23rem);
+}
+
+.scenario-boundary-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.scenario-boundary-item {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 13px;
+  min-height: 152px;
+  padding: 17px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: 22px;
+  background: rgba(255,255,255,.58);
+}
+
+.scenario-boundary-item b {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 15px;
+  color: #111d32;
+  background: linear-gradient(135deg, #ffd166, #ff9f1c);
+  font: 950 15px "Microsoft YaHei", sans-serif;
+  box-shadow: 0 10px 22px rgba(201,154,46,.18);
+}
+
+.scenario-boundary-item h4,
+.scenario-pathway-step h4,
+.scenario-assumption-card h4 {
+  margin: 0 0 8px;
+  color: #111d32;
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.scenario-boundary-item ul,
+.scenario-assumption-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(20,32,51,.68);
+  font-size: 16px;
+  line-height: 1.76;
+  font-weight: 720;
+}
+
+.scenario-source-timeline {
+  position: relative;
+  display: grid;
+  gap: 14px;
+}
+
+.scenario-source-timeline::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(201,154,46,.2), rgba(26,161,139,.45), rgba(21,94,239,.2));
+}
+
+.scenario-source-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding-left: 30px;
+}
+
+.scenario-source-step::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 5px rgba(201,154,46,.12);
+}
+
+.scenario-source-step span {
+  color: #111d32;
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.scenario-source-step p {
+  margin: 0;
+  color: rgba(20,32,51,.7);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 720;
+}
+
+.scenario-pathway-card {
+  margin-bottom: 18px;
+}
+
+.scenario-pathway-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.38fr) minmax(260px, .62fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.scenario-word-figure {
+  margin: 0;
+}
+
+.scenario-word-figure__frame {
+  display: grid;
+  place-items: center;
+  min-height: 430px;
+  padding: 16px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,248,232,.66)),
+    repeating-linear-gradient(135deg, rgba(201,154,46,.05) 0 1px, transparent 1px 12px);
+}
+
+.scenario-word-figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(20,32,51,.1);
+}
+
+.scenario-word-figure figcaption {
+  display: grid;
+  gap: 5px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 750;
+}
+
+.scenario-word-figure figcaption strong {
+  color: #111d32;
+  font-size: 18px;
+}
+
+.scenario-pathway-steps {
+  display: grid;
+  gap: 14px;
+}
+
+.scenario-pathway-step {
+  position: relative;
+  padding: 17px 18px 17px 64px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: 24px;
+  background: rgba(255,255,255,.58);
+}
+
+.scenario-pathway-step i {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #111d32;
+  background: rgba(255,209,102,.56);
+  font-style: normal;
+  font-weight: 950;
+}
+
+.scenario-pathway-step p {
+  margin: 0;
+  color: rgba(20,32,51,.68);
+  font-size: 16px;
+  line-height: 1.72;
+  font-weight: 720;
+}
+
+.scenario-subsection-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  margin: 28px 0 14px;
+  padding: 0 4px;
+}
+
+.scenario-subsection-title span {
+  color: #111d32;
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 950;
+  letter-spacing: -.035em;
+}
+
+.scenario-subsection-title em {
+  color: var(--muted);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 780;
+  text-align: right;
+}
+
+.scenario-core-chart-grid {
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.scenario-chart-card--wide,
+.scenario-balance-card {
+  grid-column: 1 / -1;
+}
+
+.scenario-chart-card--with-insights {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scenario-balance-card {
+  margin-top: 18px;
+}
+
+.scenario-chart-card--with-insights .economics-title {
+  justify-content: center;
+}
+
+.scenario-chart-with-notes {
+  display: grid;
+  grid-template-columns: minmax(0, 960px) clamp(270px, 23vw, 335px);
+  justify-content: center;
+  gap: clamp(16px, 1.6vw, 24px);
+  align-items: stretch;
+}
+
+.scenario-chart-pane {
+  min-width: 0;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.scenario-chart-title {
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 12px;
+  padding-inline: 6px;
+  text-align: center;
+}
+
+.scenario-chart-title span {
+  font-size: clamp(24px, 1.75vw, 29px);
+  line-height: 1.18;
+}
+
+.scenario-chart-with-notes .scenario-chart {
+  width: 100%;
+  max-width: min(960px, 100%);
+  margin-inline: auto;
+  min-height: clamp(400px, 30vw, 470px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.scenario-chart-with-notes .scenario-detail-panel {
+  width: min(960px, 100%);
+  flex: 0 0 auto;
+}
+
+.scenario-chart-notes {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  width: 100%;
+  padding-top: 42px;
+}
+
+.scenario-chart-note {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  padding: 13px 14px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,248,232,.64)),
+    radial-gradient(circle at 92% 8%, rgba(201,154,46,.12), transparent 12rem);
+}
+
+.scenario-chart-note b {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  color: #111d32;
+  background: rgba(255,209,102,.58);
+  font: 950 13px "Microsoft YaHei", sans-serif;
+}
+
+.scenario-chart-note strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #111d32;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 950;
+}
+
+.scenario-chart-note p {
+  margin: 0;
+  color: rgba(20,32,51,.68);
+  font-size: 15.5px;
+  line-height: 1.62;
+  font-weight: 720;
+}
+
+.scenario-assumption-panel {
+  margin-top: 18px;
+}
+
+.scenario-assumption-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.scenario-assumption-group h3 {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.scenario-assumption-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.scenario-assumption-card {
+  min-height: 190px;
+  padding: 20px;
+  border: 1px solid rgba(20,32,51,.1);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.66), rgba(255,248,232,.58)),
+    radial-gradient(circle at 90% 0%, rgba(21,94,239,.07), transparent 14rem);
+}
+
+.scenario-assumption-card span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #111d32;
+  background: rgba(201,154,46,.16);
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.scenario-economics-title-block {
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(20,32,51,.1);
+}
+
 .scenario-kpis .kpi strong {
   margin-top: 12px;
   font-size: clamp(23px, 1.55vw, 27px);
@@ -1766,7 +2234,7 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
 }
 
 .scenario-chart-card {
-  padding: 18px 20px;
+  padding: 22px;
   background:
     linear-gradient(180deg, rgba(255,252,244,.92), rgba(255,248,232,.86)),
     radial-gradient(circle at 20% 16%, rgba(201,154,46,.16), transparent 22rem);
@@ -2262,7 +2730,7 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
   .auth-card { padding: 28px; border-radius: 26px; }
   .auth-form__row { grid-template-columns: 1fr; }
   .auth-form__row .primary-button { width: 100%; justify-content: center; }
-  .hero, .chart-grid, .overview-grid, .node-layout, .kpi-grid, #module-province .kpi-grid, .economics-layout, .unit-static-stage, .unit-economics__detail, .scenario-source-grid, .scenario-chart-grid, .regional-clean-layout, .regional-matrix { grid-template-columns: 1fr; }
+  .hero, .chart-grid, .overview-grid, .node-layout, .kpi-grid, #module-province .kpi-grid, .economics-layout, .unit-static-stage, .unit-economics__detail, .scenario-section--overview, .scenario-boundary-grid, .scenario-boundary-list, .scenario-pathway-layout, .scenario-source-grid, .scenario-chart-grid, .scenario-core-chart-grid, .scenario-chart-with-notes, .scenario-assumption-grid, .regional-clean-layout, .regional-matrix { grid-template-columns: 1fr; }
   .section-heading, .section-heading--nodes, .playbar { align-items: stretch; flex-direction: column; }
   .basis-toggle { width: 100%; justify-content: stretch; border-radius: 24px; flex-wrap: wrap; }
   .basis-toggle span,
@@ -2283,6 +2751,13 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
   .cost-row { grid-template-columns: 104px minmax(56px, 1fr) max-content; }
   .cost-row__share { display: none; }
   .scenario-chart { max-width: none; }
+  .scenario-chart-pane { max-width: none; }
+  .scenario-chart-with-notes .scenario-chart { min-height: 360px; }
+  .scenario-chart-notes { padding-top: 0; }
+  .scenario-subsection-title { align-items: start; flex-direction: column; }
+  .scenario-subsection-title em { text-align: left; }
+  .scenario-source-step { grid-template-columns: 1fr; gap: 4px; }
+  .scenario-word-figure__frame { min-height: 220px; }
   .scenario-matrix-head { display: none; }
   .scenario-matrix-row { grid-template-columns: 1fr; gap: 8px; }
   .regional-toolbar { justify-content: flex-start; min-width: 0; }

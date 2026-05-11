@@ -4,6 +4,7 @@ const state = {
   nodes: null,
   economics: null,
   scenarios: null,
+  baseline: null,
   regions: null,
   years: {
     province: 2024,
@@ -202,19 +203,22 @@ async function loadData() {
     let nodes;
     let economics;
     let scenarios;
+    let baseline;
     let regions;
     if (window.__DASHBOARD_DATA__) {
       summary = window.__DASHBOARD_DATA__.summary;
       nodes = window.__DASHBOARD_DATA__.nodes;
       economics = window.__DASHBOARD_DATA__.economics;
       scenarios = window.__DASHBOARD_DATA__.scenarios;
+      baseline = window.__DASHBOARD_DATA__.baseline;
       regions = window.__DASHBOARD_DATA__.regions;
     } else {
-      [summary, nodes, economics, scenarios, regions] = await Promise.all([
+      [summary, nodes, economics, scenarios, baseline, regions] = await Promise.all([
         fetch('data/gansu_power_summary.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 gansu_power_summary.json'); return r.json(); }),
         fetch('data/node_evolution.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 node_evolution.json'); return r.json(); }),
         fetch('data/coal_power_economics.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 coal_power_economics.json'); return r.json(); }),
         fetch('data/scenario_parameters.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 scenario_parameters.json'); return r.json(); }),
+        fetch('data/baseline_scenario.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 baseline_scenario.json'); return r.json(); }),
         fetch('data/regional_differences.json?t=' + Date.now()).then(r => { if (!r.ok) throw new Error('无法读取 regional_differences.json'); return r.json(); }),
       ]);
     }
@@ -223,6 +227,7 @@ async function loadData() {
     state.nodes = nodes;
     state.economics = economics;
     state.scenarios = scenarios;
+    state.baseline = baseline;
     state.regions = regions;
     const startYear = summary.years[0];
     state.years = { province: startYear, nodes: startYear, economics: startYear, regions: regions?.years?.[0] || startYear, scenarios: scenarios?.years?.[0] || startYear };
@@ -417,6 +422,7 @@ function renderAll() {
   renderEconomicsChart();
   renderCostBreakdown();
   renderUnitEconomics();
+  renderBaselineScenarioModule();
   renderScenarioKpis();
   renderScenarioSourceCards();
   renderScenarioFuelCarbonChart();
@@ -467,11 +473,12 @@ function renderHero() {
     const year = moduleYear('scenarios');
     const record = getScenarioRecord(year);
     if (!record) return;
-    if (lead) lead.textContent = '当前模块展示模型情景假设的来源、设置逻辑和年度参数路径，用于把燃料价格、碳约束和区域容量造价统一纳入转型演示口径。';
+    const balance = baselineLineRecord(state.baseline?.powerBalance || [], year);
+    if (lead) lead.textContent = '当前模块围绕基准情景展示研究边界、路径推演、电量平衡、CCUS 布局与关键参数；经济与环境参数继续沿用当前界面既有数据口径。';
     $('#heroInsight').innerHTML = `
-      <span class="insight-label">情景参数设置</span>
+      <span class="insight-label">基准情景说明与关键参数</span>
       <strong>${year}</strong>
-      <p class="scenario-insight-text">甘肃煤价 ${fmt(record.fuel.coal.gansu, 0)} 元/吨，碳价 ${fmt(record.carbon.price, 1)} 元/吨，碳配额 ${fmt(record.carbon.quota, 3)} tCO₂/MWh；甘肃单位容量造价：陆上风电 ${fmt(record.capex.gansu.wind, 0)}、光伏 ${fmt(record.capex.gansu.pv, 0)}、光热 ${fmt(record.capex.gansu.csp, 0)} 元/千瓦。</p>
+      <p class="scenario-insight-text">${balance ? `甘肃总发电量 ${fmt(balance.generation, 0)} 亿千瓦时，省内用电量 ${fmt(balance.demand, 0)} 亿千瓦时，外送电量 ${fmt(balance.export, 0)} 亿千瓦时；` : ''}经济参数沿用当前界面：甘肃煤价 ${fmt(record.fuel.coal.gansu, 0)} 元/吨，碳价 ${fmt(record.carbon.price, 1)} 元/吨。</p>
     `;
     return;
   }
@@ -983,6 +990,251 @@ function scenarioChangeLabel(current, start, unit) {
   const pct = start ? diff / start * 100 : 0;
   if (unit === 'tCO₂/MWh') return `较2024 ${diff > 0 ? '+' : ''}${fmt(diff, 3)} ${unit}`;
   return `较2024 ${diff > 0 ? '+' : ''}${fmt(pct, 1)}%`;
+}
+
+function renderBaselineScenarioModule() {
+  renderBaselineOverview();
+  renderBaselineBoundary();
+  renderBaselinePathway();
+  renderBaselineChartNotes();
+  renderBaselineGenerationShareChart();
+  renderBaselineRenewableShareChart();
+  renderBaselineCcusChart();
+  renderBaselinePowerBalanceChart();
+  renderBaselineAssumptions();
+}
+
+function renderBaselineChartNotes() {
+  const mapping = {
+    baselineGenerationShareNotes: 'generationShare',
+    baselineRenewableShareNotes: 'renewableShare',
+    baselineCcusNotes: 'ccusPath',
+    baselinePowerBalanceNotes: 'powerBalance',
+  };
+  Object.entries(mapping).forEach(([id, key]) => {
+    const container = $(`#${id}`);
+    const notes = state.baseline?.chartInterpretations?.[key] || [];
+    if (!container) return;
+    container.innerHTML = notes.map((note, index) => `
+      <section class="scenario-chart-note">
+        <b>${String(index + 1).padStart(2, '0')}</b>
+        <div>
+          <strong>${escapeHtml(note.label)}</strong>
+          <p>${escapeHtml(note.text)}</p>
+        </div>
+      </section>
+    `).join('');
+  });
+}
+
+function renderBaselineOverview() {
+  const baseline = state.baseline;
+  const lead = $('#scenarioOverviewLead');
+  const kpis = $('#scenarioOverviewKpis');
+  if (!baseline) return;
+  if (lead) lead.textContent = baseline.overview?.lead || '';
+  if (kpis) {
+    kpis.innerHTML = (baseline.overview?.kpis || []).map(card => `
+      <div class="kpi">
+        <span>${escapeHtml(card.label)}</span>
+        <strong>${escapeHtml(card.value)}</strong>
+        <em>${escapeHtml(card.note)}</em>
+      </div>
+    `).join('');
+  }
+}
+
+function renderBaselineBoundary() {
+  const baseline = state.baseline;
+  const boundary = $('#scenarioBoundaryCards');
+  const timeline = $('#scenarioSourceTimeline');
+  if (!baseline) return;
+  if (boundary) {
+    boundary.innerHTML = (baseline.boundaries || []).map((group, index) => `
+      <section class="scenario-boundary-item">
+        <b>${String(index + 1).padStart(2, '0')}</b>
+        <div>
+          <h4>${escapeHtml(group.title)}</h4>
+          <ul>${(group.items || []).map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+        </div>
+      </section>
+    `).join('');
+  }
+  if (timeline) {
+    timeline.innerHTML = (baseline.dataSources || []).map(item => `
+      <div class="scenario-source-step">
+        <span>${escapeHtml(item.period)}</span>
+        <p>${escapeHtml(item.source)}</p>
+      </div>
+    `).join('');
+  }
+}
+
+function renderBaselinePathway() {
+  const baseline = state.baseline;
+  const figure = $('#scenarioPathwayFigure');
+  const steps = $('#scenarioPathwaySteps');
+  if (!baseline) return;
+  if (figure) {
+    const fig = baseline.pathwayFigure || {};
+    figure.innerHTML = `
+      <div class="scenario-word-figure__frame">
+        <img src="${escapeAttr(fig.src || '')}" alt="${escapeAttr(fig.title || '转型路径仿真推演思路')}" loading="lazy">
+      </div>
+      <figcaption>
+        <strong>${escapeHtml((fig.title || '转型路径仿真推演思路').replace(/^图\d+\s*/, ''))}</strong>
+        <span>${escapeHtml(fig.caption || '')}</span>
+      </figcaption>
+    `;
+  }
+  if (steps) {
+    steps.innerHTML = (baseline.pathwaySteps || []).map((step, index) => `
+      <article class="scenario-pathway-step">
+        <i>${index + 1}</i>
+        <h4>${escapeHtml(step.title)}</h4>
+        <p>${escapeHtml(step.text)}</p>
+      </article>
+    `).join('');
+  }
+}
+
+function baselineLineRecord(rows, year) {
+  if (!rows?.length) return null;
+  const exact = rows.find(row => Number(row.year) === Number(year));
+  if (exact) return exact;
+  const sorted = [...rows].sort((a, b) => Math.abs(a.year - year) - Math.abs(b.year - year));
+  return sorted[0];
+}
+
+function renderBaselineLineChart(containerId, rows, series, options = {}) {
+  const container = $(`#${containerId}`);
+  if (!container || !rows?.length) return;
+  const currentYear = moduleYear('scenarios');
+  const width = options.width || 980;
+  const height = options.height || 460;
+  const pad = options.pad || { left: 96, right: 34, top: 58, bottom: 60 };
+  const plotW = width - pad.left - pad.right;
+  const plotH = height - pad.top - pad.bottom;
+  const minYear = rows[0].year;
+  const maxYear = rows[rows.length - 1].year;
+  const chartYear = Math.min(Math.max(currentYear, minYear), maxYear);
+  const values = rows.flatMap(row => series.map(item => Number(getByPath(row, item.path) || 0)));
+  const rawMax = Math.max(...values, 1);
+  const rawMin = Math.min(...values, 0);
+  const span = rawMax - rawMin || 1;
+  const minValue = options.yMin ?? (options.fromZero !== false && rawMin >= 0 ? 0 : rawMin - span * 0.12);
+  const maxValue = options.yMax ?? (rawMax + span * 0.18);
+  const ticks = options.yTicks || (options.yStep ? (() => {
+    const result = [];
+    for (let value = minValue; value <= maxValue + options.yStep * 0.001; value += options.yStep) {
+      result.push(Number(value.toFixed(6)));
+    }
+    return result;
+  })() : niceTicks(minValue, maxValue));
+  const axis = axisBoundsFromTicks(ticks, minValue, maxValue);
+  const x = value => pad.left + ((value - minYear) / Math.max(maxYear - minYear, 1)) * plotW;
+  const y = value => pad.top + plotH - ((Number(value || 0) - axis.min) / Math.max(axis.max - axis.min, 1e-6)) * plotH;
+  const grid = ticks.map(tick => {
+    const yy = y(tick);
+    return `<line class="grid-line" x1="${pad.left}" y1="${yy}" x2="${width - pad.right}" y2="${yy}"/><text class="axis-label" x="${pad.left - 12}" y="${yy + 4}" text-anchor="end">${fmt(tick, options.tickDigits ?? options.digits ?? 1)}</text>`;
+  }).join('');
+  const legend = series.map((item, index) => {
+    const slot = plotW / Math.max(series.length, 1);
+    const xPos = pad.left + index * slot + Math.max(0, (slot - 150) / 2);
+    return `<g class="chart-legend-item scenario-legend-item" transform="translate(${xPos}, 24)">
+      <line x1="0" x2="26" y1="0" y2="0" stroke="${item.color}" stroke-width="3.8" stroke-linecap="round"></line>
+      <circle cx="13" cy="0" r="5.2" fill="${item.color}"></circle>
+      <text class="axis-label scenario-legend-text" x="36" y="5">${escapeHtml(item.label)}</text>
+    </g>`;
+  }).join('');
+  const paths = series.map(item => {
+    const d = rows.map((row, index) => {
+      const value = Number(getByPath(row, item.path) || 0);
+      return `${index === 0 ? 'M' : 'L'} ${x(row.year).toFixed(1)} ${y(value).toFixed(1)}`;
+    }).join(' ');
+    const points = rows.map(row => {
+      const current = row.year === chartYear;
+      const value = Number(getByPath(row, item.path) || 0);
+      const title = `${row.year} ${item.label} ${fmt(value, options.digits ?? 1)}${options.unit ? ` ${options.unit}` : ''}`;
+      return `<circle class="chart-point scenario-point ${current ? 'is-current is-selected' : ''}" data-chart="${escapeAttr(containerId)}" data-series="${escapeAttr(item.key)}" data-year="${row.year}" cx="${x(row.year)}" cy="${y(value)}" r="${current ? 6.8 : 4.2}" fill="${item.color}"><title>${escapeHtml(title)}</title></circle>`;
+    }).join('');
+    return `<path class="scenario-line" d="${d}" fill="none" stroke="${item.color}" stroke-width="${item.width || 3.6}" stroke-linecap="round" stroke-linejoin="round"/>${points}`;
+  }).join('');
+  const tickCandidates = [minYear, 2030, 2035, 2040, 2050, maxYear];
+  const yearTicks = [...new Set(tickCandidates)].filter(year => year >= minYear && year <= maxYear).map(tick => `<text class="axis-label" x="${x(tick)}" y="${height - 26}" text-anchor="middle">${tick}</text>`).join('');
+  const detailRow = baselineLineRecord(rows, chartYear);
+  const detailPanel = detailRow ? renderScenarioDetailPanel({
+    title: options.label || '基准情景路径',
+    year: detailRow.year,
+    items: series.map(item => {
+      const value = Number(getByPath(detailRow, item.path) || 0);
+      return {
+        key: item.key,
+        label: item.label,
+        value: `${fmt(value, options.digits ?? 1)}${options.unit ? ` ${options.unit}` : ''}`,
+        color: item.color,
+      };
+    }),
+  }) : '';
+  container.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeAttr(options.label || '基准情景路径')}">
+    <text class="axis-label axis-label--x" x="${pad.left + plotW / 2}" y="${height - 6}" text-anchor="middle">年份</text>
+    <text class="axis-label axis-label--y" x="26" y="${pad.top + plotH / 2}" text-anchor="middle" transform="rotate(-90 26 ${pad.top + plotH / 2})">${escapeHtml(options.unit || '')}</text>
+    ${legend}
+    ${grid}
+    <line class="current-year-line" x1="${x(chartYear)}" y1="${pad.top}" x2="${x(chartYear)}" y2="${pad.top + plotH}" />
+    ${paths}
+    ${yearTicks}
+  </svg>${detailPanel}`;
+  bindScenarioPointEvents(container);
+}
+
+function renderBaselineGenerationShareChart() {
+  renderBaselineLineChart('baselineGenerationShareChart', state.baseline?.generationShare || [], [
+    { key: 'gansu', label: '甘肃省', path: ['gansu'], color: '#c99a2e', width: 4.2 },
+    { key: 'northwest', label: '西北地区', path: ['northwest'], color: '#1aa18b', width: 4.0 },
+  ], { label: '发电总量占全国比例', unit: '%', digits: 2, tickDigits: 0, yMin: 0, yMax: 25, yStep: 5 });
+}
+
+function renderBaselineRenewableShareChart() {
+  renderBaselineLineChart('baselineRenewableShareChart', state.baseline?.renewableShare || [], [
+    { key: 'gansu', label: '甘肃省', path: ['gansu'], color: '#c99a2e', width: 4.2 },
+    { key: 'northwest', label: '西北地区', path: ['northwest'], color: '#1aa18b', width: 4.0 },
+  ], { label: '风光发电量占全国比例', unit: '%', digits: 2, tickDigits: 0, yMin: 0, yMax: 35, yStep: 5 });
+}
+
+function renderBaselineCcusChart() {
+  renderBaselineLineChart('baselineCcusChart', state.baseline?.ccusPath || [], [
+    { key: 'gansu', label: '甘肃省', path: ['gansu'], color: '#c99a2e', width: 4.2 },
+    { key: 'northwest', label: '西北地区', path: ['northwest'], color: '#1aa18b', width: 4.0 },
+    { key: 'national', label: '全国', path: ['national'], color: '#155eef', width: 4.0 },
+  ], { label: '煤电 CCUS 改造装机容量', unit: '亿千瓦', digits: 2, tickDigits: 0, yMin: 0, yMax: 7, yStep: 1 });
+}
+
+function renderBaselinePowerBalanceChart() {
+  renderBaselineLineChart('baselinePowerBalanceChart', state.baseline?.powerBalance || [], [
+    { key: 'generation', label: '总发电量', path: ['generation'], color: '#155eef', width: 4.2 },
+    { key: 'demand', label: '省内用电量', path: ['demand'], color: '#1aa18b', width: 4.0 },
+    { key: 'export', label: '外送电量', path: ['export'], color: '#c99a2e', width: 4.0 },
+  ], { label: '甘肃省电量平衡路径', unit: '亿千瓦时', digits: 0, yMin: 0, yMax: 7000, yStep: 1000 });
+}
+
+function renderBaselineAssumptions() {
+  const container = $('#scenarioAssumptions');
+  if (!container || !state.baseline) return;
+  container.innerHTML = (state.baseline.powerAssumptions || []).map(group => `
+    <section class="scenario-assumption-group">
+      <h3>${escapeHtml(group.group)}</h3>
+      <div class="scenario-assumption-grid">
+        ${(group.items || []).map(item => `
+          <article class="scenario-assumption-card">
+            <span>${escapeHtml(item.meta)}</span>
+            <h4>${escapeHtml(item.title)}</h4>
+            <ul>${(item.facts || []).map(fact => `<li>${escapeHtml(fact)}</li>`).join('')}</ul>
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `).join('');
 }
 
 function renderScenarioKpis() {

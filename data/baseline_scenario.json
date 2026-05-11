@@ -1,0 +1,1063 @@
+{
+  "metadata": {
+    "sourceDocument": "2026.05.10-院士4期基准情景说明.docx",
+    "sourceExcel": "2026.05.08-院士4期基础路径-最新版.xlsx",
+    "yearRange": [
+      2024,
+      2060
+    ],
+    "notes": "现有经济参数沿用当前 UI 数据；本数据仅补充基准情景口径、流程图与基础路径曲线。"
+  },
+  "overview": {
+    "title": "基准情景说明与关键参数",
+    "lead": "以甘肃省为重点研究对象，结合全国与西北边界条件，展示 2024–2060 年电源转型路径、电量平衡、CCUS 布局与关键参数。",
+    "kpis": [
+      {
+        "label": "研究周期",
+        "value": "2024–2060",
+        "note": "规划尺度转型时间步长为年"
+      },
+      {
+        "label": "研究重点",
+        "value": "甘肃省域",
+        "note": "全国与西北作为研究边界"
+      },
+      {
+        "label": "核心路径",
+        "value": "总量 / 新能源 / CCUS",
+        "note": "承接路径推演逻辑"
+      },
+      {
+        "label": "电源范围",
+        "value": "8 类资源",
+        "note": "含煤电、水电、风光光热、其他与储能"
+      }
+    ]
+  },
+  "boundaries": [
+    {
+      "title": "空间边界",
+      "items": [
+        "全国及西北地区作为研究边界",
+        "研究重点为甘肃省域范围"
+      ]
+    },
+    {
+      "title": "时间边界",
+      "items": [
+        "仿真起始年为 2024 年",
+        "仿真推演年为 2025–2060 年",
+        "2025 年实际数据用于校验"
+      ]
+    },
+    {
+      "title": "领域边界",
+      "items": [
+        "电源、电网、用电与储能统筹考虑",
+        "外送通道采用宏观容量与数量约束"
+      ]
+    },
+    {
+      "title": "模型颗粒度",
+      "items": [
+        "煤电细化至机组级",
+        "水电、风电、光伏、光热按投运年份聚类"
+      ]
+    }
+  ],
+  "dataSources": [
+    {
+      "period": "1995–2023",
+      "source": "能源数据简明手册、国家能源局、国家统计局等"
+    },
+    {
+      "period": "2024–2025",
+      "source": "甘肃发改委、甘肃省政府办公厅、商务厅、工信厅等"
+    },
+    {
+      "period": "2026–2035",
+      "source": "甘肃经研院边界条件文件与收资表"
+    },
+    {
+      "period": "2035–2060",
+      "source": "基准情景路径设计与模型推演"
+    }
+  ],
+  "pathwayFigure": {
+    "title": "转型路径仿真推演思路",
+    "src": "data/scenario_figures/figure-1-pathway.png",
+    "caption": "按照全国碳中和目标、电力减排任务与区域解耦逻辑，形成甘肃省基准转型路径。"
+  },
+  "pathwaySteps": [
+    {
+      "title": "框定全国碳排碳汇边界",
+      "text": "先以权威统计、能源资料和碳中和目标确定全国全社会碳排放与碳汇边界，明确电力系统需要承担的减排空间和长期约束。"
+    },
+    {
+      "title": "分解电力碳减排任务",
+      "text": "再扣除非二氧化碳温室气体、非电领域排放与碳汇，提取电力部门减排和增汇任务，并转化为电源结构、发电量和 CCUS 的路径约束。"
+    },
+    {
+      "title": "解耦至西北与甘肃",
+      "text": "最后按整体保熵还原思路，将全国任务分解为西北和甘肃的发电总量、新能源发电量与煤电 CCUS 路径，用于后续仿真推演。"
+    }
+  ],
+  "generationShare": [
+    {
+      "year": 2024,
+      "gansu": 2.2605,
+      "northwest": 14.1567
+    },
+    {
+      "year": 2025,
+      "gansu": 2.4384,
+      "northwest": 14.2856
+    },
+    {
+      "year": 2026,
+      "gansu": 2.5566,
+      "northwest": 15.1973
+    },
+    {
+      "year": 2027,
+      "gansu": 2.66,
+      "northwest": 15.8906
+    },
+    {
+      "year": 2028,
+      "gansu": 2.7441,
+      "northwest": 16.7151
+    },
+    {
+      "year": 2029,
+      "gansu": 2.8324,
+      "northwest": 17.5126
+    },
+    {
+      "year": 2030,
+      "gansu": 2.895,
+      "northwest": 18.2874
+    },
+    {
+      "year": 2031,
+      "gansu": 2.966,
+      "northwest": 18.4736
+    },
+    {
+      "year": 2032,
+      "gansu": 3.0388,
+      "northwest": 18.6393
+    },
+    {
+      "year": 2033,
+      "gansu": 3.1134,
+      "northwest": 18.7852
+    },
+    {
+      "year": 2034,
+      "gansu": 3.1899,
+      "northwest": 18.9123
+    },
+    {
+      "year": 2035,
+      "gansu": 3.2225,
+      "northwest": 19.0215
+    },
+    {
+      "year": 2036,
+      "gansu": 3.1861,
+      "northwest": 19.1948
+    },
+    {
+      "year": 2037,
+      "gansu": 3.1502,
+      "northwest": 19.353
+    },
+    {
+      "year": 2038,
+      "gansu": 3.1149,
+      "northwest": 19.4966
+    },
+    {
+      "year": 2039,
+      "gansu": 3.08,
+      "northwest": 19.6264
+    },
+    {
+      "year": 2040,
+      "gansu": 3.0457,
+      "northwest": 19.7427
+    },
+    {
+      "year": 2041,
+      "gansu": 3.0505,
+      "northwest": 20.0183
+    },
+    {
+      "year": 2042,
+      "gansu": 3.0553,
+      "northwest": 20.0795
+    },
+    {
+      "year": 2043,
+      "gansu": 3.0602,
+      "northwest": 20.137
+    },
+    {
+      "year": 2044,
+      "gansu": 3.0651,
+      "northwest": 20.1909
+    },
+    {
+      "year": 2045,
+      "gansu": 3.0666,
+      "northwest": 20.1425
+    },
+    {
+      "year": 2046,
+      "gansu": 3.0714,
+      "northwest": 20.1172
+    },
+    {
+      "year": 2047,
+      "gansu": 3.0762,
+      "northwest": 20.1874
+    },
+    {
+      "year": 2048,
+      "gansu": 3.081,
+      "northwest": 20.2543
+    },
+    {
+      "year": 2049,
+      "gansu": 3.0858,
+      "northwest": 20.2239
+    },
+    {
+      "year": 2050,
+      "gansu": 3.0907,
+      "northwest": 20.1926
+    },
+    {
+      "year": 2051,
+      "gansu": 3.0962,
+      "northwest": 20.1176
+    },
+    {
+      "year": 2052,
+      "gansu": 3.1018,
+      "northwest": 20.042
+    },
+    {
+      "year": 2053,
+      "gansu": 3.1074,
+      "northwest": 19.966
+    },
+    {
+      "year": 2054,
+      "gansu": 3.113,
+      "northwest": 19.8896
+    },
+    {
+      "year": 2055,
+      "gansu": 3.1272,
+      "northwest": 19.8127
+    },
+    {
+      "year": 2056,
+      "gansu": 3.1518,
+      "northwest": 19.8042
+    },
+    {
+      "year": 2057,
+      "gansu": 3.1766,
+      "northwest": 19.7951
+    },
+    {
+      "year": 2058,
+      "gansu": 3.2017,
+      "northwest": 19.7853
+    },
+    {
+      "year": 2059,
+      "gansu": 3.2272,
+      "northwest": 19.7748
+    },
+    {
+      "year": 2060,
+      "gansu": 3.253,
+      "northwest": 19.7636
+    }
+  ],
+  "renewableShare": [
+    {
+      "year": 2024,
+      "gansu": 4.5873,
+      "northwest": 20.0511
+    },
+    {
+      "year": 2025,
+      "gansu": 4.3582,
+      "northwest": 18.5859
+    },
+    {
+      "year": 2026,
+      "gansu": 4.5335,
+      "northwest": 22.7802
+    },
+    {
+      "year": 2027,
+      "gansu": 4.7337,
+      "northwest": 26.0114
+    },
+    {
+      "year": 2028,
+      "gansu": 4.9597,
+      "northwest": 27.732
+    },
+    {
+      "year": 2029,
+      "gansu": 5.2132,
+      "northwest": 30.2191
+    },
+    {
+      "year": 2030,
+      "gansu": 5.4961,
+      "northwest": 33.0551
+    },
+    {
+      "year": 2031,
+      "gansu": 5.5822,
+      "northwest": 32.6823
+    },
+    {
+      "year": 2032,
+      "gansu": 5.6811,
+      "northwest": 32.326
+    },
+    {
+      "year": 2033,
+      "gansu": 5.7924,
+      "northwest": 31.9842
+    },
+    {
+      "year": 2034,
+      "gansu": 5.9162,
+      "northwest": 31.6555
+    },
+    {
+      "year": 2035,
+      "gansu": 6.0526,
+      "northwest": 31.339
+    },
+    {
+      "year": 2036,
+      "gansu": 5.8541,
+      "northwest": 31.0182
+    },
+    {
+      "year": 2037,
+      "gansu": 5.6686,
+      "northwest": 30.706
+    },
+    {
+      "year": 2038,
+      "gansu": 5.4948,
+      "northwest": 30.4012
+    },
+    {
+      "year": 2039,
+      "gansu": 5.3317,
+      "northwest": 30.1028
+    },
+    {
+      "year": 2040,
+      "gansu": 5.1781,
+      "northwest": 29.8099
+    },
+    {
+      "year": 2041,
+      "gansu": 5.1005,
+      "northwest": 29.7928
+    },
+    {
+      "year": 2042,
+      "gansu": 5.0278,
+      "northwest": 29.4756
+    },
+    {
+      "year": 2043,
+      "gansu": 4.9597,
+      "northwest": 29.1746
+    },
+    {
+      "year": 2044,
+      "gansu": 4.8957,
+      "northwest": 28.8881
+    },
+    {
+      "year": 2045,
+      "gansu": 4.8302,
+      "northwest": 28.4754
+    },
+    {
+      "year": 2046,
+      "gansu": 4.7736,
+      "northwest": 28.1173
+    },
+    {
+      "year": 2047,
+      "gansu": 4.7202,
+      "northwest": 27.9089
+    },
+    {
+      "year": 2048,
+      "gansu": 4.6698,
+      "northwest": 27.7098
+    },
+    {
+      "year": 2049,
+      "gansu": 4.6221,
+      "northwest": 27.3917
+    },
+    {
+      "year": 2050,
+      "gansu": 4.577,
+      "northwest": 27.0867
+    },
+    {
+      "year": 2051,
+      "gansu": 4.5418,
+      "northwest": 26.7758
+    },
+    {
+      "year": 2052,
+      "gansu": 4.5089,
+      "northwest": 26.4776
+    },
+    {
+      "year": 2053,
+      "gansu": 4.478,
+      "northwest": 26.1913
+    },
+    {
+      "year": 2054,
+      "gansu": 4.4491,
+      "northwest": 25.9162
+    },
+    {
+      "year": 2055,
+      "gansu": 4.4343,
+      "northwest": 25.6516
+    },
+    {
+      "year": 2056,
+      "gansu": 4.4364,
+      "northwest": 25.4912
+    },
+    {
+      "year": 2057,
+      "gansu": 4.4403,
+      "northwest": 25.339
+    },
+    {
+      "year": 2058,
+      "gansu": 4.446,
+      "northwest": 25.1949
+    },
+    {
+      "year": 2059,
+      "gansu": 4.4533,
+      "northwest": 25.0583
+    },
+    {
+      "year": 2060,
+      "gansu": 4.4622,
+      "northwest": 24.9291
+    }
+  ],
+  "ccusPath": [
+    {
+      "year": 2025,
+      "gansu": 0.01,
+      "northwest": 0.01,
+      "national": 0.01
+    },
+    {
+      "year": 2026,
+      "gansu": 0.02,
+      "northwest": 0.06,
+      "national": 0.31
+    },
+    {
+      "year": 2027,
+      "gansu": 0.03,
+      "northwest": 0.1,
+      "national": 0.55
+    },
+    {
+      "year": 2028,
+      "gansu": 0.04,
+      "northwest": 0.15,
+      "national": 0.75
+    },
+    {
+      "year": 2029,
+      "gansu": 0.05,
+      "northwest": 0.21,
+      "national": 0.96
+    },
+    {
+      "year": 2030,
+      "gansu": 0.06,
+      "northwest": 0.27,
+      "national": 1.27
+    },
+    {
+      "year": 2031,
+      "gansu": 0.07,
+      "northwest": 0.32,
+      "national": 1.5
+    },
+    {
+      "year": 2032,
+      "gansu": 0.08,
+      "northwest": 0.37,
+      "national": 1.65
+    },
+    {
+      "year": 2033,
+      "gansu": 0.09,
+      "northwest": 0.44,
+      "national": 1.82
+    },
+    {
+      "year": 2034,
+      "gansu": 0.1,
+      "northwest": 0.51,
+      "national": 1.99
+    },
+    {
+      "year": 2035,
+      "gansu": 0.11,
+      "northwest": 0.58,
+      "national": 2.21
+    },
+    {
+      "year": 2036,
+      "gansu": 0.12,
+      "northwest": 0.62,
+      "national": 2.35
+    },
+    {
+      "year": 2037,
+      "gansu": 0.13,
+      "northwest": 0.64,
+      "national": 2.47
+    },
+    {
+      "year": 2038,
+      "gansu": 0.13,
+      "northwest": 0.72,
+      "national": 2.75
+    },
+    {
+      "year": 2039,
+      "gansu": 0.13,
+      "northwest": 0.82,
+      "national": 2.95
+    },
+    {
+      "year": 2040,
+      "gansu": 0.13,
+      "northwest": 0.82,
+      "national": 3.25
+    },
+    {
+      "year": 2041,
+      "gansu": 0.13,
+      "northwest": 1.07,
+      "national": 3.55
+    },
+    {
+      "year": 2042,
+      "gansu": 0.13,
+      "northwest": 1.11,
+      "national": 3.79
+    },
+    {
+      "year": 2043,
+      "gansu": 0.13,
+      "northwest": 1.16,
+      "national": 4.04
+    },
+    {
+      "year": 2044,
+      "gansu": 0.13,
+      "northwest": 1.17,
+      "national": 4.25
+    },
+    {
+      "year": 2045,
+      "gansu": 0.13,
+      "northwest": 1.27,
+      "national": 4.55
+    },
+    {
+      "year": 2046,
+      "gansu": 0.13,
+      "northwest": 1.35,
+      "national": 4.83
+    },
+    {
+      "year": 2047,
+      "gansu": 0.13,
+      "northwest": 1.43,
+      "national": 5.11
+    },
+    {
+      "year": 2048,
+      "gansu": 0.13,
+      "northwest": 1.51,
+      "national": 5.39
+    },
+    {
+      "year": 2049,
+      "gansu": 0.13,
+      "northwest": 1.6,
+      "national": 5.68
+    },
+    {
+      "year": 2050,
+      "gansu": 0.13,
+      "northwest": 1.68,
+      "national": 5.96
+    },
+    {
+      "year": 2051,
+      "gansu": 0.13,
+      "northwest": 1.71,
+      "national": 5.94
+    },
+    {
+      "year": 2052,
+      "gansu": 0.13,
+      "northwest": 1.75,
+      "national": 5.98
+    },
+    {
+      "year": 2053,
+      "gansu": 0.13,
+      "northwest": 1.79,
+      "national": 6.07
+    },
+    {
+      "year": 2054,
+      "gansu": 0.13,
+      "northwest": 1.82,
+      "national": 6.15
+    },
+    {
+      "year": 2055,
+      "gansu": 0.13,
+      "northwest": 1.85,
+      "national": 6.13
+    },
+    {
+      "year": 2056,
+      "gansu": 0.13,
+      "northwest": 1.89,
+      "national": 6.19
+    },
+    {
+      "year": 2057,
+      "gansu": 0.13,
+      "northwest": 1.93,
+      "national": 6.33
+    },
+    {
+      "year": 2058,
+      "gansu": 0.13,
+      "northwest": 1.95,
+      "national": 6.45
+    },
+    {
+      "year": 2059,
+      "gansu": 0.13,
+      "northwest": 1.97,
+      "national": 6.57
+    },
+    {
+      "year": 2060,
+      "gansu": 0.13,
+      "northwest": 1.99,
+      "national": 6.64
+    }
+  ],
+  "powerBalance": [
+    {
+      "year": 2024,
+      "generation": 2280.14,
+      "demand": 1746.32,
+      "export": 533.82
+    },
+    {
+      "year": 2025,
+      "generation": 2578.7,
+      "demand": 1927.1,
+      "export": 651.6
+    },
+    {
+      "year": 2026,
+      "generation": 2836.0,
+      "demand": 1936.0,
+      "export": 900.0
+    },
+    {
+      "year": 2027,
+      "generation": 3095.2144,
+      "demand": 2083.0,
+      "export": 1012.2144
+    },
+    {
+      "year": 2028,
+      "generation": 3349.42,
+      "demand": 2211.0,
+      "export": 1138.42
+    },
+    {
+      "year": 2029,
+      "generation": 3626.3612,
+      "demand": 2346.0,
+      "export": 1280.3612
+    },
+    {
+      "year": 2030,
+      "generation": 3888.0,
+      "demand": 2448.0,
+      "export": 1440.0
+    },
+    {
+      "year": 2031,
+      "generation": 4090.1556,
+      "demand": 2567.541,
+      "export": 1522.6146
+    },
+    {
+      "year": 2032,
+      "generation": 4302.8883,
+      "demand": 2692.9194,
+      "export": 1609.9689
+    },
+    {
+      "year": 2033,
+      "generation": 4526.7552,
+      "demand": 2824.4203,
+      "export": 1702.3349
+    },
+    {
+      "year": 2034,
+      "generation": 4762.3426,
+      "demand": 2962.3426,
+      "export": 1800.0
+    },
+    {
+      "year": 2035,
+      "generation": 4940.1189,
+      "demand": 3107.0,
+      "export": 1833.1189
+    },
+    {
+      "year": 2036,
+      "generation": 4992.2283,
+      "demand": 3125.3812,
+      "export": 1866.8471
+    },
+    {
+      "year": 2037,
+      "generation": 5045.0671,
+      "demand": 3143.8712,
+      "export": 1901.1959
+    },
+    {
+      "year": 2038,
+      "generation": 5098.6473,
+      "demand": 3162.4705,
+      "export": 1936.1768
+    },
+    {
+      "year": 2039,
+      "generation": 5152.9811,
+      "demand": 3181.1799,
+      "export": 1971.8012
+    },
+    {
+      "year": 2040,
+      "generation": 5208.0811,
+      "demand": 3200.0,
+      "export": 2008.0811
+    },
+    {
+      "year": 2041,
+      "generation": 5284.0645,
+      "demand": 3239.0359,
+      "export": 2045.0286
+    },
+    {
+      "year": 2042,
+      "generation": 5361.2039,
+      "demand": 3278.5481,
+      "export": 2082.6558
+    },
+    {
+      "year": 2043,
+      "generation": 5439.5176,
+      "demand": 3318.5422,
+      "export": 2120.9754
+    },
+    {
+      "year": 2044,
+      "generation": 5519.0242,
+      "demand": 3359.0242,
+      "export": 2160.0
+    },
+    {
+      "year": 2045,
+      "generation": 5593.5545,
+      "demand": 3400.0,
+      "export": 2193.5545
+    },
+    {
+      "year": 2046,
+      "generation": 5666.721,
+      "demand": 3439.0907,
+      "export": 2227.6303
+    },
+    {
+      "year": 2047,
+      "generation": 5740.8663,
+      "demand": 3478.6309,
+      "export": 2262.2354
+    },
+    {
+      "year": 2048,
+      "generation": 5816.0037,
+      "demand": 3518.6257,
+      "export": 2297.378
+    },
+    {
+      "year": 2049,
+      "generation": 5892.1469,
+      "demand": 3559.0803,
+      "export": 2333.0667
+    },
+    {
+      "year": 2050,
+      "generation": 5969.3097,
+      "demand": 3600.0,
+      "export": 2369.3097
+    },
+    {
+      "year": 2051,
+      "generation": 6045.2553,
+      "demand": 3639.1396,
+      "export": 2406.1157
+    },
+    {
+      "year": 2052,
+      "generation": 6122.1983,
+      "demand": 3678.7048,
+      "export": 2443.4935
+    },
+    {
+      "year": 2053,
+      "generation": 6200.152,
+      "demand": 3718.7001,
+      "export": 2481.4519
+    },
+    {
+      "year": 2054,
+      "generation": 6279.1303,
+      "demand": 3759.1303,
+      "export": 2520.0
+    },
+    {
+      "year": 2055,
+      "generation": 6376.7119,
+      "demand": 3800.0,
+      "export": 2576.7119
+    },
+    {
+      "year": 2056,
+      "generation": 6473.8837,
+      "demand": 3839.1835,
+      "export": 2634.7001
+    },
+    {
+      "year": 2057,
+      "generation": 6572.7644,
+      "demand": 3878.7711,
+      "export": 2693.9933
+    },
+    {
+      "year": 2058,
+      "generation": 6673.3878,
+      "demand": 3918.7669,
+      "export": 2754.6209
+    },
+    {
+      "year": 2059,
+      "generation": 6775.788,
+      "demand": 3959.1751,
+      "export": 2816.6129
+    },
+    {
+      "year": 2060,
+      "generation": 6880.0,
+      "demand": 4000.0,
+      "export": 2880.0
+    }
+  ],
+  "chartInterpretations": {
+    "generationShare": [
+      {
+        "label": "战略定位",
+        "text": "西北发电总量占全国比例整体抬升，说明区域在全国电力稳定供应中的支撑作用增强。随着新能源基地和外送通道建设推进，西北由资源供给区进一步转向全国电力平衡的重要支点。"
+      },
+      {
+        "label": "甘肃作用",
+        "text": "甘肃占全国比例同步上行，体现以甘肃为代表的西北清洁能源外送基地功能逐步强化。其增长节奏与西北整体趋势基本一致，说明甘肃在区域内承担稳定的增量贡献。"
+      },
+      {
+        "label": "路径特征",
+        "text": "曲线呈先加速上升、后趋于平稳的特征，适合观察长期供给能力的边际变化。后期增速趋缓并不代表战略地位下降，而是全国电源布局逐步均衡后的占比稳定。"
+      }
+    ],
+    "renewableShare": [
+      {
+        "label": "阶段贡献",
+        "text": "2024–2035 年甘肃和西北承担“先清洁、再带动后清洁”的示范作用，风光贡献率阶段性上升。该阶段体现西北资源禀赋和集中开发条件的优势。"
+      },
+      {
+        "label": "峰值之后",
+        "text": "2035 年后，随着东中部加快可再生能源布局，甘肃与西北在全国风光增量中的边际占比有所回落。这是全国清洁能源空间布局扩散后的结构性变化。"
+      },
+      {
+        "label": "长期地位",
+        "text": "即便占比回落，甘肃仍保持清洁能源重点输出区定位，是西北可再生能源供给的重要组成。2060 年甘肃仍贡献西北相当比例的风光发电量。"
+      }
+    ],
+    "ccusPath": [
+      {
+        "label": "全国趋势",
+        "text": "煤电 CCUS 改造装机总体持续增加，全国在 2045 年后进入更明显的加速改造阶段。该路径反映煤电在深度减排阶段由常规发电资产转向低碳调节资源的过程。"
+      },
+      {
+        "label": "西北承接",
+        "text": "西北煤电资源集中、技术经济性相对更优，在全国 CCUS 布局中承担较高比例。源汇匹配、封存条件和改造成本共同影响 CCUS 的区域配置。"
+      },
+      {
+        "label": "甘肃定位",
+        "text": "甘肃受封存条件、源汇匹配和跨省输送成本等约束，定位为有限规模、重点突破、逐台实施。因此甘肃曲线增幅低于西北整体和全国水平。"
+      }
+    ],
+    "powerBalance": [
+      {
+        "label": "平衡关系",
+        "text": "甘肃总发电量由省内用电量与外送电量共同决定，电量平衡是路径设计的基础约束。图中三条曲线共同反映“本地需求 + 外送任务”对电源规模的拉动。"
+      },
+      {
+        "label": "省内需求",
+        "text": "省内用电量从起点年逐步提升，反映经济社会用能增长对电源规模的持续拉动。中间年份按路径平滑增长，以避免相邻年份出现不合理跃变。"
+      },
+      {
+        "label": "外送通道",
+        "text": "外送电量跟随通道建设规划增长，单条通道容量和利用小时共同决定外送规模。外送能力是甘肃新能源基地化开发和全国消纳之间的连接条件。"
+      }
+    ]
+  },
+  "powerAssumptions": [
+    {
+      "group": "常规电源",
+      "items": [
+        {
+          "title": "煤电",
+          "meta": "寿命 40 年",
+          "facts": [
+            "2045 年后不再新建",
+            "2024、2025 年装机分别为 2548.7、3283.7 万千瓦"
+          ]
+        },
+        {
+          "title": "水电",
+          "meta": "寿命 100 年",
+          "facts": [
+            "2030 年装机约 980 万千瓦",
+            "2026–2060 年发电小时数外生给定 4000 小时"
+          ]
+        },
+        {
+          "title": "其他",
+          "meta": "生物质 / 垃圾 / 余热",
+          "facts": [
+            "2024 年装机 67.37 万千瓦",
+            "2024 年发电量 24.49 亿千瓦时，至 2060 年保持稳定"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "新能源",
+      "items": [
+        {
+          "title": "风电",
+          "meta": "寿命 20 年",
+          "facts": [
+            "2060 年发电小时数 1800 小时",
+            "2060 年发电量目标 2700 亿千瓦时"
+          ]
+        },
+        {
+          "title": "光伏",
+          "meta": "寿命 20 年",
+          "facts": [
+            "2060 年发电小时数 1200 小时",
+            "2060 年发电量目标 2700 亿千瓦时"
+          ]
+        },
+        {
+          "title": "光热",
+          "meta": "寿命 30 年",
+          "facts": [
+            "2060 年发电小时数 2000 小时",
+            "2060 年发电量目标 344 亿千瓦时"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "调节资源",
+      "items": [
+        {
+          "title": "抽水蓄能",
+          "meta": "系统调节",
+          "facts": [
+            "2035 年装机 1428 万千瓦",
+            "2060 年装机 3350 万千瓦",
+            "平均利用小时数 -300 小时"
+          ]
+        },
+        {
+          "title": "电化学储能",
+          "meta": "风光配比",
+          "facts": [
+            "2035 年装机 1852.76 万千瓦",
+            "按风光装机容量之和 12% 配比",
+            "平均利用小时数 -200 小时"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceParagraphCount": 94
+}
