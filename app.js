@@ -83,7 +83,6 @@ const MODULES = {
 
 const $ = (selector) => document.querySelector(selector);
 const ACCESS_PASSWORD = 'state_grid';
-const AUTH_SESSION_KEY = 'gansu-dashboard-authorized';
 const fmt = (value, digits) => {
   const num = Number(value || 0);
   const d = digits != null ? digits : 2;
@@ -183,17 +182,11 @@ function initAuthGate() {
     return;
   }
 
-  if (sessionStorage.getItem(AUTH_SESSION_KEY) === 'true') {
-    unlockDashboard();
-    return;
-  }
-
   input.focus();
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const password = input.value.trim();
     if (password === ACCESS_PASSWORD) {
-      sessionStorage.setItem(AUTH_SESSION_KEY, 'true');
       unlockDashboard();
       return;
     }
