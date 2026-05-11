@@ -1,0 +1,404 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>甘肃省电源转型研究成果展示</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Research Dashboard · 2024–2060</p>
+        <h1>甘肃省电源转型研究成果展示</h1>
+        <p class="hero__lead">基于院士四期基础路径、节点分配结果与煤电度电经济参数，动态呈现装机结构、发电结构、节点投建和煤电经济性的长期演化。</p>
+      </div>
+      <div class="hero__insight" id="heroInsight">
+        <span class="insight-label">关键洞察</span>
+        <strong>等待数据加载</strong>
+        <p>请通过本地 HTTP 服务打开页面，以便浏览器读取 JSON 数据。</p>
+      </div>
+    </header>
+
+    <nav class="module-tabs" aria-label="成果展示模块">
+      <button class="tab is-active" data-module="province" type="button">一、甘肃省电力转型全景</button>
+      <button class="tab" data-module="nodes" type="button">二、节点演变与容量分布</button>
+      <button class="tab" data-module="economics" type="button">三、煤电度电经济参数</button>
+      <button class="tab" data-module="regions" type="button">四、区域差异对比分析</button>
+      <button class="tab" data-module="scenarios" type="button">五、情景参数设置</button>
+    </nav>
+
+    <main>
+      <section id="loading" class="status-card">正在加载研究数据，请稍候……</section>
+      <section id="error" class="status-card status-card--error" hidden></section>
+
+      <section id="module-province" class="module is-active" aria-labelledby="provinceTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Power transition panorama</p>
+            <h2 id="provinceTitle">一、甘肃省电力转型全景</h2>
+          </div>
+          <div class="playbar">
+            <div class="basis-toggle" role="group" aria-label="装机口径">
+              <span>装机口径</span>
+              <button class="basis-toggle__button is-active" data-basis="withoutStorage" type="button">不含抽蓄与电化学储能</button>
+              <button class="basis-toggle__button" data-basis="withStorage" type="button">含抽蓄与电化学储能</button>
+            </div>
+            <button id="provincePlayButton" class="primary-button play-toggle" type="button">播放演示</button>
+            <div class="year-control">
+              <label for="yearSlider">年份 <strong id="yearLabel">—</strong></label>
+              <input id="yearSlider" type="range" min="2024" max="2060" value="2024" />
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <nav class="sub-nav" id="provinceSubNav" aria-label="专题导航">
+          <button class="sub-nav__tab is-active" data-subtab="overview" type="button">总览</button>
+          <button class="sub-nav__tab" data-subtab="scale" type="button">电源规模与结构</button>
+          <button class="sub-nav__tab" data-subtab="export" type="button">电力外送与通道建设</button>
+          <button class="sub-nav__tab" data-subtab="clean" type="button">清洁化与碳排放</button>
+          <button class="sub-nav__tab" data-subtab="cost" type="button">发电成本</button>
+        </nav>
+
+        <div class="sub-tab-content" id="subtab-overview">
+          <div class="overview-grid">
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>总装机量趋势</span></div>
+              <div id="overviewCapacityChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>总发电量趋势</span></div>
+              <div id="overviewGenerationChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>发电净排放量趋势</span></div>
+              <div id="overviewEmissionChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>总发电成本趋势</span></div>
+              <div id="overviewCostChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="sub-tab-content" id="subtab-scale" hidden>
+          <div class="legend-panel" id="categoryLegend" aria-label="电源类型图例"></div>
+          <div class="chart-grid chart-grid--large province-line-grid">
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>装机容量演变趋势</span></div>
+              <div id="capacityChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>装机结构占比演变趋势</span></div>
+              <div id="capacityShare" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>发电量演变趋势</span></div>
+              <div id="generationChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>发电结构占比演变趋势</span></div>
+              <div id="generationShare" class="chart economics-chart province-line-chart"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="sub-tab-content" id="subtab-export" hidden>
+          <div class="chart-grid chart-grid--large province-line-grid">
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>外送电量趋势</span></div>
+              <div id="exportChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>甘肃省外送占比趋势</span></div>
+              <div id="exportShareChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>已建设外送通道趋势</span></div>
+              <div id="exportChannelChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+          </div>
+        </div>
+
+
+        <div class="sub-tab-content" id="subtab-clean" hidden>
+          <div class="chart-grid chart-grid--large province-line-grid">
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>发电清洁程度趋势</span></div>
+              <div id="cleanChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>碳排放与碳汇趋势</span></div>
+              <div id="emissionChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>单位发电量碳排放趋势</span></div>
+              <div id="unitEmissionChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="sub-tab-content" id="subtab-cost" hidden>
+          <div class="chart-grid chart-grid--large province-line-grid">
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>分电源发电成本趋势</span></div>
+              <div id="costSourceChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>分电源度电成本趋势</span></div>
+              <div id="levelizedCostSourceChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title"><span>分成本项发电成本趋势</span></div>
+              <div id="costItemChart" class="chart economics-chart province-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card cost-structure-card">
+              <div class="card-title economics-title"><span>当前年份成本结构</span></div>
+              <div id="costStructureChart" class="cost-structure-chart"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="module-nodes" class="module" aria-labelledby="nodesTitle">
+        <div class="section-heading section-heading--nodes">
+          <div>
+            <p class="eyebrow">Node evolution</p>
+            <h2 id="nodesTitle">分配节点投建与容量演变</h2>
+          </div>
+          <div class="playbar">
+            <button id="nodePlayButton" class="primary-button play-toggle" type="button">播放演示</button>
+            <div class="year-control">
+              <label for="nodeYearSlider">年份 <strong id="nodeYearLabel">—</strong></label>
+              <input id="nodeYearSlider" type="range" min="2024" max="2060" value="2024" />
+            </div>
+          </div>
+        </div>
+
+        <div class="node-layout">
+          <article class="report-card map-card">
+            <div class="card-title"><span>甘肃节点地图</span><em>圆形为省内容量节点，大小表示当前容量；菱形为外送节点，虚线为接入示意</em></div>
+            <div id="gansuMap" class="gansu-map" aria-label="甘肃省节点演变示意图"></div>
+            <p class="map-note"><strong>注：当前节点的空间位置与连线关系为基于现有资料形成的阶段性研究示意，主要用于展示节点间相对关系；后续将随数据校核、模型细化和研究推进持续更新并动态调整。</strong> 图中蓝青色圆形节点表示省内容量承载节点，节点大小随当前年份分配容量变化；橙金色菱形节点表示外送节点，因分配结果未拆分至单个外送节点，故其大小不表征容量。省内节点之间采用既有网架示意连线，外送节点与最近省内容量节点之间采用橙色虚线表示基于相对空间邻近关系推断的外送接入示意，相关连线不等同于精确物理拓扑。</p>
+          </article>
+
+          <aside class="report-card node-panel">
+            <div class="card-title"><span>节点详情</span><em id="selectedNodeMeta">—</em></div>
+            <div id="selectedNode" class="selected-node"></div>
+            <div id="nodeCapacityChart" class="node-chart"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="module-economics" class="module" aria-labelledby="economicsTitle">
+        <div class="section-heading section-heading--economics">
+          <div>
+            <p class="eyebrow">Coal power economics</p>
+            <h2 id="economicsTitle">煤电度电经济参数年度演化</h2>
+          </div>
+          <div class="playbar">
+            <button id="economicsPlayButton" class="primary-button play-toggle" type="button">播放演示</button>
+            <div class="year-control">
+              <label for="economicsYearSlider">年份 <strong id="economicsYearLabel">—</strong></label>
+              <input id="economicsYearSlider" type="range" min="2024" max="2060" value="2024" />
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid economics-kpis" id="economicsKpiGrid"></div>
+
+        <div class="economics-layout">
+          <article class="report-card chart-card economics-chart-card">
+            <div class="card-title economics-title"><span>年发电利润与机组年发电成本费用</span></div>
+            <div id="economicsChart" class="chart economics-chart"></div>
+          </article>
+
+          <aside class="report-card cost-panel">
+            <div class="card-title"><span>机组年发电成本费用详情</span><em>当前年份</em></div>
+            <div id="costBreakdown" class="cost-breakdown"></div>
+          </aside>
+        </div>
+
+        <section class="unit-economics" aria-labelledby="unitEconomicsTitle">
+          <div class="unit-economics__heading">
+            <div>
+              <p class="eyebrow">Unit-level coal economics</p>
+              <h3 id="unitEconomicsTitle">煤电机组度电经济参数详情</h3>
+              <p>2024–2060 煤电机组度电经济参数。</p>
+            </div>
+          </div>
+
+          <div class="unit-static-stage">
+            <div class="unit-overview-grid">
+              <article class="report-card chart-card economics-chart-card unit-overview-card">
+                <div class="card-title economics-title"><span>机组年发电利润静态分布</span></div>
+                <div id="allUnitsProfitChart" class="unit-overview-chart"></div>
+              </article>
+              <article class="report-card chart-card economics-chart-card unit-overview-card">
+                <div class="card-title economics-title"><span>机组年发电成本费用静态分布</span></div>
+                <div id="allUnitsCostChart" class="unit-overview-chart"></div>
+              </article>
+            </div>
+            <aside class="report-card unit-summary-panel">
+              <div class="card-title"><span>度电经济统计概览</span></div>
+              <div id="plantEconomicsOverviewPanel"></div>
+            </aside>
+          </div>
+
+          <div class="unit-economics__selector-row">
+            <div class="unit-economics__controls">
+              <div class="unit-combo-wrap">
+                <input id="unitSelect" class="unit-combo" type="search" placeholder="输入或点击选择机组编号" aria-label="输入或点击选择机组编号" autocomplete="off" />
+                <div id="unitDropdown" class="unit-dropdown" hidden></div>
+              </div>
+            </div>
+            <div id="unitEconomicsStatus" class="unit-economics__status"></div>
+          </div>
+
+          <div class="unit-economics__detail">
+            <div class="unit-economics__charts">
+              <article class="report-card chart-card economics-chart-card unit-line-card unit-line-card--profit">
+                <div class="card-title economics-title"><span>当前机组年发电利润</span></div>
+                <div id="plantProfitChart" class="unit-line-chart"></div>
+              </article>
+              <article class="report-card chart-card economics-chart-card unit-line-card unit-line-card--cost">
+                <div class="card-title economics-title"><span>当前机组年发电成本费用</span></div>
+                <div id="plantCostChart" class="unit-line-chart"></div>
+              </article>
+            </div>
+            <aside class="report-card unit-detail-panel">
+              <div class="card-title"><span>机组参数详情</span></div>
+              <div id="plantEconomicsDetailPanel"></div>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+
+      <section id="module-regions" class="module" aria-labelledby="regionsTitle">
+        <div class="section-heading section-heading--regions">
+          <div>
+            <p class="eyebrow">Regional divergence</p>
+            <h2 id="regionsTitle">四、区域差异对比分析</h2>
+          </div>
+          <div class="playbar">
+            <button id="regionPlayButton" class="primary-button play-toggle" type="button">播放演示</button>
+            <div class="year-control">
+              <label for="regionYearSlider">年份 <strong id="regionYearLabel">—</strong></label>
+              <input id="regionYearSlider" type="range" min="2024" max="2060" value="2024" />
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid regional-kpis" id="regionalKpiGrid"></div>
+
+        <article class="report-card regional-structure-card">
+          <div class="card-title regional-card-title">
+            <div>
+              <span>2030 / 2060 三区域电源结构对比</span>
+            </div>
+            <div class="regional-toolbar" aria-label="结构对比切换">
+              <div id="regionalStructureYearControls" class="regional-segment"></div>
+              <div id="regionalStructureMetricControls" class="regional-segment"></div>
+            </div>
+          </div>
+          <div id="regionalStructureChart" class="regional-structure-chart"></div>
+        </article>
+
+        <div class="regional-clean-layout">
+          <div class="regional-clean-charts">
+            <div id="regionalCleanMetricControls" class="regional-segment regional-segment--wide" style="justify-self:center"></div>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title">
+                <span>发电量占比趋势</span>
+              </div>
+              <div id="regionalCleanGenerationChart" class="chart regional-line-chart"></div>
+            </article>
+            <article class="report-card chart-card economics-chart-card">
+              <div class="card-title economics-title">
+                <span>装机占比趋势</span>
+              </div>
+              <div id="regionalCleanCapacityChart" class="chart regional-line-chart"></div>
+            </article>
+          </div>
+
+          <aside class="report-card regional-rank-card">
+            <div class="card-title"><span>当前年份区域排序</span></div>
+            <div id="regionalCleanRankPanel" class="regional-rank-panel"></div>
+          </aside>
+        </div>
+
+        <article class="report-card chart-card economics-chart-card">
+          <div class="card-title economics-title">
+            <span>单位发电量碳排放强度趋势</span>
+          </div>
+          <div id="regionalCarbonChart" class="chart regional-carbon-chart scenario-chart"></div>
+        </article>
+
+        <article class="report-card regional-matrix-card">
+          <div class="card-title">
+            <span>区域差异矩阵</span>
+          </div>
+          <div id="regionalMatrix" class="regional-matrix"></div>
+        </article>
+      </section>
+
+      <section id="module-scenarios" class="module" aria-labelledby="scenariosTitle">
+        <div class="section-heading section-heading--scenarios">
+          <div>
+            <p class="eyebrow">Scenario assumptions</p>
+            <h2 id="scenariosTitle">情景参数设置与来源说明</h2>
+          </div>
+          <div class="playbar">
+            <button id="scenarioPlayButton" class="primary-button play-toggle" type="button">播放演示</button>
+            <div class="year-control">
+              <label for="scenarioYearSlider">年份 <strong id="scenarioYearLabel">—</strong></label>
+              <input id="scenarioYearSlider" type="range" min="2024" max="2060" value="2024" />
+            </div>
+          </div>
+        </div>
+
+        <div class="kpi-grid scenario-kpis" id="scenarioKpiGrid"></div>
+
+        <div class="scenario-source-grid" id="scenarioSourceCards" aria-label="情景参数来源摘要"></div>
+
+        <div class="scenario-chart-grid">
+          <article class="report-card chart-card scenario-chart-card">
+            <div class="card-title economics-title"><span>区域入炉标煤价路径</span></div>
+            <div id="scenarioFuelCarbonChart" class="chart scenario-chart"></div>
+          </article>
+          <article class="report-card chart-card scenario-chart-card">
+            <div class="card-title economics-title"><span>碳排放交易权配额与碳排放权价格路径</span></div>
+            <div id="scenarioQuotaChart" class="chart scenario-chart"></div>
+          </article>
+          <article class="report-card chart-card scenario-chart-card">
+            <div class="card-title economics-title"><span>甘肃省各电源类型单位容量造价路径</span></div>
+            <div id="scenarioGansuCapexChart" class="chart scenario-chart"></div>
+          </article>
+          <article class="report-card chart-card scenario-chart-card">
+            <div class="card-title scenario-comparison-title">
+              <span>区域单位容量造价对比</span>
+              <em>选择电源类型</em>
+            </div>
+            <div id="scenarioTechControls" class="scenario-tech-controls"></div>
+            <div id="scenarioRegionalCapexChart" class="chart scenario-chart"></div>
+          </article>
+        </div>
+
+        <article class="report-card scenario-matrix-card">
+          <div class="card-title">
+            <span>情景参数矩阵</span>
+            <em>当前年份参数、相对 2024 变化与设置逻辑</em>
+          </div>
+          <div id="scenarioMatrix" class="scenario-matrix"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

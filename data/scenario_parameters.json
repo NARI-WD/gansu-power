@@ -1,0 +1,2159 @@
+{
+  "metadata": {
+    "source": "2026.05.08-表3-场景参数表-参数来源及数据设置方法说明-马凯辉.xlsx",
+    "sheet": "主要场景参数表",
+    "yearRange": [
+      2024,
+      2060
+    ],
+    "notes": "参数展示为模型情景假设口径，界面文案对来源和方法进行了摘要化表达。"
+  },
+  "parameters": [
+    {
+      "key": "fuel.coal.gansu",
+      "path": [
+        "fuel",
+        "coal",
+        "gansu"
+      ],
+      "label": "甘肃入炉标煤价",
+      "unit": "元/吨",
+      "group": "燃料价格",
+      "methodTag": "2025后稳定",
+      "color": "#8f5a2a",
+      "startValue": 700.0,
+      "endValue": 650.0,
+      "changePct": -7.14
+    },
+    {
+      "key": "fuel.coal.northwestOther",
+      "path": [
+        "fuel",
+        "coal",
+        "northwestOther"
+      ],
+      "label": "西北其他入炉标煤价",
+      "unit": "元/吨",
+      "group": "燃料价格",
+      "methodTag": "区域回落后稳定",
+      "color": "#b87933",
+      "startValue": 700.0,
+      "endValue": 650.0,
+      "changePct": -7.14
+    },
+    {
+      "key": "fuel.coal.nationalOther",
+      "path": [
+        "fuel",
+        "coal",
+        "nationalOther"
+      ],
+      "label": "全国其他入炉标煤价",
+      "unit": "元/吨",
+      "group": "燃料价格",
+      "methodTag": "高位回落后稳定",
+      "color": "#d66a2d",
+      "startValue": 850.0,
+      "endValue": 800.0,
+      "changePct": -5.88
+    },
+    {
+      "key": "fuel.gas.northwestOther",
+      "path": [
+        "fuel",
+        "gas",
+        "northwestOther"
+      ],
+      "label": "西北其他天然气价格",
+      "unit": "元/立方米",
+      "group": "燃料价格",
+      "methodTag": "基准稳定",
+      "color": "#2878b8",
+      "startValue": 2.0,
+      "endValue": 2.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "fuel.gas.nationalOther",
+      "path": [
+        "fuel",
+        "gas",
+        "nationalOther"
+      ],
+      "label": "全国其他天然气价格",
+      "unit": "元/立方米",
+      "group": "燃料价格",
+      "methodTag": "基准稳定",
+      "color": "#155eef",
+      "startValue": 2.0,
+      "endValue": 2.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "carbon.quota",
+      "path": [
+        "carbon",
+        "quota"
+      ],
+      "label": "碳排放交易权配额",
+      "unit": "tCO₂/MWh",
+      "group": "碳约束",
+      "methodTag": "线性趋零",
+      "color": "#08d5c5",
+      "startValue": 0.791,
+      "endValue": 0.0,
+      "changePct": -100.0
+    },
+    {
+      "key": "carbon.price",
+      "path": [
+        "carbon",
+        "price"
+      ],
+      "label": "碳排放权价格",
+      "unit": "元/吨",
+      "group": "碳约束",
+      "methodTag": "长期上行",
+      "color": "#f04e2f",
+      "startValue": 91.8,
+      "endValue": 300.0,
+      "changePct": 226.8
+    },
+    {
+      "key": "capex.gansu.coal",
+      "path": [
+        "capex",
+        "gansu",
+        "coal"
+      ],
+      "label": "甘肃煤电造价",
+      "unit": "元/千瓦",
+      "group": "甘肃容量造价",
+      "methodTag": "常规稳定",
+      "color": "#8f5a2a",
+      "startValue": 3400.0,
+      "endValue": 3400.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.gansu.hydro",
+      "path": [
+        "capex",
+        "gansu",
+        "hydro"
+      ],
+      "label": "甘肃水电造价",
+      "unit": "元/千瓦",
+      "group": "甘肃容量造价",
+      "methodTag": "平滑递增",
+      "color": "#2878b8",
+      "startValue": 8138.5044,
+      "endValue": 10000.0,
+      "changePct": 22.87
+    },
+    {
+      "key": "capex.gansu.wind",
+      "path": [
+        "capex",
+        "gansu",
+        "wind"
+      ],
+      "label": "甘肃风电造价",
+      "unit": "元/千瓦",
+      "group": "甘肃容量造价",
+      "methodTag": "等比降本",
+      "color": "#18a389",
+      "startValue": 5400.0,
+      "endValue": 3780.0,
+      "changePct": -30.0
+    },
+    {
+      "key": "capex.gansu.pv",
+      "path": [
+        "capex",
+        "gansu",
+        "pv"
+      ],
+      "label": "甘肃光伏造价",
+      "unit": "元/千瓦",
+      "group": "甘肃容量造价",
+      "methodTag": "等比降本",
+      "color": "#d8a21d",
+      "startValue": 3280.0,
+      "endValue": 1968.0,
+      "changePct": -40.0
+    },
+    {
+      "key": "capex.gansu.csp",
+      "path": [
+        "capex",
+        "gansu",
+        "csp"
+      ],
+      "label": "甘肃光热造价",
+      "unit": "元/千瓦",
+      "group": "甘肃容量造价",
+      "methodTag": "深度降本",
+      "color": "#d7662b",
+      "startValue": 15000.0,
+      "endValue": 7500.0,
+      "changePct": -50.0
+    },
+    {
+      "key": "capex.northwestOther.coal",
+      "path": [
+        "capex",
+        "northwestOther",
+        "coal"
+      ],
+      "label": "西北其他煤电造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "常规稳定",
+      "color": "#8f5a2a",
+      "startValue": 3400.0,
+      "endValue": 3400.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.northwestOther.gas",
+      "path": [
+        "capex",
+        "northwestOther",
+        "gas"
+      ],
+      "label": "西北其他气电造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "常规稳定",
+      "color": "#756b91",
+      "startValue": 2400.0,
+      "endValue": 2400.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.northwestOther.hydro",
+      "path": [
+        "capex",
+        "northwestOther",
+        "hydro"
+      ],
+      "label": "西北其他水电造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "平滑递增",
+      "color": "#2878b8",
+      "startValue": 8138.5044,
+      "endValue": 10000.0,
+      "changePct": 22.87
+    },
+    {
+      "key": "capex.northwestOther.wind",
+      "path": [
+        "capex",
+        "northwestOther",
+        "wind"
+      ],
+      "label": "西北其他风电造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "等比降本",
+      "color": "#18a389",
+      "startValue": 5500.0,
+      "endValue": 3850.0,
+      "changePct": -30.0
+    },
+    {
+      "key": "capex.northwestOther.pv",
+      "path": [
+        "capex",
+        "northwestOther",
+        "pv"
+      ],
+      "label": "西北其他光伏造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "等比降本",
+      "color": "#d8a21d",
+      "startValue": 3250.0,
+      "endValue": 1950.0,
+      "changePct": -40.0
+    },
+    {
+      "key": "capex.northwestOther.csp",
+      "path": [
+        "capex",
+        "northwestOther",
+        "csp"
+      ],
+      "label": "西北其他光热造价",
+      "unit": "元/千瓦",
+      "group": "西北其他容量造价",
+      "methodTag": "深度降本",
+      "color": "#d7662b",
+      "startValue": 14800.0,
+      "endValue": 7400.0,
+      "changePct": -50.0
+    },
+    {
+      "key": "capex.nationalOther.coal",
+      "path": [
+        "capex",
+        "nationalOther",
+        "coal"
+      ],
+      "label": "全国其他煤电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "常规稳定",
+      "color": "#8f5a2a",
+      "startValue": 3400.0,
+      "endValue": 3400.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.nationalOther.gas",
+      "path": [
+        "capex",
+        "nationalOther",
+        "gas"
+      ],
+      "label": "全国其他气电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "常规稳定",
+      "color": "#756b91",
+      "startValue": 2400.0,
+      "endValue": 2400.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.nationalOther.hydro",
+      "path": [
+        "capex",
+        "nationalOther",
+        "hydro"
+      ],
+      "label": "全国其他水电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "平滑递增",
+      "color": "#2878b8",
+      "startValue": 8138.5044,
+      "endValue": 10000.0,
+      "changePct": 22.87
+    },
+    {
+      "key": "capex.nationalOther.nuclear",
+      "path": [
+        "capex",
+        "nationalOther",
+        "nuclear"
+      ],
+      "label": "全国其他核电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "常规稳定",
+      "color": "#6f7480",
+      "startValue": 20000.0,
+      "endValue": 20000.0,
+      "changePct": 0.0
+    },
+    {
+      "key": "capex.nationalOther.onshoreWind",
+      "path": [
+        "capex",
+        "nationalOther",
+        "onshoreWind"
+      ],
+      "label": "全国其他陆上风电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "等比降本",
+      "color": "#18a389",
+      "startValue": 5800.0,
+      "endValue": 4060.0,
+      "changePct": -30.0
+    },
+    {
+      "key": "capex.nationalOther.offshoreWind",
+      "path": [
+        "capex",
+        "nationalOther",
+        "offshoreWind"
+      ],
+      "label": "全国其他海上风电造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "等比降本",
+      "color": "#0f8fb3",
+      "startValue": 10000.0,
+      "endValue": 7000.0,
+      "changePct": -30.0
+    },
+    {
+      "key": "capex.nationalOther.pv",
+      "path": [
+        "capex",
+        "nationalOther",
+        "pv"
+      ],
+      "label": "全国其他光伏造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "等比降本",
+      "color": "#d8a21d",
+      "startValue": 3450.0,
+      "endValue": 2070.0,
+      "changePct": -40.0
+    },
+    {
+      "key": "capex.nationalOther.csp",
+      "path": [
+        "capex",
+        "nationalOther",
+        "csp"
+      ],
+      "label": "全国其他光热造价",
+      "unit": "元/千瓦",
+      "group": "全国其他容量造价",
+      "methodTag": "深度降本",
+      "color": "#d7662b",
+      "startValue": 16500.0,
+      "endValue": 8250.0,
+      "changePct": -50.0
+    }
+  ],
+  "sourceCards": [
+    {
+      "title": "燃料价格",
+      "source": "公开能源统计、企业年报、区域调研与行业均价共同校核。",
+      "method": "2024 采用调研水平，2025 起反映煤价回落后保持稳定；天然气作为区域基准参数延续。",
+      "tone": "fuel"
+    },
+    {
+      "title": "碳约束参数",
+      "source": "全国碳市场发电行业配额方案与生态环境部公开市场信息。",
+      "method": "配额强度由起始值向 2050 年零配额收敛，碳价按中长期上行轨迹外推至 2060 年。",
+      "tone": "carbon"
+    },
+    {
+      "title": "甘肃容量造价",
+      "source": "省内代表性项目投资、装机规模披露与可再生能源工程造价资料。",
+      "method": "常规电源维持稳定，水电平滑递增，风电、光伏、光热按目标降本路径逐年下降。",
+      "tone": "gansu"
+    },
+    {
+      "title": "区域造价对比",
+      "source": "西北其他省区核准批复、环评公示、招投标公告及全国性造价指标。",
+      "method": "以区域相对差异为核心，不追求单个项目精确造价，统一使用平滑插值刻画长期趋势。",
+      "tone": "regional"
+    }
+  ],
+  "years": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050,
+    2051,
+    2052,
+    2053,
+    2054,
+    2055,
+    2056,
+    2057,
+    2058,
+    2059,
+    2060
+  ],
+  "records": [
+    {
+      "year": 2024,
+      "fuel": {
+        "coal": {
+          "gansu": 700.0,
+          "northwestOther": 700.0,
+          "nationalOther": 850.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.791,
+        "price": 91.8
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8138.5044,
+          "wind": 5400.0,
+          "pv": 3280.0,
+          "csp": 15000.0
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8138.5044,
+          "wind": 5500.0,
+          "pv": 3250.0,
+          "csp": 14800.0
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8138.5044,
+          "nuclear": 20000.0,
+          "onshoreWind": 5800.0,
+          "offshoreWind": 10000.0,
+          "pv": 3450.0,
+          "csp": 16500.0
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.7606,
+        "price": 62.36
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8185.2034,
+          "wind": 5346.7629,
+          "pv": 3233.7868,
+          "csp": 14713.9513
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8185.2034,
+          "wind": 5445.777,
+          "pv": 3204.2094,
+          "csp": 14517.7653
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8185.2034,
+          "nuclear": 20000.0,
+          "onshoreWind": 5742.8194,
+          "offshoreWind": 9901.4128,
+          "pv": 3401.3916,
+          "csp": 16185.3464
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.7302,
+        "price": 69.1497
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8232.1703,
+          "wind": 5294.0507,
+          "pv": 3188.2246,
+          "csp": 14433.3576
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8232.1703,
+          "wind": 5392.0887,
+          "pv": 3159.064,
+          "csp": 14240.9128
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8232.1703,
+          "nuclear": 20000.0,
+          "onshoreWind": 5686.2026,
+          "offshoreWind": 9803.7976,
+          "pv": 3353.468,
+          "csp": 15876.6933
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.6997,
+        "price": 75.9394
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8279.4068,
+          "wind": 5241.8581,
+          "pv": 3143.3045,
+          "csp": 14158.1147
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8279.4068,
+          "wind": 5338.9296,
+          "pv": 3114.5547,
+          "csp": 13969.3398
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8279.4068,
+          "nuclear": 20000.0,
+          "onshoreWind": 5630.1439,
+          "offshoreWind": 9707.1447,
+          "pv": 3306.2196,
+          "csp": 15573.9262
+        }
+      }
+    },
+    {
+      "year": 2028,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.6693,
+        "price": 82.7291
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8326.9142,
+          "wind": 5190.1801,
+          "pv": 3099.0172,
+          "csp": 13888.1207
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8326.9142,
+          "wind": 5286.2946,
+          "pv": 3070.6725,
+          "csp": 13702.9457
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8326.9142,
+          "nuclear": 20000.0,
+          "onshoreWind": 5574.6379,
+          "offshoreWind": 9611.4447,
+          "pv": 3259.637,
+          "csp": 15276.9328
+        }
+      }
+    },
+    {
+      "year": 2029,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.6389,
+        "price": 89.5189
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8374.6943,
+          "wind": 5139.0116,
+          "pv": 3055.3539,
+          "csp": 13623.2754
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8374.6943,
+          "wind": 5234.1785,
+          "pv": 3027.4086,
+          "csp": 13441.6318
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8374.6943,
+          "nuclear": 20000.0,
+          "onshoreWind": 5519.6791,
+          "offshoreWind": 9516.6882,
+          "pv": 3213.7106,
+          "csp": 14985.603
+        }
+      }
+    },
+    {
+      "year": 2030,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.6085,
+        "price": 96.3086
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8422.7486,
+          "wind": 5088.3475,
+          "pv": 3012.3058,
+          "csp": 13363.4808
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8422.7486,
+          "wind": 5182.5762,
+          "pv": 2984.7542,
+          "csp": 13185.301
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8422.7486,
+          "nuclear": 20000.0,
+          "onshoreWind": 5465.2622,
+          "offshoreWind": 9422.8658,
+          "pv": 3168.4314,
+          "csp": 14699.8288
+        }
+      }
+    },
+    {
+      "year": 2031,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.578,
+        "price": 103.0983
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8471.0785,
+          "wind": 5038.183,
+          "pv": 2969.8642,
+          "csp": 13108.6404
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8471.0785,
+          "wind": 5131.4826,
+          "pv": 2942.7008,
+          "csp": 12933.8585
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8471.0785,
+          "nuclear": 20000.0,
+          "onshoreWind": 5411.3817,
+          "offshoreWind": 9329.9684,
+          "pv": 3123.7901,
+          "csp": 14419.5044
+        }
+      }
+    },
+    {
+      "year": 2032,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.5476,
+        "price": 109.888
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8519.6858,
+          "wind": 4988.5129,
+          "pv": 2928.0206,
+          "csp": 12858.6597
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8519.6858,
+          "wind": 5080.8928,
+          "pv": 2901.2399,
+          "csp": 12687.2109
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8519.6858,
+          "nuclear": 20000.0,
+          "onshoreWind": 5358.0324,
+          "offshoreWind": 9237.9869,
+          "pv": 3079.7777,
+          "csp": 14144.5257
+        }
+      }
+    },
+    {
+      "year": 2033,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.5172,
+        "price": 116.6777
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8568.572,
+          "wind": 4939.3326,
+          "pv": 2886.7665,
+          "csp": 12613.4462
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8568.572,
+          "wind": 5030.8017,
+          "pv": 2860.3631,
+          "csp": 12445.2669
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8568.572,
+          "nuclear": 20000.0,
+          "onshoreWind": 5305.2091,
+          "offshoreWind": 9146.9122,
+          "pv": 3036.3855,
+          "csp": 13874.7909
+        }
+      }
+    },
+    {
+      "year": 2034,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.4868,
+        "price": 123.4674
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8617.7388,
+          "wind": 4890.6371,
+          "pv": 2846.0937,
+          "csp": 12372.9089
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8617.7388,
+          "wind": 4981.2044,
+          "pv": 2820.0623,
+          "csp": 12207.9368
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8617.7388,
+          "nuclear": 20000.0,
+          "onshoreWind": 5252.9065,
+          "offshoreWind": 9056.7354,
+          "pv": 2993.6046,
+          "csp": 13610.1998
+        }
+      }
+    },
+    {
+      "year": 2035,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.4563,
+        "price": 130.2571
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8667.1876,
+          "wind": 4842.4217,
+          "pv": 2805.9939,
+          "csp": 12136.9586
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8667.1876,
+          "wind": 4932.0962,
+          "pv": 2780.3293,
+          "csp": 11975.1325
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8667.1876,
+          "nuclear": 20000.0,
+          "onshoreWind": 5201.1196,
+          "offshoreWind": 8967.4476,
+          "pv": 2951.4265,
+          "csp": 13350.6545
+        }
+      }
+    },
+    {
+      "year": 2036,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.4259,
+        "price": 137.0469
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8716.9202,
+          "wind": 4794.6816,
+          "pv": 2766.4591,
+          "csp": 11905.5079
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8716.9202,
+          "wind": 4883.472,
+          "pv": 2741.1562,
+          "csp": 11746.7678
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8716.9202,
+          "nuclear": 20000.0,
+          "onshoreWind": 5149.8432,
+          "offshoreWind": 8879.04,
+          "pv": 2909.8427,
+          "csp": 13096.0587
+        }
+      }
+    },
+    {
+      "year": 2037,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.3955,
+        "price": 143.8366
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8766.9381,
+          "wind": 4747.4122,
+          "pv": 2727.4814,
+          "csp": 11678.4709
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8766.9381,
+          "wind": 4835.3272,
+          "pv": 2702.5349,
+          "csp": 11522.758
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8766.9381,
+          "nuclear": 20000.0,
+          "onshoreWind": 5099.0724,
+          "offshoreWind": 8791.5041,
+          "pv": 2868.8447,
+          "csp": 12846.318
+        }
+      }
+    },
+    {
+      "year": 2038,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.3651,
+        "price": 150.6263
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8817.2431,
+          "wind": 4700.6088,
+          "pv": 2689.0528,
+          "csp": 11455.7635
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8817.2431,
+          "wind": 4787.6571,
+          "pv": 2664.4578,
+          "csp": 11303.02
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8817.2431,
+          "nuclear": 20000.0,
+          "onshoreWind": 5048.802,
+          "offshoreWind": 8704.8311,
+          "pv": 2828.4244,
+          "csp": 12601.3398
+        }
+      }
+    },
+    {
+      "year": 2039,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.3347,
+        "price": 157.416
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8867.8367,
+          "wind": 4654.2668,
+          "pv": 2651.1657,
+          "csp": 11237.3031
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8867.8367,
+          "wind": 4740.4569,
+          "pv": 2626.9172,
+          "csp": 11087.4724
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8867.8367,
+          "nuclear": 20000.0,
+          "onshoreWind": 4999.0273,
+          "offshoreWind": 8619.0126,
+          "pv": 2788.5736,
+          "csp": 12361.0334
+        }
+      }
+    },
+    {
+      "year": 2040,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.3042,
+        "price": 164.2057
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8918.7206,
+          "wind": 4608.3817,
+          "pv": 2613.8123,
+          "csp": 11023.0087
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8918.7206,
+          "wind": 4693.7221,
+          "pv": 2589.9055,
+          "csp": 10876.0352
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8918.7206,
+          "nuclear": 20000.0,
+          "onshoreWind": 4949.7433,
+          "offshoreWind": 8534.0402,
+          "pv": 2749.2843,
+          "csp": 12125.3096
+        }
+      }
+    },
+    {
+      "year": 2041,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.2738,
+        "price": 170.9954
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 8969.8965,
+          "wind": 4562.949,
+          "pv": 2576.9853,
+          "csp": 10812.8009
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8969.8965,
+          "wind": 4647.448,
+          "pv": 2553.4153,
+          "csp": 10668.6302
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 8969.8965,
+          "nuclear": 20000.0,
+          "onshoreWind": 4900.9452,
+          "offshoreWind": 8449.9055,
+          "pv": 2710.5485,
+          "csp": 11894.081
+        }
+      }
+    },
+    {
+      "year": 2042,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.2434,
+        "price": 177.7851
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9021.366,
+          "wind": 4517.9641,
+          "pv": 2540.6771,
+          "csp": 10606.6017
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9021.366,
+          "wind": 4601.6301,
+          "pv": 2517.4392,
+          "csp": 10465.1804
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9021.366,
+          "nuclear": 20000.0,
+          "onshoreWind": 4852.6282,
+          "offshoreWind": 8366.6003,
+          "pv": 2672.3585,
+          "csp": 11667.2619
+        }
+      }
+    },
+    {
+      "year": 2043,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.213,
+        "price": 184.5749
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9073.1308,
+          "wind": 4473.4228,
+          "pv": 2504.8805,
+          "csp": 10404.3348
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9073.1308,
+          "wind": 4556.264,
+          "pv": 2481.97,
+          "csp": 10265.6103
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9073.1308,
+          "nuclear": 20000.0,
+          "onshoreWind": 4804.7875,
+          "offshoreWind": 8284.1163,
+          "pv": 2634.7066,
+          "csp": 11444.7682
+        }
+      }
+    },
+    {
+      "year": 2044,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.1825,
+        "price": 191.3646
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9125.1927,
+          "wind": 4429.3206,
+          "pv": 2469.5882,
+          "csp": 10205.925
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9125.1927,
+          "wind": 4511.345,
+          "pv": 2447.0005,
+          "csp": 10069.846
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9125.1927,
+          "nuclear": 20000.0,
+          "onshoreWind": 4757.4184,
+          "offshoreWind": 8202.4455,
+          "pv": 2597.5851,
+          "csp": 11226.5175
+        }
+      }
+    },
+    {
+      "year": 2045,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.1521,
+        "price": 198.1543
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9177.5534,
+          "wind": 4385.6532,
+          "pv": 2434.7932,
+          "csp": 10011.2989
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9177.5534,
+          "wind": 4466.869,
+          "pv": 2412.5237,
+          "csp": 9877.8149
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9177.5534,
+          "nuclear": 20000.0,
+          "onshoreWind": 4710.5164,
+          "offshoreWind": 8121.5799,
+          "pv": 2560.9867,
+          "csp": 11012.4288
+        }
+      }
+    },
+    {
+      "year": 2046,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.1217,
+        "price": 204.944
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9230.2144,
+          "wind": 4342.4162,
+          "pv": 2400.4884,
+          "csp": 9820.3843
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9230.2144,
+          "wind": 4422.8314,
+          "pv": 2378.5327,
+          "csp": 9689.4459
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9230.2144,
+          "nuclear": 20000.0,
+          "onshoreWind": 4664.0767,
+          "offshoreWind": 8041.5116,
+          "pv": 2524.9039,
+          "csp": 10802.4227
+        }
+      }
+    },
+    {
+      "year": 2047,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0913,
+        "price": 211.7337
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9283.1777,
+          "wind": 4299.6056,
+          "pv": 2366.6669,
+          "csp": 9633.1104
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9283.1777,
+          "wind": 4379.2279,
+          "pv": 2345.0206,
+          "csp": 9504.669
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9283.1777,
+          "nuclear": 20000.0,
+          "onshoreWind": 4618.0949,
+          "offshoreWind": 7962.2326,
+          "pv": 2489.3295,
+          "csp": 10596.4215
+        }
+      }
+    },
+    {
+      "year": 2048,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0608,
+        "price": 218.5234
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9336.4448,
+          "wind": 4257.217,
+          "pv": 2333.322,
+          "csp": 9449.4079
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9336.4448,
+          "wind": 4336.0543,
+          "pv": 2311.9806,
+          "csp": 9323.4158
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9336.4448,
+          "nuclear": 20000.0,
+          "onshoreWind": 4572.5664,
+          "offshoreWind": 7883.7352,
+          "pv": 2454.2564,
+          "csp": 10394.3487
+        }
+      }
+    },
+    {
+      "year": 2049,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0304,
+        "price": 225.3131
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9390.0176,
+          "wind": 4215.2463,
+          "pv": 2300.4469,
+          "csp": 9269.2085
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9390.0176,
+          "wind": 4293.3064,
+          "pv": 2279.4062,
+          "csp": 9145.619
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9390.0176,
+          "nuclear": 20000.0,
+          "onshoreWind": 4527.4868,
+          "offshoreWind": 7806.0116,
+          "pv": 2419.6774,
+          "csp": 10196.1293
+        }
+      }
+    },
+    {
+      "year": 2050,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 232.1029
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9443.8978,
+          "wind": 4173.6894,
+          "pv": 2268.035,
+          "csp": 9092.4455
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9443.8978,
+          "wind": 4250.9799,
+          "pv": 2247.2907,
+          "csp": 8971.2129
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9443.8978,
+          "nuclear": 20000.0,
+          "onshoreWind": 4482.8515,
+          "offshoreWind": 7729.0544,
+          "pv": 2385.5856,
+          "csp": 10001.6901
+        }
+      }
+    },
+    {
+      "year": 2051,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 238.8926
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9498.0872,
+          "wind": 4132.5421,
+          "pv": 2236.0797,
+          "csp": 8919.0534
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9498.0872,
+          "wind": 4209.0707,
+          "pv": 2215.6278,
+          "csp": 8800.1327
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9498.0872,
+          "nuclear": 20000.0,
+          "onshoreWind": 4438.6564,
+          "offshoreWind": 7652.8558,
+          "pv": 2351.9741,
+          "csp": 9810.9587
+        }
+      }
+    },
+    {
+      "year": 2052,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 245.6823
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9552.5875,
+          "wind": 4091.8006,
+          "pv": 2204.5747,
+          "csp": 8748.9678
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9552.5875,
+          "wind": 4167.5746,
+          "pv": 2184.4109,
+          "csp": 8632.3149
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9552.5875,
+          "nuclear": 20000.0,
+          "onshoreWind": 4394.8969,
+          "offshoreWind": 7577.4084,
+          "pv": 2318.8362,
+          "csp": 9623.8646
+        }
+      }
+    },
+    {
+      "year": 2053,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 252.472
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9607.4005,
+          "wind": 4051.4607,
+          "pv": 2173.5135,
+          "csp": 8582.1257
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9607.4005,
+          "wind": 4126.4877,
+          "pv": 2153.6338,
+          "csp": 8467.6974
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9607.4005,
+          "nuclear": 20000.0,
+          "onshoreWind": 4351.5688,
+          "offshoreWind": 7502.7049,
+          "pv": 2286.1652,
+          "csp": 9440.3383
+        }
+      }
+    },
+    {
+      "year": 2054,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 259.2617
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9662.528,
+          "wind": 4011.5184,
+          "pv": 2142.89,
+          "csp": 8418.4654
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9662.528,
+          "wind": 4085.8058,
+          "pv": 2123.2904,
+          "csp": 8306.2192
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9662.528,
+          "nuclear": 20000.0,
+          "onshoreWind": 4308.668,
+          "offshoreWind": 7428.7379,
+          "pv": 2253.9545,
+          "csp": 9260.3119
+        }
+      }
+    },
+    {
+      "year": 2055,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 266.0514
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9717.9719,
+          "wind": 3971.97,
+          "pv": 2112.698,
+          "csp": 8257.926
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9717.9719,
+          "wind": 4045.525,
+          "pv": 2093.3745,
+          "csp": 8147.8203
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9717.9719,
+          "nuclear": 20000.0,
+          "onshoreWind": 4266.19,
+          "offshoreWind": 7355.5,
+          "pv": 2222.1976,
+          "csp": 9083.7186
+        }
+      }
+    },
+    {
+      "year": 2056,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 272.8411
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9773.7339,
+          "wind": 3932.8115,
+          "pv": 2082.9313,
+          "csp": 8100.448
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9773.7339,
+          "wind": 4005.6413,
+          "pv": 2063.8801,
+          "csp": 7992.4421
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9773.7339,
+          "nuclear": 20000.0,
+          "onshoreWind": 4224.1308,
+          "offshoreWind": 7282.9842,
+          "pv": 2190.8882,
+          "csp": 8910.4928
+        }
+      }
+    },
+    {
+      "year": 2057,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 279.6309
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9829.8159,
+          "wind": 3894.039,
+          "pv": 2053.5841,
+          "csp": 7945.9732
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9829.8159,
+          "wind": 3966.1508,
+          "pv": 2034.8013,
+          "csp": 7840.0269
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9829.8159,
+          "nuclear": 20000.0,
+          "onshoreWind": 4182.4863,
+          "offshoreWind": 7211.1833,
+          "pv": 2160.0198,
+          "csp": 8740.5705
+        }
+      }
+    },
+    {
+      "year": 2058,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 286.4206
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9886.2197,
+          "wind": 3855.6488,
+          "pv": 2024.6503,
+          "csp": 7794.4442
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9886.2197,
+          "wind": 3927.0497,
+          "pv": 2006.1322,
+          "csp": 7690.5183
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9886.2197,
+          "nuclear": 20000.0,
+          "onshoreWind": 4141.2524,
+          "offshoreWind": 7140.0903,
+          "pv": 2129.5865,
+          "csp": 8573.8886
+        }
+      }
+    },
+    {
+      "year": 2059,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 293.2103
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 9942.9471,
+          "wind": 3817.637,
+          "pv": 1996.1242,
+          "csp": 7645.8048
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9942.9471,
+          "wind": 3888.334,
+          "pv": 1977.867,
+          "csp": 7543.8608
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 9942.9471,
+          "nuclear": 20000.0,
+          "onshoreWind": 4100.4249,
+          "offshoreWind": 7069.6982,
+          "pv": 2099.5819,
+          "csp": 8410.3853
+        }
+      }
+    },
+    {
+      "year": 2060,
+      "fuel": {
+        "coal": {
+          "gansu": 650.0,
+          "northwestOther": 650.0,
+          "nationalOther": 800.0
+        },
+        "gas": {
+          "northwestOther": 2.0,
+          "nationalOther": 2.0
+        }
+      },
+      "carbon": {
+        "quota": 0.0,
+        "price": 300.0
+      },
+      "capex": {
+        "gansu": {
+          "coal": 3400.0,
+          "hydro": 10000.0,
+          "wind": 3780.0,
+          "pv": 1968.0,
+          "csp": 7500.0
+        },
+        "northwestOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 10000.0,
+          "wind": 3850.0,
+          "pv": 1950.0,
+          "csp": 7400.0
+        },
+        "nationalOther": {
+          "coal": 3400.0,
+          "gas": 2400.0,
+          "hydro": 10000.0,
+          "nuclear": 20000.0,
+          "onshoreWind": 4060.0,
+          "offshoreWind": 7000.0,
+          "pv": 2070.0,
+          "csp": 8250.0
+        }
+      }
+    }
+  ]
+}

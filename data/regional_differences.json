@@ -1,0 +1,2413 @@
+{
+  "metadata": {
+    "source": "区域差异.xlsx",
+    "yearRange": [
+      2024,
+      2060
+    ],
+    "notes": "区域差异数据按甘肃省、西北地区、全国三个尺度整理；结构对比采用原表 2030 与 2060 展示图口径。"
+  },
+  "areas": [
+    {
+      "key": "gansu",
+      "label": "甘肃省",
+      "shortLabel": "甘肃",
+      "color": "#c99a2e"
+    },
+    {
+      "key": "northwest",
+      "label": "西北地区",
+      "shortLabel": "西北",
+      "color": "#18a389"
+    },
+    {
+      "key": "national",
+      "label": "全国",
+      "shortLabel": "全国",
+      "color": "#155eef"
+    }
+  ],
+  "structure": {
+    "2030": {
+      "capacity": {
+        "categories": [
+          {
+            "key": "coal",
+            "label": "煤电",
+            "color": "#8f5a2a"
+          },
+          {
+            "key": "gas",
+            "label": "气电",
+            "color": "#756b91"
+          },
+          {
+            "key": "pv",
+            "label": "光伏",
+            "color": "#d8a21d"
+          },
+          {
+            "key": "csp",
+            "label": "光热",
+            "color": "#d7662b"
+          },
+          {
+            "key": "wind",
+            "label": "风电",
+            "color": "#18a389"
+          },
+          {
+            "key": "hydro",
+            "label": "水电",
+            "color": "#2878b8"
+          },
+          {
+            "key": "nuclear",
+            "label": "核电",
+            "color": "#6f7480"
+          },
+          {
+            "key": "pumpedHydro",
+            "label": "抽水蓄能",
+            "color": "#155eef"
+          },
+          {
+            "key": "electrochemical",
+            "label": "电化学储能",
+            "color": "#08d5c5"
+          }
+        ],
+        "regions": [
+          {
+            "key": "gansu",
+            "label": "甘肃省",
+            "shortLabel": "甘肃",
+            "values": {
+              "coal": 21.83,
+              "gas": 0.0,
+              "pv": 33.45,
+              "csp": 0.46,
+              "wind": 26.65,
+              "hydro": 3.66,
+              "nuclear": 0.0,
+              "pumpedHydro": 4.22,
+              "electrochemical": 9.73
+            },
+            "total": 100.0
+          },
+          {
+            "key": "northwest",
+            "label": "西北地区",
+            "shortLabel": "西北",
+            "values": {
+              "coal": 22.2,
+              "gas": 0.63,
+              "pv": 38.34,
+              "csp": 0.87,
+              "wind": 24.45,
+              "hydro": 3.61,
+              "nuclear": 0.0,
+              "pumpedHydro": 3.75,
+              "electrochemical": 6.13
+            },
+            "total": 99.98
+          },
+          {
+            "key": "national",
+            "label": "全国",
+            "shortLabel": "全国",
+            "values": {
+              "coal": 28.14,
+              "gas": 4.12,
+              "pv": 31.67,
+              "csp": 0.35,
+              "wind": 17.91,
+              "hydro": 7.74,
+              "nuclear": 2.08,
+              "pumpedHydro": 3.02,
+              "electrochemical": 4.98
+            },
+            "total": 100.01
+          }
+        ]
+      },
+      "generation": {
+        "categories": [
+          {
+            "key": "coal",
+            "label": "煤电",
+            "color": "#8f5a2a"
+          },
+          {
+            "key": "gas",
+            "label": "气电",
+            "color": "#756b91"
+          },
+          {
+            "key": "pv",
+            "label": "光伏",
+            "color": "#d8a21d"
+          },
+          {
+            "key": "csp",
+            "label": "光热",
+            "color": "#d7662b"
+          },
+          {
+            "key": "wind",
+            "label": "风电",
+            "color": "#18a389"
+          },
+          {
+            "key": "hydro",
+            "label": "水电",
+            "color": "#2878b8"
+          },
+          {
+            "key": "nuclear",
+            "label": "核电",
+            "color": "#6f7480"
+          },
+          {
+            "key": "other",
+            "label": "其它",
+            "color": "#b8a27a"
+          }
+        ],
+        "regions": [
+          {
+            "key": "gansu",
+            "label": "甘肃省",
+            "shortLabel": "甘肃",
+            "values": {
+              "coal": 39.23,
+              "gas": 0.0,
+              "pv": 24.55,
+              "csp": 0.25,
+              "wind": 25.83,
+              "hydro": 10.15,
+              "nuclear": 0.0,
+              "other": 0.0
+            },
+            "total": 100.01
+          },
+          {
+            "key": "northwest",
+            "label": "西北地区",
+            "shortLabel": "西北",
+            "values": {
+              "coal": 44.4,
+              "gas": 0.83,
+              "pv": 24.07,
+              "csp": 1.07,
+              "wind": 23.02,
+              "hydro": 6.61,
+              "nuclear": 0.0,
+              "other": 0.0
+            },
+            "total": 100.0
+          },
+          {
+            "key": "national",
+            "label": "全国",
+            "shortLabel": "全国",
+            "values": {
+              "coal": 48.3,
+              "gas": 4.1,
+              "pv": 14.18,
+              "csp": 0.33,
+              "wind": 13.43,
+              "hydro": 12.22,
+              "nuclear": 6.14,
+              "other": 1.31
+            },
+            "total": 100.01
+          }
+        ]
+      }
+    },
+    "2060": {
+      "capacity": {
+        "categories": [
+          {
+            "key": "coal",
+            "label": "煤电",
+            "color": "#8f5a2a"
+          },
+          {
+            "key": "gas",
+            "label": "气电",
+            "color": "#756b91"
+          },
+          {
+            "key": "pv",
+            "label": "光伏",
+            "color": "#d8a21d"
+          },
+          {
+            "key": "csp",
+            "label": "光热",
+            "color": "#d7662b"
+          },
+          {
+            "key": "wind",
+            "label": "风电",
+            "color": "#18a389"
+          },
+          {
+            "key": "hydro",
+            "label": "水电",
+            "color": "#2878b8"
+          },
+          {
+            "key": "nuclear",
+            "label": "核电",
+            "color": "#6f7480"
+          },
+          {
+            "key": "pumpedHydro",
+            "label": "抽水蓄能",
+            "color": "#155eef"
+          },
+          {
+            "key": "electrochemical",
+            "label": "电化学储能",
+            "color": "#08d5c5"
+          }
+        ],
+        "regions": [
+          {
+            "key": "gansu",
+            "label": "甘肃省",
+            "shortLabel": "甘肃",
+            "values": {
+              "coal": 12.31,
+              "gas": 0.0,
+              "pv": 41.1,
+              "csp": 3.14,
+              "wind": 27.4,
+              "hydro": 1.79,
+              "nuclear": 0.0,
+              "pumpedHydro": 6.12,
+              "electrochemical": 8.13
+            },
+            "total": 99.99
+          },
+          {
+            "key": "northwest",
+            "label": "西北地区",
+            "shortLabel": "西北",
+            "values": {
+              "coal": 9.2,
+              "gas": 0.28,
+              "pv": 43.89,
+              "csp": 3.12,
+              "wind": 29.26,
+              "hydro": 1.62,
+              "nuclear": 0.0,
+              "pumpedHydro": 5.46,
+              "electrochemical": 7.16
+            },
+            "total": 99.99
+          },
+          {
+            "key": "national",
+            "label": "全国",
+            "shortLabel": "全国",
+            "values": {
+              "coal": 7.2,
+              "gas": 1.43,
+              "pv": 49.87,
+              "csp": 1.29,
+              "wind": 25.49,
+              "hydro": 4.22,
+              "nuclear": 2.14,
+              "pumpedHydro": 3.01,
+              "electrochemical": 5.36
+            },
+            "total": 100.01
+          }
+        ]
+      },
+      "generation": {
+        "categories": [
+          {
+            "key": "coal",
+            "label": "煤电",
+            "color": "#8f5a2a"
+          },
+          {
+            "key": "gas",
+            "label": "气电",
+            "color": "#756b91"
+          },
+          {
+            "key": "pv",
+            "label": "光伏",
+            "color": "#d8a21d"
+          },
+          {
+            "key": "csp",
+            "label": "光热",
+            "color": "#d7662b"
+          },
+          {
+            "key": "wind",
+            "label": "风电",
+            "color": "#18a389"
+          },
+          {
+            "key": "hydro",
+            "label": "水电",
+            "color": "#2878b8"
+          },
+          {
+            "key": "nuclear",
+            "label": "核电",
+            "color": "#6f7480"
+          },
+          {
+            "key": "other",
+            "label": "其它",
+            "color": "#b8a27a"
+          }
+        ],
+        "regions": [
+          {
+            "key": "gansu",
+            "label": "甘肃省",
+            "shortLabel": "甘肃",
+            "values": {
+              "coal": 10.5,
+              "gas": 0.0,
+              "pv": 39.38,
+              "csp": 5.02,
+              "wind": 39.38,
+              "hydro": 5.72,
+              "nuclear": 0.0,
+              "other": 0.0
+            },
+            "total": 100.0
+          },
+          {
+            "key": "northwest",
+            "label": "西北地区",
+            "shortLabel": "西北",
+            "values": {
+              "coal": 18.63,
+              "gas": 0.49,
+              "pv": 36.0,
+              "csp": 5.02,
+              "wind": 36.0,
+              "hydro": 3.88,
+              "nuclear": 0.0,
+              "other": 0.0
+            },
+            "total": 100.02
+          },
+          {
+            "key": "national",
+            "label": "全国",
+            "shortLabel": "全国",
+            "values": {
+              "coal": 10.0,
+              "gas": 2.03,
+              "pv": 33.0,
+              "csp": 2.0,
+              "wind": 30.0,
+              "hydro": 11.16,
+              "nuclear": 10.64,
+              "other": 1.17
+            },
+            "total": 100.0
+          }
+        ]
+      }
+    }
+  },
+  "clean": {
+    "nonFossil": {
+      "key": "nonFossil",
+      "label": "非化石能源",
+      "records": [
+        {
+          "year": 2024,
+          "generationShare": {
+            "gansu": 52.8,
+            "northwest": 33.83,
+            "national": 38.87
+          },
+          "capacityShare": {
+            "gansu": 74.32,
+            "northwest": 63.48,
+            "national": 57.96
+          }
+        },
+        {
+          "year": 2025,
+          "generationShare": {
+            "gansu": 51.49,
+            "northwest": 35.76,
+            "national": 42.29
+          },
+          "capacityShare": {
+            "gansu": 73.2,
+            "northwest": 68.8,
+            "national": 61.32
+          }
+        },
+        {
+          "year": 2026,
+          "generationShare": {
+            "gansu": 53.03,
+            "northwest": 41.92,
+            "national": 43.38
+          },
+          "capacityShare": {
+            "gansu": 72.38,
+            "northwest": 70.15,
+            "national": 62.0
+          }
+        },
+        {
+          "year": 2027,
+          "generationShare": {
+            "gansu": 54.06,
+            "northwest": 46.21,
+            "national": 44.46
+          },
+          "capacityShare": {
+            "gansu": 72.51,
+            "northwest": 71.96,
+            "national": 62.71
+          }
+        },
+        {
+          "year": 2028,
+          "generationShare": {
+            "gansu": 55.82,
+            "northwest": 48.02,
+            "national": 45.52
+          },
+          "capacityShare": {
+            "gansu": 72.94,
+            "northwest": 72.64,
+            "national": 63.43
+          }
+        },
+        {
+          "year": 2029,
+          "generationShare": {
+            "gansu": 57.85,
+            "northwest": 51.02,
+            "national": 46.57
+          },
+          "capacityShare": {
+            "gansu": 73.7,
+            "northwest": 74.08,
+            "national": 64.18
+          }
+        },
+        {
+          "year": 2030,
+          "generationShare": {
+            "gansu": 60.77,
+            "northwest": 54.77,
+            "national": 47.61
+          },
+          "capacityShare": {
+            "gansu": 74.63,
+            "northwest": 74.66,
+            "national": 64.95
+          }
+        },
+        {
+          "year": 2031,
+          "generationShare": {
+            "gansu": 61.94,
+            "northwest": 55.49,
+            "national": 48.95
+          },
+          "capacityShare": {
+            "gansu": 75.44,
+            "northwest": 75.03,
+            "national": 65.86
+          }
+        },
+        {
+          "year": 2032,
+          "generationShare": {
+            "gansu": 63.18,
+            "northwest": 56.22,
+            "national": 50.29
+          },
+          "capacityShare": {
+            "gansu": 76.26,
+            "northwest": 75.38,
+            "national": 66.78
+          }
+        },
+        {
+          "year": 2033,
+          "generationShare": {
+            "gansu": 64.5,
+            "northwest": 56.97,
+            "national": 51.63
+          },
+          "capacityShare": {
+            "gansu": 77.02,
+            "northwest": 75.72,
+            "national": 67.71
+          }
+        },
+        {
+          "year": 2034,
+          "generationShare": {
+            "gansu": 65.91,
+            "northwest": 57.74,
+            "national": 52.97
+          },
+          "capacityShare": {
+            "gansu": 78.05,
+            "northwest": 76.05,
+            "national": 68.64
+          }
+        },
+        {
+          "year": 2035,
+          "generationShare": {
+            "gansu": 68.36,
+            "northwest": 58.51,
+            "national": 54.3
+          },
+          "capacityShare": {
+            "gansu": 78.89,
+            "northwest": 76.87,
+            "national": 71.08
+          }
+        },
+        {
+          "year": 2036,
+          "generationShare": {
+            "gansu": 69.22,
+            "northwest": 59.3,
+            "national": 55.64
+          },
+          "capacityShare": {
+            "gansu": 78.58,
+            "northwest": 77.22,
+            "national": 73.14
+          }
+        },
+        {
+          "year": 2037,
+          "generationShare": {
+            "gansu": 70.07,
+            "northwest": 60.1,
+            "national": 56.97
+          },
+          "capacityShare": {
+            "gansu": 78.19,
+            "northwest": 77.56,
+            "national": 73.9
+          }
+        },
+        {
+          "year": 2038,
+          "generationShare": {
+            "gansu": 70.93,
+            "northwest": 60.91,
+            "national": 58.3
+          },
+          "capacityShare": {
+            "gansu": 78.06,
+            "northwest": 77.91,
+            "national": 74.6
+          }
+        },
+        {
+          "year": 2039,
+          "generationShare": {
+            "gansu": 71.78,
+            "northwest": 61.73,
+            "national": 59.63
+          },
+          "capacityShare": {
+            "gansu": 78.0,
+            "northwest": 78.2,
+            "national": 75.3
+          }
+        },
+        {
+          "year": 2040,
+          "generationShare": {
+            "gansu": 72.64,
+            "northwest": 62.55,
+            "national": 60.96
+          },
+          "capacityShare": {
+            "gansu": 77.94,
+            "northwest": 78.53,
+            "national": 75.9
+          }
+        },
+        {
+          "year": 2041,
+          "generationShare": {
+            "gansu": 73.46,
+            "northwest": 63.38,
+            "national": 62.3
+          },
+          "capacityShare": {
+            "gansu": 77.96,
+            "northwest": 78.82,
+            "national": 76.38
+          }
+        },
+        {
+          "year": 2042,
+          "generationShare": {
+            "gansu": 74.29,
+            "northwest": 64.27,
+            "national": 63.65
+          },
+          "capacityShare": {
+            "gansu": 77.91,
+            "northwest": 78.94,
+            "national": 76.83
+          }
+        },
+        {
+          "year": 2043,
+          "generationShare": {
+            "gansu": 75.12,
+            "northwest": 65.16,
+            "national": 64.99
+          },
+          "capacityShare": {
+            "gansu": 78.05,
+            "northwest": 79.14,
+            "national": 77.36
+          }
+        },
+        {
+          "year": 2044,
+          "generationShare": {
+            "gansu": 75.95,
+            "northwest": 66.05,
+            "national": 66.33
+          },
+          "capacityShare": {
+            "gansu": 78.07,
+            "northwest": 79.29,
+            "national": 77.93
+          }
+        },
+        {
+          "year": 2045,
+          "generationShare": {
+            "gansu": 76.79,
+            "northwest": 66.97,
+            "national": 67.67
+          },
+          "capacityShare": {
+            "gansu": 78.13,
+            "northwest": 79.42,
+            "national": 78.63
+          }
+        },
+        {
+          "year": 2046,
+          "generationShare": {
+            "gansu": 77.64,
+            "northwest": 67.89,
+            "national": 69.04
+          },
+          "capacityShare": {
+            "gansu": 78.61,
+            "northwest": 79.98,
+            "national": 79.9
+          }
+        },
+        {
+          "year": 2047,
+          "generationShare": {
+            "gansu": 78.48,
+            "northwest": 68.79,
+            "national": 70.41
+          },
+          "capacityShare": {
+            "gansu": 79.24,
+            "northwest": 80.66,
+            "national": 81.07
+          }
+        },
+        {
+          "year": 2048,
+          "generationShare": {
+            "gansu": 79.33,
+            "northwest": 69.69,
+            "national": 71.77
+          },
+          "capacityShare": {
+            "gansu": 79.84,
+            "northwest": 81.44,
+            "national": 82.03
+          }
+        },
+        {
+          "year": 2049,
+          "generationShare": {
+            "gansu": 80.18,
+            "northwest": 70.61,
+            "national": 73.13
+          },
+          "capacityShare": {
+            "gansu": 80.53,
+            "northwest": 82.04,
+            "national": 83.03
+          }
+        },
+        {
+          "year": 2050,
+          "generationShare": {
+            "gansu": 81.03,
+            "northwest": 71.53,
+            "national": 74.49
+          },
+          "capacityShare": {
+            "gansu": 81.31,
+            "northwest": 82.74,
+            "national": 83.94
+          }
+        },
+        {
+          "year": 2051,
+          "generationShare": {
+            "gansu": 81.88,
+            "northwest": 72.46,
+            "national": 75.85
+          },
+          "capacityShare": {
+            "gansu": 81.97,
+            "northwest": 83.45,
+            "national": 84.88
+          }
+        },
+        {
+          "year": 2052,
+          "generationShare": {
+            "gansu": 82.73,
+            "northwest": 73.4,
+            "national": 77.21
+          },
+          "capacityShare": {
+            "gansu": 82.23,
+            "northwest": 83.97,
+            "national": 85.66
+          }
+        },
+        {
+          "year": 2053,
+          "generationShare": {
+            "gansu": 83.59,
+            "northwest": 74.33,
+            "national": 78.56
+          },
+          "capacityShare": {
+            "gansu": 82.68,
+            "northwest": 84.56,
+            "national": 86.37
+          }
+        },
+        {
+          "year": 2054,
+          "generationShare": {
+            "gansu": 84.44,
+            "northwest": 75.27,
+            "national": 79.91
+          },
+          "capacityShare": {
+            "gansu": 83.18,
+            "northwest": 85.32,
+            "national": 87.09
+          }
+        },
+        {
+          "year": 2055,
+          "generationShare": {
+            "gansu": 85.28,
+            "northwest": 76.2,
+            "national": 81.26
+          },
+          "capacityShare": {
+            "gansu": 83.66,
+            "northwest": 86.0,
+            "national": 87.89
+          }
+        },
+        {
+          "year": 2056,
+          "generationShare": {
+            "gansu": 86.12,
+            "northwest": 77.14,
+            "national": 82.61
+          },
+          "capacityShare": {
+            "gansu": 83.98,
+            "northwest": 86.6,
+            "national": 88.53
+          }
+        },
+        {
+          "year": 2057,
+          "generationShare": {
+            "gansu": 86.97,
+            "northwest": 78.08,
+            "national": 83.95
+          },
+          "capacityShare": {
+            "gansu": 84.43,
+            "northwest": 87.18,
+            "national": 89.11
+          }
+        },
+        {
+          "year": 2058,
+          "generationShare": {
+            "gansu": 87.81,
+            "northwest": 79.01,
+            "national": 85.29
+          },
+          "capacityShare": {
+            "gansu": 84.67,
+            "northwest": 87.83,
+            "national": 89.55
+          }
+        },
+        {
+          "year": 2059,
+          "generationShare": {
+            "gansu": 88.65,
+            "northwest": 79.95,
+            "national": 86.63
+          },
+          "capacityShare": {
+            "gansu": 85.04,
+            "northwest": 88.49,
+            "national": 90.04
+          }
+        },
+        {
+          "year": 2060,
+          "generationShare": {
+            "gansu": 89.5,
+            "northwest": 80.89,
+            "national": 87.97
+          },
+          "capacityShare": {
+            "gansu": 85.64,
+            "northwest": 89.15,
+            "national": 90.58
+          }
+        }
+      ]
+    },
+    "renewable": {
+      "key": "renewable",
+      "label": "可再生能源",
+      "records": [
+        {
+          "year": 2024,
+          "generationShare": {
+            "gansu": 52.8,
+            "northwest": 33.83,
+            "national": 34.4
+          },
+          "capacityShare": {
+            "gansu": 74.32,
+            "northwest": 63.48,
+            "national": 56.05
+          }
+        },
+        {
+          "year": 2025,
+          "generationShare": {
+            "gansu": 51.49,
+            "northwest": 35.76,
+            "national": 37.71
+          },
+          "capacityShare": {
+            "gansu": 73.2,
+            "northwest": 68.8,
+            "national": 59.65
+          }
+        },
+        {
+          "year": 2026,
+          "generationShare": {
+            "gansu": 53.03,
+            "northwest": 41.92,
+            "national": 38.65
+          },
+          "capacityShare": {
+            "gansu": 72.38,
+            "northwest": 70.15,
+            "national": 60.22
+          }
+        },
+        {
+          "year": 2027,
+          "generationShare": {
+            "gansu": 54.06,
+            "northwest": 46.21,
+            "national": 39.41
+          },
+          "capacityShare": {
+            "gansu": 72.51,
+            "northwest": 71.96,
+            "national": 60.82
+          }
+        },
+        {
+          "year": 2028,
+          "generationShare": {
+            "gansu": 55.82,
+            "northwest": 48.02,
+            "national": 40.13
+          },
+          "capacityShare": {
+            "gansu": 72.94,
+            "northwest": 72.64,
+            "national": 61.43
+          }
+        },
+        {
+          "year": 2029,
+          "generationShare": {
+            "gansu": 57.85,
+            "northwest": 51.02,
+            "national": 40.82
+          },
+          "capacityShare": {
+            "gansu": 73.7,
+            "northwest": 74.08,
+            "national": 62.05
+          }
+        },
+        {
+          "year": 2030,
+          "generationShare": {
+            "gansu": 60.77,
+            "northwest": 54.77,
+            "national": 41.47
+          },
+          "capacityShare": {
+            "gansu": 74.63,
+            "northwest": 74.66,
+            "national": 62.69
+          }
+        },
+        {
+          "year": 2031,
+          "generationShare": {
+            "gansu": 61.94,
+            "northwest": 55.49,
+            "national": 42.65
+          },
+          "capacityShare": {
+            "gansu": 75.44,
+            "northwest": 75.03,
+            "national": 63.6
+          }
+        },
+        {
+          "year": 2032,
+          "generationShare": {
+            "gansu": 63.18,
+            "northwest": 56.22,
+            "national": 43.84
+          },
+          "capacityShare": {
+            "gansu": 76.26,
+            "northwest": 75.38,
+            "national": 64.52
+          }
+        },
+        {
+          "year": 2033,
+          "generationShare": {
+            "gansu": 64.5,
+            "northwest": 56.97,
+            "national": 45.01
+          },
+          "capacityShare": {
+            "gansu": 77.02,
+            "northwest": 75.72,
+            "national": 65.45
+          }
+        },
+        {
+          "year": 2034,
+          "generationShare": {
+            "gansu": 65.91,
+            "northwest": 57.74,
+            "national": 46.19
+          },
+          "capacityShare": {
+            "gansu": 78.05,
+            "northwest": 76.05,
+            "national": 66.39
+          }
+        },
+        {
+          "year": 2035,
+          "generationShare": {
+            "gansu": 68.36,
+            "northwest": 58.51,
+            "national": 47.36
+          },
+          "capacityShare": {
+            "gansu": 78.89,
+            "northwest": 76.87,
+            "national": 68.77
+          }
+        },
+        {
+          "year": 2036,
+          "generationShare": {
+            "gansu": 69.22,
+            "northwest": 59.3,
+            "national": 48.55
+          },
+          "capacityShare": {
+            "gansu": 78.58,
+            "northwest": 77.22,
+            "national": 70.94
+          }
+        },
+        {
+          "year": 2037,
+          "generationShare": {
+            "gansu": 70.07,
+            "northwest": 60.1,
+            "national": 49.74
+          },
+          "capacityShare": {
+            "gansu": 78.19,
+            "northwest": 77.56,
+            "national": 71.7
+          }
+        },
+        {
+          "year": 2038,
+          "generationShare": {
+            "gansu": 70.93,
+            "northwest": 60.91,
+            "national": 50.92
+          },
+          "capacityShare": {
+            "gansu": 78.06,
+            "northwest": 77.91,
+            "national": 72.4
+          }
+        },
+        {
+          "year": 2039,
+          "generationShare": {
+            "gansu": 71.78,
+            "northwest": 61.73,
+            "national": 52.11
+          },
+          "capacityShare": {
+            "gansu": 78.0,
+            "northwest": 78.2,
+            "national": 73.1
+          }
+        },
+        {
+          "year": 2040,
+          "generationShare": {
+            "gansu": 72.64,
+            "northwest": 62.55,
+            "national": 53.28
+          },
+          "capacityShare": {
+            "gansu": 77.94,
+            "northwest": 78.53,
+            "national": 73.7
+          }
+        },
+        {
+          "year": 2041,
+          "generationShare": {
+            "gansu": 73.46,
+            "northwest": 63.38,
+            "national": 54.47
+          },
+          "capacityShare": {
+            "gansu": 77.96,
+            "northwest": 78.82,
+            "national": 74.19
+          }
+        },
+        {
+          "year": 2042,
+          "generationShare": {
+            "gansu": 74.29,
+            "northwest": 64.27,
+            "national": 55.65
+          },
+          "capacityShare": {
+            "gansu": 77.91,
+            "northwest": 78.94,
+            "national": 74.63
+          }
+        },
+        {
+          "year": 2043,
+          "generationShare": {
+            "gansu": 75.12,
+            "northwest": 65.16,
+            "national": 56.82
+          },
+          "capacityShare": {
+            "gansu": 78.05,
+            "northwest": 79.14,
+            "national": 75.16
+          }
+        },
+        {
+          "year": 2044,
+          "generationShare": {
+            "gansu": 75.95,
+            "northwest": 66.05,
+            "national": 57.99
+          },
+          "capacityShare": {
+            "gansu": 78.07,
+            "northwest": 79.29,
+            "national": 75.72
+          }
+        },
+        {
+          "year": 2045,
+          "generationShare": {
+            "gansu": 76.79,
+            "northwest": 66.97,
+            "national": 59.16
+          },
+          "capacityShare": {
+            "gansu": 78.13,
+            "northwest": 79.42,
+            "national": 76.41
+          }
+        },
+        {
+          "year": 2046,
+          "generationShare": {
+            "gansu": 77.64,
+            "northwest": 67.89,
+            "national": 60.36
+          },
+          "capacityShare": {
+            "gansu": 78.61,
+            "northwest": 79.98,
+            "national": 77.66
+          }
+        },
+        {
+          "year": 2047,
+          "generationShare": {
+            "gansu": 78.48,
+            "northwest": 68.79,
+            "national": 61.55
+          },
+          "capacityShare": {
+            "gansu": 79.24,
+            "northwest": 80.66,
+            "national": 78.8
+          }
+        },
+        {
+          "year": 2048,
+          "generationShare": {
+            "gansu": 79.33,
+            "northwest": 69.69,
+            "national": 62.74
+          },
+          "capacityShare": {
+            "gansu": 79.84,
+            "northwest": 81.44,
+            "national": 79.75
+          }
+        },
+        {
+          "year": 2049,
+          "generationShare": {
+            "gansu": 80.18,
+            "northwest": 70.61,
+            "national": 63.92
+          },
+          "capacityShare": {
+            "gansu": 80.53,
+            "northwest": 82.04,
+            "national": 80.73
+          }
+        },
+        {
+          "year": 2050,
+          "generationShare": {
+            "gansu": 81.03,
+            "northwest": 71.53,
+            "national": 65.09
+          },
+          "capacityShare": {
+            "gansu": 81.31,
+            "northwest": 82.74,
+            "national": 81.61
+          }
+        },
+        {
+          "year": 2051,
+          "generationShare": {
+            "gansu": 81.88,
+            "northwest": 72.46,
+            "national": 66.31
+          },
+          "capacityShare": {
+            "gansu": 81.97,
+            "northwest": 83.45,
+            "national": 82.54
+          }
+        },
+        {
+          "year": 2052,
+          "generationShare": {
+            "gansu": 82.73,
+            "northwest": 73.4,
+            "national": 67.53
+          },
+          "capacityShare": {
+            "gansu": 82.23,
+            "northwest": 83.97,
+            "national": 83.31
+          }
+        },
+        {
+          "year": 2053,
+          "generationShare": {
+            "gansu": 83.59,
+            "northwest": 74.33,
+            "national": 68.74
+          },
+          "capacityShare": {
+            "gansu": 82.68,
+            "northwest": 84.56,
+            "national": 84.02
+          }
+        },
+        {
+          "year": 2054,
+          "generationShare": {
+            "gansu": 84.44,
+            "northwest": 75.27,
+            "national": 69.95
+          },
+          "capacityShare": {
+            "gansu": 83.18,
+            "northwest": 85.32,
+            "national": 84.73
+          }
+        },
+        {
+          "year": 2055,
+          "generationShare": {
+            "gansu": 85.28,
+            "northwest": 76.2,
+            "national": 71.15
+          },
+          "capacityShare": {
+            "gansu": 83.66,
+            "northwest": 86.0,
+            "national": 85.52
+          }
+        },
+        {
+          "year": 2056,
+          "generationShare": {
+            "gansu": 86.12,
+            "northwest": 77.14,
+            "national": 72.39
+          },
+          "capacityShare": {
+            "gansu": 83.98,
+            "northwest": 86.6,
+            "national": 86.17
+          }
+        },
+        {
+          "year": 2057,
+          "generationShare": {
+            "gansu": 86.97,
+            "northwest": 78.08,
+            "national": 73.63
+          },
+          "capacityShare": {
+            "gansu": 84.43,
+            "northwest": 87.18,
+            "national": 86.76
+          }
+        },
+        {
+          "year": 2058,
+          "generationShare": {
+            "gansu": 87.81,
+            "northwest": 79.01,
+            "national": 74.87
+          },
+          "capacityShare": {
+            "gansu": 84.67,
+            "northwest": 87.83,
+            "national": 87.2
+          }
+        },
+        {
+          "year": 2059,
+          "generationShare": {
+            "gansu": 88.65,
+            "northwest": 79.95,
+            "national": 76.1
+          },
+          "capacityShare": {
+            "gansu": 85.04,
+            "northwest": 88.49,
+            "national": 87.7
+          }
+        },
+        {
+          "year": 2060,
+          "generationShare": {
+            "gansu": 89.5,
+            "northwest": 80.89,
+            "national": 77.33
+          },
+          "capacityShare": {
+            "gansu": 85.64,
+            "northwest": 89.15,
+            "national": 88.24
+          }
+        }
+      ]
+    },
+    "nonHydroRenewable": {
+      "key": "nonHydroRenewable",
+      "label": "非水可再生能源",
+      "records": [
+        {
+          "year": 2024,
+          "generationShare": {
+            "gansu": 35.24,
+            "northwest": 24.47,
+            "national": 20.27
+          },
+          "capacityShare": {
+            "gansu": 64.54,
+            "northwest": 55.74,
+            "national": 44.2
+          }
+        },
+        {
+          "year": 2025,
+          "generationShare": {
+            "gansu": 37.31,
+            "northwest": 27.06,
+            "national": 23.88
+          },
+          "capacityShare": {
+            "gansu": 65.27,
+            "northwest": 62.42,
+            "national": 49.31
+          }
+        },
+        {
+          "year": 2026,
+          "generationShare": {
+            "gansu": 39.08,
+            "northwest": 32.93,
+            "national": 24.56
+          },
+          "capacityShare": {
+            "gansu": 65.41,
+            "northwest": 64.86,
+            "national": 50.3
+          }
+        },
+        {
+          "year": 2027,
+          "generationShare": {
+            "gansu": 41.29,
+            "northwest": 37.88,
+            "national": 25.81
+          },
+          "capacityShare": {
+            "gansu": 66.36,
+            "northwest": 67.12,
+            "national": 51.29
+          }
+        },
+        {
+          "year": 2028,
+          "generationShare": {
+            "gansu": 44.03,
+            "northwest": 40.34,
+            "national": 27.01
+          },
+          "capacityShare": {
+            "gansu": 67.51,
+            "northwest": 68.03,
+            "national": 52.28
+          }
+        },
+        {
+          "year": 2029,
+          "generationShare": {
+            "gansu": 46.96,
+            "northwest": 43.97,
+            "national": 28.16
+          },
+          "capacityShare": {
+            "gansu": 68.89,
+            "northwest": 69.77,
+            "national": 53.28
+          }
+        },
+        {
+          "year": 2030,
+          "generationShare": {
+            "gansu": 50.63,
+            "northwest": 48.16,
+            "national": 29.25
+          },
+          "capacityShare": {
+            "gansu": 70.37,
+            "northwest": 70.65,
+            "national": 54.27
+          }
+        },
+        {
+          "year": 2031,
+          "generationShare": {
+            "gansu": 52.29,
+            "northwest": 49.11,
+            "national": 30.61
+          },
+          "capacityShare": {
+            "gansu": 71.44,
+            "northwest": 71.2,
+            "national": 55.5
+          }
+        },
+        {
+          "year": 2032,
+          "generationShare": {
+            "gansu": 54.02,
+            "northwest": 50.07,
+            "national": 31.97
+          },
+          "capacityShare": {
+            "gansu": 72.51,
+            "northwest": 71.73,
+            "national": 56.73
+          }
+        },
+        {
+          "year": 2033,
+          "generationShare": {
+            "gansu": 55.8,
+            "northwest": 51.03,
+            "national": 33.31
+          },
+          "capacityShare": {
+            "gansu": 73.5,
+            "northwest": 72.23,
+            "national": 57.95
+          }
+        },
+        {
+          "year": 2034,
+          "generationShare": {
+            "gansu": 57.64,
+            "northwest": 51.99,
+            "national": 34.65
+          },
+          "capacityShare": {
+            "gansu": 74.74,
+            "northwest": 72.72,
+            "national": 59.18
+          }
+        },
+        {
+          "year": 2035,
+          "generationShare": {
+            "gansu": 60.39,
+            "northwest": 52.95,
+            "national": 35.99
+          },
+          "capacityShare": {
+            "gansu": 75.79,
+            "northwest": 73.65,
+            "national": 61.7
+          }
+        },
+        {
+          "year": 2036,
+          "generationShare": {
+            "gansu": 61.33,
+            "northwest": 53.91,
+            "national": 37.29
+          },
+          "capacityShare": {
+            "gansu": 75.55,
+            "northwest": 74.14,
+            "national": 64.39
+          }
+        },
+        {
+          "year": 2037,
+          "generationShare": {
+            "gansu": 62.26,
+            "northwest": 54.87,
+            "national": 38.59
+          },
+          "capacityShare": {
+            "gansu": 75.23,
+            "northwest": 74.6,
+            "national": 65.35
+          }
+        },
+        {
+          "year": 2038,
+          "generationShare": {
+            "gansu": 63.2,
+            "northwest": 55.83,
+            "national": 39.88
+          },
+          "capacityShare": {
+            "gansu": 75.16,
+            "northwest": 75.06,
+            "national": 66.23
+          }
+        },
+        {
+          "year": 2039,
+          "generationShare": {
+            "gansu": 64.14,
+            "northwest": 56.79,
+            "national": 41.17
+          },
+          "capacityShare": {
+            "gansu": 75.16,
+            "northwest": 75.46,
+            "national": 67.1
+          }
+        },
+        {
+          "year": 2040,
+          "generationShare": {
+            "gansu": 65.08,
+            "northwest": 57.75,
+            "national": 42.45
+          },
+          "capacityShare": {
+            "gansu": 75.16,
+            "northwest": 75.89,
+            "national": 67.88
+          }
+        },
+        {
+          "year": 2041,
+          "generationShare": {
+            "gansu": 66.01,
+            "northwest": 58.71,
+            "national": 43.65
+          },
+          "capacityShare": {
+            "gansu": 75.23,
+            "northwest": 76.28,
+            "national": 68.49
+          }
+        },
+        {
+          "year": 2042,
+          "generationShare": {
+            "gansu": 66.95,
+            "northwest": 59.67,
+            "national": 44.84
+          },
+          "capacityShare": {
+            "gansu": 75.25,
+            "northwest": 76.48,
+            "national": 69.06
+          }
+        },
+        {
+          "year": 2043,
+          "generationShare": {
+            "gansu": 67.88,
+            "northwest": 60.63,
+            "national": 46.02
+          },
+          "capacityShare": {
+            "gansu": 75.43,
+            "northwest": 76.74,
+            "national": 69.7
+          }
+        },
+        {
+          "year": 2044,
+          "generationShare": {
+            "gansu": 68.82,
+            "northwest": 61.59,
+            "national": 47.2
+          },
+          "capacityShare": {
+            "gansu": 75.51,
+            "northwest": 76.96,
+            "national": 70.37
+          }
+        },
+        {
+          "year": 2045,
+          "generationShare": {
+            "gansu": 69.75,
+            "northwest": 62.56,
+            "national": 48.37
+          },
+          "capacityShare": {
+            "gansu": 75.62,
+            "northwest": 77.14,
+            "national": 71.15
+          }
+        },
+        {
+          "year": 2046,
+          "generationShare": {
+            "gansu": 70.69,
+            "northwest": 63.52,
+            "national": 49.56
+          },
+          "capacityShare": {
+            "gansu": 76.13,
+            "northwest": 77.74,
+            "national": 72.43
+          }
+        },
+        {
+          "year": 2047,
+          "generationShare": {
+            "gansu": 71.63,
+            "northwest": 64.48,
+            "national": 50.75
+          },
+          "capacityShare": {
+            "gansu": 76.79,
+            "northwest": 78.47,
+            "national": 73.62
+          }
+        },
+        {
+          "year": 2048,
+          "generationShare": {
+            "gansu": 72.56,
+            "northwest": 65.44,
+            "national": 51.93
+          },
+          "capacityShare": {
+            "gansu": 77.42,
+            "northwest": 79.28,
+            "national": 74.62
+          }
+        },
+        {
+          "year": 2049,
+          "generationShare": {
+            "gansu": 73.5,
+            "northwest": 66.41,
+            "national": 53.1
+          },
+          "capacityShare": {
+            "gansu": 78.12,
+            "northwest": 79.92,
+            "national": 75.65
+          }
+        },
+        {
+          "year": 2050,
+          "generationShare": {
+            "gansu": 74.43,
+            "northwest": 67.37,
+            "national": 54.27
+          },
+          "capacityShare": {
+            "gansu": 78.93,
+            "northwest": 80.65,
+            "national": 76.59
+          }
+        },
+        {
+          "year": 2051,
+          "generationShare": {
+            "gansu": 75.37,
+            "northwest": 68.34,
+            "national": 55.48
+          },
+          "capacityShare": {
+            "gansu": 79.61,
+            "northwest": 81.39,
+            "national": 77.56
+          }
+        },
+        {
+          "year": 2052,
+          "generationShare": {
+            "gansu": 76.3,
+            "northwest": 69.3,
+            "national": 56.68
+          },
+          "capacityShare": {
+            "gansu": 79.9,
+            "northwest": 81.94,
+            "national": 78.39
+          }
+        },
+        {
+          "year": 2053,
+          "generationShare": {
+            "gansu": 77.24,
+            "northwest": 70.26,
+            "national": 57.87
+          },
+          "capacityShare": {
+            "gansu": 80.38,
+            "northwest": 82.55,
+            "national": 79.14
+          }
+        },
+        {
+          "year": 2054,
+          "generationShare": {
+            "gansu": 78.18,
+            "northwest": 71.23,
+            "national": 59.07
+          },
+          "capacityShare": {
+            "gansu": 80.91,
+            "northwest": 83.33,
+            "national": 79.91
+          }
+        },
+        {
+          "year": 2055,
+          "generationShare": {
+            "gansu": 79.11,
+            "northwest": 72.19,
+            "national": 60.26
+          },
+          "capacityShare": {
+            "gansu": 81.41,
+            "northwest": 84.04,
+            "national": 80.74
+          }
+        },
+        {
+          "year": 2056,
+          "generationShare": {
+            "gansu": 80.04,
+            "northwest": 73.15,
+            "national": 61.44
+          },
+          "capacityShare": {
+            "gansu": 81.77,
+            "northwest": 84.66,
+            "national": 81.43
+          }
+        },
+        {
+          "year": 2057,
+          "generationShare": {
+            "gansu": 80.98,
+            "northwest": 74.12,
+            "national": 62.63
+          },
+          "capacityShare": {
+            "gansu": 82.25,
+            "northwest": 85.27,
+            "national": 82.05
+          }
+        },
+        {
+          "year": 2058,
+          "generationShare": {
+            "gansu": 81.91,
+            "northwest": 75.08,
+            "national": 63.81
+          },
+          "capacityShare": {
+            "gansu": 82.53,
+            "northwest": 85.93,
+            "national": 82.53
+          }
+        },
+        {
+          "year": 2059,
+          "generationShare": {
+            "gansu": 82.85,
+            "northwest": 76.05,
+            "national": 64.99
+          },
+          "capacityShare": {
+            "gansu": 82.93,
+            "northwest": 86.62,
+            "national": 83.06
+          }
+        },
+        {
+          "year": 2060,
+          "generationShare": {
+            "gansu": 83.78,
+            "northwest": 77.01,
+            "national": 66.17
+          },
+          "capacityShare": {
+            "gansu": 83.56,
+            "northwest": 87.29,
+            "national": 83.64
+          }
+        }
+      ]
+    }
+  },
+  "carbon": [
+    {
+      "year": 2024,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.6483,
+        "northwest": 5.1171,
+        "national": 4.5419
+      },
+      "intensityGramPerKwh": {
+        "gansu": 364.83,
+        "northwest": 511.71,
+        "national": 454.19
+      }
+    },
+    {
+      "year": 2025,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.7152,
+        "northwest": 4.9614,
+        "national": 4.2716
+      },
+      "intensityGramPerKwh": {
+        "gansu": 371.52,
+        "northwest": 496.14,
+        "national": 427.16
+      }
+    },
+    {
+      "year": 2026,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.5775,
+        "northwest": 4.4627,
+        "national": 4.1779
+      },
+      "intensityGramPerKwh": {
+        "gansu": 357.75,
+        "northwest": 446.27,
+        "national": 417.79
+      }
+    },
+    {
+      "year": 2027,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.4862,
+        "northwest": 4.1279,
+        "national": 4.0841
+      },
+      "intensityGramPerKwh": {
+        "gansu": 348.62,
+        "northwest": 412.79,
+        "national": 408.41
+      }
+    },
+    {
+      "year": 2028,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.3412,
+        "northwest": 3.9841,
+        "national": 3.9917
+      },
+      "intensityGramPerKwh": {
+        "gansu": 334.12,
+        "northwest": 398.41,
+        "national": 399.17
+      }
+    },
+    {
+      "year": 2029,
+      "intensityTonPer10kKwh": {
+        "gansu": 3.1774,
+        "northwest": 3.7524,
+        "national": 3.8995
+      },
+      "intensityGramPerKwh": {
+        "gansu": 317.74,
+        "northwest": 375.24,
+        "national": 389.95
+      }
+    },
+    {
+      "year": 2030,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.9475,
+        "northwest": 3.4329,
+        "national": 3.808
+      },
+      "intensityGramPerKwh": {
+        "gansu": 294.75,
+        "northwest": 343.29,
+        "national": 380.8
+      }
+    },
+    {
+      "year": 2031,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.8565,
+        "northwest": 3.3741,
+        "national": 3.7044
+      },
+      "intensityGramPerKwh": {
+        "gansu": 285.65,
+        "northwest": 337.41,
+        "national": 370.44
+      }
+    },
+    {
+      "year": 2032,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.7591,
+        "northwest": 3.3139,
+        "national": 3.6011
+      },
+      "intensityGramPerKwh": {
+        "gansu": 275.91,
+        "northwest": 331.39,
+        "national": 360.11
+      }
+    },
+    {
+      "year": 2033,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.657,
+        "northwest": 3.253,
+        "national": 3.4981
+      },
+      "intensityGramPerKwh": {
+        "gansu": 265.7,
+        "northwest": 325.3,
+        "national": 349.81
+      }
+    },
+    {
+      "year": 2034,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.55,
+        "northwest": 3.1908,
+        "national": 3.3954
+      },
+      "intensityGramPerKwh": {
+        "gansu": 255.0,
+        "northwest": 319.08,
+        "national": 339.54
+      }
+    },
+    {
+      "year": 2035,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.3628,
+        "northwest": 3.1215,
+        "national": 3.277
+      },
+      "intensityGramPerKwh": {
+        "gansu": 236.28,
+        "northwest": 312.15,
+        "national": 327.7
+      }
+    },
+    {
+      "year": 2036,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.2937,
+        "northwest": 3.0576,
+        "national": 3.1741
+      },
+      "intensityGramPerKwh": {
+        "gansu": 229.37,
+        "northwest": 305.76,
+        "national": 317.41
+      }
+    },
+    {
+      "year": 2037,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.2262,
+        "northwest": 2.9932,
+        "national": 3.0711
+      },
+      "intensityGramPerKwh": {
+        "gansu": 222.62,
+        "northwest": 299.32,
+        "national": 307.11
+      }
+    },
+    {
+      "year": 2038,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.1601,
+        "northwest": 2.9278,
+        "national": 2.9689
+      },
+      "intensityGramPerKwh": {
+        "gansu": 216.01,
+        "northwest": 292.78,
+        "national": 296.89
+      }
+    },
+    {
+      "year": 2039,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.0933,
+        "northwest": 2.8625,
+        "national": 2.8669
+      },
+      "intensityGramPerKwh": {
+        "gansu": 209.33,
+        "northwest": 286.25,
+        "national": 286.69
+      }
+    },
+    {
+      "year": 2040,
+      "intensityTonPer10kKwh": {
+        "gansu": 2.0267,
+        "northwest": 2.7963,
+        "national": 2.7661
+      },
+      "intensityGramPerKwh": {
+        "gansu": 202.67,
+        "northwest": 279.63,
+        "national": 276.61
+      }
+    },
+    {
+      "year": 2041,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.9624,
+        "northwest": 2.7299,
+        "national": 2.6646
+      },
+      "intensityGramPerKwh": {
+        "gansu": 196.24,
+        "northwest": 272.99,
+        "national": 266.46
+      }
+    },
+    {
+      "year": 2042,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.8987,
+        "northwest": 2.6592,
+        "national": 2.5636
+      },
+      "intensityGramPerKwh": {
+        "gansu": 189.87,
+        "northwest": 265.92,
+        "national": 256.36
+      }
+    },
+    {
+      "year": 2043,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.8337,
+        "northwest": 2.5879,
+        "national": 2.4621
+      },
+      "intensityGramPerKwh": {
+        "gansu": 183.37,
+        "northwest": 258.79,
+        "national": 246.21
+      }
+    },
+    {
+      "year": 2044,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.7697,
+        "northwest": 2.5171,
+        "national": 2.3606
+      },
+      "intensityGramPerKwh": {
+        "gansu": 176.97,
+        "northwest": 251.71,
+        "national": 236.06
+      }
+    },
+    {
+      "year": 2045,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.7049,
+        "northwest": 2.444,
+        "national": 2.2584
+      },
+      "intensityGramPerKwh": {
+        "gansu": 170.49,
+        "northwest": 244.4,
+        "national": 225.84
+      }
+    },
+    {
+      "year": 2046,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.6417,
+        "northwest": 2.3741,
+        "national": 2.1563
+      },
+      "intensityGramPerKwh": {
+        "gansu": 164.17,
+        "northwest": 237.41,
+        "national": 215.63
+      }
+    },
+    {
+      "year": 2047,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.5777,
+        "northwest": 2.3056,
+        "national": 2.0551
+      },
+      "intensityGramPerKwh": {
+        "gansu": 157.77,
+        "northwest": 230.56,
+        "national": 205.51
+      }
+    },
+    {
+      "year": 2048,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.5137,
+        "northwest": 2.236,
+        "national": 1.9557
+      },
+      "intensityGramPerKwh": {
+        "gansu": 151.37,
+        "northwest": 223.6,
+        "national": 195.57
+      }
+    },
+    {
+      "year": 2049,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.4494,
+        "northwest": 2.1658,
+        "national": 1.8556
+      },
+      "intensityGramPerKwh": {
+        "gansu": 144.94,
+        "northwest": 216.58,
+        "national": 185.56
+      }
+    },
+    {
+      "year": 2050,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.3845,
+        "northwest": 2.0947,
+        "national": 1.7568
+      },
+      "intensityGramPerKwh": {
+        "gansu": 138.45,
+        "northwest": 209.47,
+        "national": 175.68
+      }
+    },
+    {
+      "year": 2051,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.3202,
+        "northwest": 2.0222,
+        "national": 1.6577
+      },
+      "intensityGramPerKwh": {
+        "gansu": 132.02,
+        "northwest": 202.22,
+        "national": 165.77
+      }
+    },
+    {
+      "year": 2052,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.258,
+        "northwest": 1.9511,
+        "national": 1.5601
+      },
+      "intensityGramPerKwh": {
+        "gansu": 125.8,
+        "northwest": 195.11,
+        "national": 156.01
+      }
+    },
+    {
+      "year": 2053,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.1948,
+        "northwest": 1.8797,
+        "national": 1.4631
+      },
+      "intensityGramPerKwh": {
+        "gansu": 119.48,
+        "northwest": 187.97,
+        "national": 146.31
+      }
+    },
+    {
+      "year": 2054,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.1314,
+        "northwest": 1.807,
+        "national": 1.3661
+      },
+      "intensityGramPerKwh": {
+        "gansu": 113.14,
+        "northwest": 180.7,
+        "national": 136.61
+      }
+    },
+    {
+      "year": 2055,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.0697,
+        "northwest": 1.7349,
+        "national": 1.269
+      },
+      "intensityGramPerKwh": {
+        "gansu": 106.97,
+        "northwest": 173.49,
+        "national": 126.9
+      }
+    },
+    {
+      "year": 2056,
+      "intensityTonPer10kKwh": {
+        "gansu": 1.0083,
+        "northwest": 1.6635,
+        "national": 1.1731
+      },
+      "intensityGramPerKwh": {
+        "gansu": 100.83,
+        "northwest": 166.35,
+        "national": 117.31
+      }
+    },
+    {
+      "year": 2057,
+      "intensityTonPer10kKwh": {
+        "gansu": 0.9463,
+        "northwest": 1.5923,
+        "national": 1.078
+      },
+      "intensityGramPerKwh": {
+        "gansu": 94.63,
+        "northwest": 159.23,
+        "national": 107.8
+      }
+    },
+    {
+      "year": 2058,
+      "intensityTonPer10kKwh": {
+        "gansu": 0.8851,
+        "northwest": 1.5206,
+        "national": 0.9836
+      },
+      "intensityGramPerKwh": {
+        "gansu": 88.51,
+        "northwest": 152.06,
+        "national": 98.36
+      }
+    },
+    {
+      "year": 2059,
+      "intensityTonPer10kKwh": {
+        "gansu": 0.8235,
+        "northwest": 1.4489,
+        "national": 0.8893
+      },
+      "intensityGramPerKwh": {
+        "gansu": 82.35,
+        "northwest": 144.89,
+        "national": 88.93
+      }
+    },
+    {
+      "year": 2060,
+      "intensityTonPer10kKwh": {
+        "gansu": 0.7611,
+        "northwest": 1.3775,
+        "national": 0.795
+      },
+      "intensityGramPerKwh": {
+        "gansu": 76.11,
+        "northwest": 137.75,
+        "national": 79.5
+      }
+    }
+  ],
+  "years": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050,
+    2051,
+    2052,
+    2053,
+    2054,
+    2055,
+    2056,
+    2057,
+    2058,
+    2059,
+    2060
+  ]
+}

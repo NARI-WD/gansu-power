@@ -1,0 +1,4025 @@
+{
+  "metadata": {
+    "source": "甘肃省数据.xlsx",
+    "capacitySheet": "【展示图】甘肃省装机容量结构",
+    "generationSheet": "【展示图】甘肃省发电量结构",
+    "capacityUnit": "万千瓦",
+    "generationUnit": "亿千瓦时",
+    "shareUnit": "%",
+    "capacityBasis": {
+      "withoutStorage": "不含抽蓄与电化学储能",
+      "withStorage": "含抽蓄与电化学储能"
+    },
+    "yearRange": [
+      2024,
+      2060
+    ]
+  },
+  "categories": [
+    {
+      "key": "coal",
+      "label": "煤电",
+      "color": "#8f5a2a"
+    },
+    {
+      "key": "hydro",
+      "label": "水电",
+      "color": "#2878b8"
+    },
+    {
+      "key": "wind",
+      "label": "陆上风电",
+      "color": "#18a389"
+    },
+    {
+      "key": "pv",
+      "label": "光伏",
+      "color": "#d8a21d"
+    },
+    {
+      "key": "csp",
+      "label": "光热",
+      "color": "#d7662b"
+    },
+    {
+      "key": "other",
+      "label": "其他",
+      "color": "#756b91"
+    }
+  ],
+  "storageCategories": [
+    {
+      "key": "pumpedHydro",
+      "label": "抽水蓄能",
+      "color": "#155eef"
+    },
+    {
+      "key": "electrochemical",
+      "label": "电化学储能",
+      "color": "#08d5c5"
+    }
+  ],
+  "years": [
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050,
+    2051,
+    2052,
+    2053,
+    2054,
+    2055,
+    2056,
+    2057,
+    2058,
+    2059,
+    2060
+  ],
+  "records": [
+    {
+      "year": 2024,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 2548.7,
+          "hydro": 971.41,
+          "wind": 3214.9,
+          "pv": 3138.68,
+          "csp": 52.0,
+          "other": 67.3687,
+          "total": 9993.0587
+        },
+        "storage": {
+          "pumpedHydro": 0.0,
+          "electrochemical": 441.5
+        },
+        "withStorage": {
+          "coal": 2548.7,
+          "hydro": 971.41,
+          "wind": 3214.9,
+          "pv": 3138.68,
+          "csp": 52.0,
+          "other": 67.3687,
+          "pumpedHydro": 0.0,
+          "electrochemical": 441.5,
+          "total": 10434.5587
+        }
+      },
+      "generation": {
+        "coal": 1064.6528,
+        "hydro": 396.01,
+        "wind": 457.9099,
+        "pv": 333.674,
+        "csp": 3.35,
+        "other": 24.4929,
+        "total": 2280.0896
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 25.5,
+          "hydro": 9.72,
+          "wind": 32.17,
+          "pv": 31.41,
+          "csp": 0.52,
+          "other": 0.67
+        },
+        "withStorage": {
+          "coal": 24.43,
+          "hydro": 9.31,
+          "wind": 30.81,
+          "pv": 30.08,
+          "csp": 0.5,
+          "other": 0.65,
+          "pumpedHydro": 0.0,
+          "electrochemical": 4.23
+        }
+      },
+      "generationShare": {
+        "coal": 46.69,
+        "hydro": 17.37,
+        "wind": 20.08,
+        "pv": 14.63,
+        "csp": 0.15,
+        "other": 1.07
+      },
+      "hours": {
+        "all": 2272.48,
+        "coal": 4177.24
+      },
+      "export": {
+        "gansu": 533.82,
+        "northwest": 3606.0,
+        "share": 14.8,
+        "channels": 2.0
+      },
+      "clean": {
+        "nonFossilGeneration": 52.8,
+        "nonHydroRenewableGeneration": 35.24,
+        "nonFossilCapacity": 74.32,
+        "nonHydroRenewableCapacity": 64.54
+      },
+      "emission": {
+        "totalEmission": 0.8229,
+        "capturedEmission": 0.0,
+        "netEmission": 0.8229,
+        "unitEmission": 364.83
+      },
+      "costBySource": {
+        "coal": 307.1715,
+        "hydro": 49.9584,
+        "wind": 237.2038,
+        "pv": 163.1123,
+        "csp": 7.4748,
+        "other": 0.0,
+        "total": 764.9208
+      },
+      "costByItem": {
+        "operation": 151.5898,
+        "fuel": 218.1864,
+        "depreciation": 276.0674,
+        "finance": 119.0772,
+        "ccus": 0.0,
+        "emission": -0.7995,
+        "total": 764.1213
+      }
+    },
+    {
+      "year": 2025,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 3283.7,
+          "hydro": 971.99,
+          "wind": 4093.9,
+          "pv": 3842.88,
+          "csp": 62.1,
+          "other": 67.3687,
+          "total": 12321.9387
+        },
+        "storage": {
+          "pumpedHydro": 0.0,
+          "electrochemical": 815.38
+        },
+        "withStorage": {
+          "coal": 3283.7,
+          "hydro": 971.99,
+          "wind": 4093.9,
+          "pv": 3842.88,
+          "csp": 62.1,
+          "other": 67.3687,
+          "pumpedHydro": 0.0,
+          "electrochemical": 815.38,
+          "total": 13137.3187
+        }
+      },
+      "generation": {
+        "coal": 1239.1097,
+        "hydro": 362.03,
+        "wind": 549.7688,
+        "pv": 399.0975,
+        "csp": 4.1286,
+        "other": 24.4929,
+        "total": 2578.6275
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 26.65,
+          "hydro": 7.89,
+          "wind": 33.22,
+          "pv": 31.19,
+          "csp": 0.5,
+          "other": 0.55
+        },
+        "withStorage": {
+          "coal": 25.0,
+          "hydro": 7.4,
+          "wind": 31.16,
+          "pv": 29.25,
+          "csp": 0.47,
+          "other": 0.51,
+          "pumpedHydro": 0.0,
+          "electrochemical": 6.21
+        }
+      },
+      "generationShare": {
+        "coal": 48.05,
+        "hydro": 14.04,
+        "wind": 21.32,
+        "pv": 15.48,
+        "csp": 0.16,
+        "other": 0.95
+      },
+      "export": {
+        "gansu": 651.6,
+        "northwest": 4110.0,
+        "share": 15.854,
+        "channels": 2.0
+      },
+      "hours": {
+        "all": 2084.23,
+        "coal": 3773.52
+      },
+      "clean": {
+        "nonFossilGeneration": 51.49,
+        "nonHydroRenewableGeneration": 37.31,
+        "nonFossilCapacity": 73.2,
+        "nonHydroRenewableCapacity": 65.27
+      },
+      "emission": {
+        "totalEmission": 0.9489,
+        "capturedEmission": 0.015,
+        "netEmission": 0.9339,
+        "unitEmission": 371.52
+      },
+      "costBySource": {
+        "coal": 345.2826,
+        "hydro": 46.0709,
+        "wind": 268.0271,
+        "pv": 181.0116,
+        "csp": 8.56,
+        "other": 0.0,
+        "total": 848.9522
+      },
+      "costByItem": {
+        "operation": 178.8667,
+        "fuel": 230.0184,
+        "depreciation": 310.9624,
+        "finance": 129.1048,
+        "ccus": 0.0,
+        "emission": 0.4324,
+        "total": 860.1162
+      }
+    },
+    {
+      "year": 2026,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 3883.7,
+          "hydro": 980.0,
+          "wind": 4574.1,
+          "pv": 4550.38,
+          "csp": 71.3,
+          "other": 67.3687,
+          "total": 14126.8487
+        },
+        "storage": {
+          "pumpedHydro": 0.0,
+          "electrochemical": 1236.0
+        },
+        "withStorage": {
+          "coal": 3883.7,
+          "hydro": 980.0,
+          "wind": 4574.1,
+          "pv": 4550.38,
+          "csp": 71.3,
+          "other": 67.3687,
+          "pumpedHydro": 0.0,
+          "electrochemical": 1236.0,
+          "total": 15362.8487
+        }
+      },
+      "generation": {
+        "coal": 1320.5942,
+        "hydro": 392.0,
+        "wind": 619.4178,
+        "pv": 474.5293,
+        "csp": 4.8917,
+        "other": 24.4929,
+        "total": 2835.9259
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 27.49,
+          "hydro": 6.94,
+          "wind": 32.38,
+          "pv": 32.21,
+          "csp": 0.5,
+          "other": 0.48
+        },
+        "withStorage": {
+          "coal": 25.28,
+          "hydro": 6.38,
+          "wind": 29.77,
+          "pv": 29.62,
+          "csp": 0.46,
+          "other": 0.44,
+          "pumpedHydro": 0.0,
+          "electrochemical": 8.05
+        }
+      },
+      "generationShare": {
+        "coal": 46.57,
+        "hydro": 13.82,
+        "wind": 21.84,
+        "pv": 16.73,
+        "csp": 0.17,
+        "other": 0.86
+      },
+      "export": {
+        "gansu": 900.0,
+        "northwest": 4860.0,
+        "share": 18.5185,
+        "channels": 3.0
+      },
+      "hours": {
+        "all": 1999.67,
+        "coal": 3400.35
+      },
+      "clean": {
+        "nonFossilGeneration": 53.03,
+        "nonHydroRenewableGeneration": 39.08,
+        "nonFossilCapacity": 72.38,
+        "nonHydroRenewableCapacity": 65.41
+      },
+      "emission": {
+        "totalEmission": 1.0058,
+        "capturedEmission": 0.0421,
+        "netEmission": 0.9637,
+        "unitEmission": 357.75
+      },
+      "costBySource": {
+        "coal": 379.1216,
+        "hydro": 47.2285,
+        "wind": 281.3815,
+        "pv": 199.2968,
+        "csp": 9.5802,
+        "other": 0.0,
+        "total": 916.6086
+      },
+      "costByItem": {
+        "operation": 207.0681,
+        "fuel": 241.736,
+        "depreciation": 335.8841,
+        "finance": 131.9203,
+        "ccus": 0.0,
+        "emission": 2.036,
+        "total": 946.8424
+      }
+    },
+    {
+      "year": 2027,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 4383.7,
+          "hydro": 980.0,
+          "wind": 5110.6,
+          "pv": 5388.18,
+          "csp": 81.5,
+          "other": 67.3687,
+          "total": 16011.3487
+        },
+        "storage": {
+          "pumpedHydro": 0.0,
+          "electrochemical": 1730.0
+        },
+        "withStorage": {
+          "coal": 4383.7,
+          "hydro": 980.0,
+          "wind": 5110.6,
+          "pv": 5388.18,
+          "csp": 81.5,
+          "other": 67.3687,
+          "pumpedHydro": 0.0,
+          "electrochemical": 1730.0,
+          "total": 17741.3487
+        }
+      },
+      "generation": {
+        "coal": 1410.7812,
+        "hydro": 392.0,
+        "wind": 697.8869,
+        "pv": 564.2227,
+        "csp": 5.7703,
+        "other": 24.4929,
+        "total": 3095.154
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 27.38,
+          "hydro": 6.12,
+          "wind": 31.92,
+          "pv": 33.65,
+          "csp": 0.51,
+          "other": 0.42
+        },
+        "withStorage": {
+          "coal": 24.71,
+          "hydro": 5.52,
+          "wind": 28.81,
+          "pv": 30.37,
+          "csp": 0.46,
+          "other": 0.38,
+          "pumpedHydro": 0.0,
+          "electrochemical": 9.75
+        }
+      },
+      "generationShare": {
+        "coal": 45.58,
+        "hydro": 12.66,
+        "wind": 22.55,
+        "pv": 18.23,
+        "csp": 0.19,
+        "other": 0.79
+      },
+      "export": {
+        "gansu": 1012.2144,
+        "northwest": 5400.0,
+        "share": 18.7447,
+        "channels": 3.0
+      },
+      "hours": {
+        "all": 1925.91,
+        "coal": 3218.24
+      },
+      "clean": {
+        "nonFossilGeneration": 54.06,
+        "nonHydroRenewableGeneration": 41.29,
+        "nonFossilCapacity": 72.51,
+        "nonHydroRenewableCapacity": 66.36
+      },
+      "emission": {
+        "totalEmission": 1.0705,
+        "capturedEmission": 0.0663,
+        "netEmission": 1.0042,
+        "unitEmission": 348.62
+      },
+      "costBySource": {
+        "coal": 411.662,
+        "hydro": 46.2556,
+        "wind": 300.1476,
+        "pv": 221.3662,
+        "csp": 10.6918,
+        "other": 0.0,
+        "total": 990.1232
+      },
+      "costByItem": {
+        "operation": 233.1305,
+        "fuel": 255.8873,
+        "depreciation": 362.0098,
+        "finance": 139.0956,
+        "ccus": 0.0,
+        "emission": 5.1809,
+        "total": 1038.7435
+      }
+    },
+    {
+      "year": 2028,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 4883.7,
+          "hydro": 980.0,
+          "wind": 5710.1,
+          "pv": 6380.18,
+          "csp": 93.2,
+          "other": 67.3687,
+          "total": 18114.5487
+        },
+        "storage": {
+          "pumpedHydro": 612.0,
+          "electrochemical": 1982.06
+        },
+        "withStorage": {
+          "coal": 4883.7,
+          "hydro": 980.0,
+          "wind": 5710.1,
+          "pv": 6380.18,
+          "csp": 93.2,
+          "other": 67.3687,
+          "pumpedHydro": 612.0,
+          "electrochemical": 1982.06,
+          "total": 20708.6087
+        }
+      },
+      "generation": {
+        "coal": 1468.9173,
+        "hydro": 392.0,
+        "wind": 786.3067,
+        "pv": 670.864,
+        "csp": 6.8096,
+        "other": 24.4929,
+        "total": 3349.3905
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 26.96,
+          "hydro": 5.41,
+          "wind": 31.52,
+          "pv": 35.22,
+          "csp": 0.51,
+          "other": 0.37
+        },
+        "withStorage": {
+          "coal": 23.58,
+          "hydro": 4.73,
+          "wind": 27.57,
+          "pv": 30.81,
+          "csp": 0.45,
+          "other": 0.33,
+          "pumpedHydro": 2.96,
+          "electrochemical": 9.57
+        }
+      },
+      "generationShare": {
+        "coal": 43.86,
+        "hydro": 11.7,
+        "wind": 23.48,
+        "pv": 20.03,
+        "csp": 0.2,
+        "other": 0.73
+      },
+      "export": {
+        "gansu": 1138.42,
+        "northwest": 6120.0,
+        "share": 18.6016,
+        "channels": 4.0
+      },
+      "hours": {
+        "all": 1842.34,
+        "coal": 3007.8
+      },
+      "clean": {
+        "nonFossilGeneration": 55.82,
+        "nonHydroRenewableGeneration": 44.03,
+        "nonFossilCapacity": 72.94,
+        "nonHydroRenewableCapacity": 67.51
+      },
+      "emission": {
+        "totalEmission": 1.1109,
+        "capturedEmission": 0.0868,
+        "netEmission": 1.0241,
+        "unitEmission": 334.12
+      },
+      "costBySource": {
+        "coal": 438.2067,
+        "hydro": 45.6457,
+        "wind": 320.6783,
+        "pv": 247.9946,
+        "csp": 11.9553,
+        "other": 0.0,
+        "total": 1064.4806
+      },
+      "costByItem": {
+        "operation": 261.6877,
+        "fuel": 264.4009,
+        "depreciation": 390.0997,
+        "finance": 148.2922,
+        "ccus": 0.0,
+        "emission": 9.0939,
+        "total": 1129.6699
+      }
+    },
+    {
+      "year": 2029,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 5361.7,
+          "hydro": 980.0,
+          "wind": 6379.8,
+          "pv": 7554.88,
+          "csp": 106.8,
+          "other": 67.3687,
+          "total": 20450.5487
+        },
+        "storage": {
+          "pumpedHydro": 870.0,
+          "electrochemical": 2270.85
+        },
+        "withStorage": {
+          "coal": 5361.7,
+          "hydro": 980.0,
+          "wind": 6379.8,
+          "pv": 7554.88,
+          "csp": 106.8,
+          "other": 67.3687,
+          "pumpedHydro": 870.0,
+          "electrochemical": 2270.85,
+          "total": 23591.3987
+        }
+      },
+      "generation": {
+        "coal": 1518.3724,
+        "hydro": 392.0,
+        "wind": 885.9117,
+        "pv": 797.6682,
+        "csp": 8.0528,
+        "other": 24.4929,
+        "total": 3626.498
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 26.22,
+          "hydro": 4.79,
+          "wind": 31.2,
+          "pv": 36.94,
+          "csp": 0.52,
+          "other": 0.33
+        },
+        "withStorage": {
+          "coal": 22.73,
+          "hydro": 4.15,
+          "wind": 27.04,
+          "pv": 32.02,
+          "csp": 0.45,
+          "other": 0.29,
+          "pumpedHydro": 3.69,
+          "electrochemical": 9.63
+        }
+      },
+      "generationShare": {
+        "coal": 41.87,
+        "hydro": 10.81,
+        "wind": 24.43,
+        "pv": 22.0,
+        "csp": 0.22,
+        "other": 0.68
+      },
+      "export": {
+        "gansu": 1280.3612,
+        "northwest": 6840.0,
+        "share": 18.7187,
+        "channels": 4.0
+      },
+      "hours": {
+        "all": 1767.15,
+        "coal": 2831.89
+      },
+      "clean": {
+        "nonFossilGeneration": 57.85,
+        "nonHydroRenewableGeneration": 46.96,
+        "nonFossilCapacity": 73.7,
+        "nonHydroRenewableCapacity": 68.89
+      },
+      "emission": {
+        "totalEmission": 1.1445,
+        "capturedEmission": 0.105,
+        "netEmission": 1.0395,
+        "unitEmission": 317.74
+      },
+      "costBySource": {
+        "coal": 462.4616,
+        "hydro": 45.1422,
+        "wind": 345.074,
+        "pv": 281.7768,
+        "csp": 13.4152,
+        "other": 0.0,
+        "total": 1147.8698
+      },
+      "costByItem": {
+        "operation": 292.7006,
+        "fuel": 271.3765,
+        "depreciation": 422.7654,
+        "finance": 161.0274,
+        "ccus": 0.0,
+        "emission": 14.1046,
+        "total": 1229.0476
+      }
+    },
+    {
+      "year": 2030,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 5839.7,
+          "hydro": 980.0,
+          "wind": 7128.1,
+          "pv": 8945.78,
+          "csp": 122.1,
+          "other": 67.3687,
+          "total": 23083.0487
+        },
+        "storage": {
+          "pumpedHydro": 1128.0,
+          "electrochemical": 2601.5
+        },
+        "withStorage": {
+          "coal": 5839.7,
+          "hydro": 980.0,
+          "wind": 7128.1,
+          "pv": 8945.78,
+          "csp": 122.1,
+          "other": 67.3687,
+          "pumpedHydro": 1128.0,
+          "electrochemical": 2601.5,
+          "total": 26812.5487
+        }
+      },
+      "generation": {
+        "coal": 1515.4825,
+        "hydro": 392.0,
+        "wind": 998.1419,
+        "pv": 948.4316,
+        "csp": 9.5007,
+        "other": 24.4929,
+        "total": 3888.0496
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 25.3,
+          "hydro": 4.25,
+          "wind": 30.88,
+          "pv": 38.75,
+          "csp": 0.53,
+          "other": 0.29
+        },
+        "withStorage": {
+          "coal": 21.78,
+          "hydro": 3.66,
+          "wind": 26.58,
+          "pv": 33.36,
+          "csp": 0.46,
+          "other": 0.25,
+          "pumpedHydro": 4.21,
+          "electrochemical": 9.7
+        }
+      },
+      "generationShare": {
+        "coal": 38.98,
+        "hydro": 10.08,
+        "wind": 25.67,
+        "pv": 24.39,
+        "csp": 0.24,
+        "other": 0.63
+      },
+      "export": {
+        "gansu": 1440.0,
+        "northwest": 7560.0,
+        "share": 19.0476,
+        "channels": 4.0
+      },
+      "hours": {
+        "all": 1678.66,
+        "coal": 2595.14
+      },
+      "clean": {
+        "nonFossilGeneration": 60.77,
+        "nonHydroRenewableGeneration": 50.63,
+        "nonFossilCapacity": 74.63,
+        "nonHydroRenewableCapacity": 70.37
+      },
+      "emission": {
+        "totalEmission": 1.1388,
+        "capturedEmission": 0.1237,
+        "netEmission": 1.0151,
+        "unitEmission": 294.75
+      },
+      "costBySource": {
+        "coal": 477.387,
+        "hydro": 44.8429,
+        "wind": 371.4392,
+        "pv": 321.8323,
+        "csp": 15.0383,
+        "other": 0.0,
+        "total": 1230.5397
+      },
+      "costByItem": {
+        "operation": 327.1272,
+        "fuel": 269.1839,
+        "depreciation": 456.4997,
+        "finance": 177.7288,
+        "ccus": 0.0,
+        "emission": 19.2249,
+        "total": 1333.5608
+      }
+    },
+    {
+      "year": 2031,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6017.7,
+          "hydro": 980.0,
+          "wind": 7647.2,
+          "pv": 9733.78,
+          "csp": 125.9,
+          "other": 67.3687,
+          "total": 24571.9487
+        },
+        "storage": {
+          "pumpedHydro": 1182.4776,
+          "electrochemical": 2085.7132
+        },
+        "withStorage": {
+          "coal": 6017.7,
+          "hydro": 980.0,
+          "wind": 7647.2,
+          "pv": 9733.78,
+          "csp": 125.9,
+          "other": 67.3687,
+          "pumpedHydro": 1182.4776,
+          "electrochemical": 2085.7132,
+          "total": 27840.1394
+        }
+      },
+      "generation": {
+        "coal": 1547.6658,
+        "hydro": 392.0,
+        "wind": 1079.8317,
+        "pv": 1036.245,
+        "csp": 10.1095,
+        "other": 24.4929,
+        "total": 4090.3449
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 24.49,
+          "hydro": 3.99,
+          "wind": 31.12,
+          "pv": 39.61,
+          "csp": 0.51,
+          "other": 0.27
+        },
+        "withStorage": {
+          "coal": 21.62,
+          "hydro": 3.52,
+          "wind": 27.47,
+          "pv": 34.96,
+          "csp": 0.45,
+          "other": 0.24,
+          "pumpedHydro": 4.25,
+          "electrochemical": 7.49
+        }
+      },
+      "generationShare": {
+        "coal": 37.84,
+        "hydro": 9.58,
+        "wind": 26.4,
+        "pv": 25.33,
+        "csp": 0.25,
+        "other": 0.6
+      },
+      "export": {
+        "gansu": 1522.6146,
+        "northwest": 8280.0,
+        "share": 18.3891,
+        "channels": 5.0
+      },
+      "hours": {
+        "all": 1659.22,
+        "coal": 2571.86
+      },
+      "clean": {
+        "nonFossilGeneration": 61.94,
+        "nonHydroRenewableGeneration": 52.29,
+        "nonFossilCapacity": 75.44,
+        "nonHydroRenewableCapacity": 71.44
+      },
+      "emission": {
+        "totalEmission": 1.1614,
+        "capturedEmission": 0.1428,
+        "netEmission": 1.0186,
+        "unitEmission": 285.65
+      },
+      "costBySource": {
+        "coal": 487.0203,
+        "hydro": 44.6641,
+        "wind": 371.4846,
+        "pv": 340.6805,
+        "csp": 15.1796,
+        "other": 0.0,
+        "total": 1259.0291
+      },
+      "costByItem": {
+        "operation": 346.2576,
+        "fuel": 274.1815,
+        "depreciation": 452.7231,
+        "finance": 185.8669,
+        "ccus": 0.0,
+        "emission": 27.0221,
+        "total": 1380.9485
+      }
+    },
+    {
+      "year": 2032,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6195.7,
+          "hydro": 980.0,
+          "wind": 8203.9,
+          "pv": 10591.08,
+          "csp": 129.8,
+          "other": 67.3687,
+          "total": 26167.8487
+        },
+        "storage": {
+          "pumpedHydro": 1239.5862,
+          "electrochemical": 2255.409
+        },
+        "withStorage": {
+          "coal": 6195.7,
+          "hydro": 980.0,
+          "wind": 8203.9,
+          "pv": 10591.08,
+          "csp": 129.8,
+          "other": 67.3687,
+          "pumpedHydro": 1239.5862,
+          "electrochemical": 2255.409,
+          "total": 29662.8439
+        }
+      },
+      "generation": {
+        "coal": 1575.4013,
+        "hydro": 392.0,
+        "wind": 1168.1783,
+        "pv": 1132.1769,
+        "csp": 10.7559,
+        "other": 24.4929,
+        "total": 4303.0053
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 23.68,
+          "hydro": 3.75,
+          "wind": 31.35,
+          "pv": 40.47,
+          "csp": 0.5,
+          "other": 0.26
+        },
+        "withStorage": {
+          "coal": 20.89,
+          "hydro": 3.3,
+          "wind": 27.66,
+          "pv": 35.7,
+          "csp": 0.44,
+          "other": 0.23,
+          "pumpedHydro": 4.18,
+          "electrochemical": 7.6
+        }
+      },
+      "generationShare": {
+        "coal": 36.61,
+        "hydro": 9.11,
+        "wind": 27.15,
+        "pv": 26.31,
+        "csp": 0.25,
+        "other": 0.57
+      },
+      "export": {
+        "gansu": 1609.9689,
+        "northwest": 9000.0,
+        "share": 17.8885,
+        "channels": 5.0
+      },
+      "hours": {
+        "all": 1639.25,
+        "coal": 2542.73
+      },
+      "clean": {
+        "nonFossilGeneration": 63.18,
+        "nonHydroRenewableGeneration": 54.02,
+        "nonFossilCapacity": 76.26,
+        "nonHydroRenewableCapacity": 72.51
+      },
+      "emission": {
+        "totalEmission": 1.1805,
+        "capturedEmission": 0.1611,
+        "netEmission": 1.0194,
+        "unitEmission": 275.91
+      },
+      "costBySource": {
+        "coal": 495.7391,
+        "hydro": 44.5107,
+        "wind": 388.745,
+        "pv": 360.4033,
+        "csp": 15.3224,
+        "other": 0.0,
+        "total": 1304.7205
+      },
+      "costByItem": {
+        "operation": 366.7236,
+        "fuel": 278.3819,
+        "depreciation": 471.8031,
+        "finance": 187.8119,
+        "ccus": 0.0,
+        "emission": 35.9081,
+        "total": 1445.9177
+      }
+    },
+    {
+      "year": 2033,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6395.7,
+          "hydro": 980.0,
+          "wind": 8801.29,
+          "pv": 11523.94,
+          "csp": 133.8,
+          "other": 67.3687,
+          "total": 27902.0987
+        },
+        "storage": {
+          "pumpedHydro": 1299.453,
+          "electrochemical": 2439.0312
+        },
+        "withStorage": {
+          "coal": 6395.7,
+          "hydro": 980.0,
+          "wind": 8801.29,
+          "pv": 11523.94,
+          "csp": 133.8,
+          "other": 67.3687,
+          "pumpedHydro": 1299.453,
+          "electrochemical": 2439.0312,
+          "total": 31640.5828
+        }
+      },
+      "generation": {
+        "coal": 1598.2415,
+        "hydro": 392.0,
+        "wind": 1263.7764,
+        "pv": 1236.9955,
+        "csp": 11.4418,
+        "other": 24.4929,
+        "total": 4526.9481
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 22.92,
+          "hydro": 3.51,
+          "wind": 31.54,
+          "pv": 41.3,
+          "csp": 0.48,
+          "other": 0.24
+        },
+        "withStorage": {
+          "coal": 20.21,
+          "hydro": 3.1,
+          "wind": 27.82,
+          "pv": 36.42,
+          "csp": 0.42,
+          "other": 0.21,
+          "pumpedHydro": 4.11,
+          "electrochemical": 7.71
+        }
+      },
+      "generationShare": {
+        "coal": 35.31,
+        "hydro": 8.66,
+        "wind": 27.92,
+        "pv": 27.33,
+        "csp": 0.25,
+        "other": 0.54
+      },
+      "export": {
+        "gansu": 1702.3349,
+        "northwest": 9720.0,
+        "share": 17.5137,
+        "channels": 5.0
+      },
+      "hours": {
+        "all": 1617.57,
+        "coal": 2498.93
+      },
+      "clean": {
+        "nonFossilGeneration": 64.5,
+        "nonHydroRenewableGeneration": 55.8,
+        "nonFossilCapacity": 77.02,
+        "nonHydroRenewableCapacity": 73.5
+      },
+      "emission": {
+        "totalEmission": 1.1963,
+        "capturedEmission": 0.1778,
+        "netEmission": 1.0185,
+        "unitEmission": 265.7
+      },
+      "costBySource": {
+        "coal": 504.2588,
+        "hydro": 44.3749,
+        "wind": 405.3935,
+        "pv": 363.57,
+        "csp": 15.467,
+        "other": 0.0,
+        "total": 1333.0642
+      },
+      "costByItem": {
+        "operation": 389.124,
+        "fuel": 281.8452,
+        "depreciation": 467.8287,
+        "finance": 194.2663,
+        "ccus": 0.0,
+        "emission": 45.8428,
+        "total": 1493.4082
+      }
+    },
+    {
+      "year": 2034,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6495.7,
+          "hydro": 980.0,
+          "wind": 9442.14,
+          "pv": 12538.92,
+          "csp": 137.9,
+          "other": 67.3687,
+          "total": 29662.0287
+        },
+        "storage": {
+          "pumpedHydro": 1362.211,
+          "electrochemical": 2637.732
+        },
+        "withStorage": {
+          "coal": 6495.7,
+          "hydro": 980.0,
+          "wind": 9442.14,
+          "pv": 12538.92,
+          "csp": 137.9,
+          "other": 67.3687,
+          "pumpedHydro": 1362.211,
+          "electrochemical": 2637.732,
+          "total": 33661.9717
+        }
+      },
+      "generation": {
+        "coal": 1615.0989,
+        "hydro": 392.0,
+        "wind": 1367.1919,
+        "pv": 1351.5135,
+        "csp": 12.1694,
+        "other": 24.4929,
+        "total": 4762.4666
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.9,
+          "hydro": 3.3,
+          "wind": 31.83,
+          "pv": 42.27,
+          "csp": 0.46,
+          "other": 0.23
+        },
+        "withStorage": {
+          "coal": 19.3,
+          "hydro": 2.91,
+          "wind": 28.05,
+          "pv": 37.25,
+          "csp": 0.41,
+          "other": 0.2,
+          "pumpedHydro": 4.05,
+          "electrochemical": 7.84
+        }
+      },
+      "generationShare": {
+        "coal": 33.91,
+        "hydro": 8.23,
+        "wind": 28.71,
+        "pv": 28.38,
+        "csp": 0.26,
+        "other": 0.51
+      },
+      "export": {
+        "gansu": 1800.0,
+        "northwest": 10440.0,
+        "share": 17.2414,
+        "channels": 5.0
+      },
+      "hours": {
+        "all": 1600.96,
+        "coal": 2486.41
+      },
+      "clean": {
+        "nonFossilGeneration": 65.91,
+        "nonHydroRenewableGeneration": 57.64,
+        "nonFossilCapacity": 78.05,
+        "nonHydroRenewableCapacity": 74.74
+      },
+      "emission": {
+        "totalEmission": 1.2082,
+        "capturedEmission": 0.1963,
+        "netEmission": 1.0119,
+        "unitEmission": 255.0
+      },
+      "costBySource": {
+        "coal": 507.7713,
+        "hydro": 44.374,
+        "wind": 418.417,
+        "pv": 384.9594,
+        "csp": 15.6136,
+        "other": 0.0,
+        "total": 1371.1353
+      },
+      "costByItem": {
+        "operation": 410.9495,
+        "fuel": 284.5289,
+        "depreciation": 476.0325,
+        "finance": 199.6242,
+        "ccus": 0.0,
+        "emission": 57.0703,
+        "total": 1552.8666
+      }
+    },
+    {
+      "year": 2035,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6660.3,
+          "hydro": 980.0,
+          "wind": 10129.69,
+          "pv": 13643.38,
+          "csp": 142.1,
+          "other": 67.3687,
+          "total": 31622.8387
+        },
+        "storage": {
+          "pumpedHydro": 1428.0,
+          "electrochemical": 2852.76
+        },
+        "withStorage": {
+          "coal": 6660.3,
+          "hydro": 980.0,
+          "wind": 10129.69,
+          "pv": 13643.38,
+          "csp": 142.1,
+          "other": 67.3687,
+          "pumpedHydro": 1428.0,
+          "electrochemical": 2852.76,
+          "total": 35903.5987
+        }
+      },
+      "generation": {
+        "coal": 1555.1513,
+        "hydro": 392.0,
+        "wind": 1479.0755,
+        "pv": 1476.6424,
+        "csp": 12.9409,
+        "other": 24.4929,
+        "total": 4940.303
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.06,
+          "hydro": 3.1,
+          "wind": 32.03,
+          "pv": 43.14,
+          "csp": 0.45,
+          "other": 0.21
+        },
+        "withStorage": {
+          "coal": 18.55,
+          "hydro": 2.73,
+          "wind": 28.21,
+          "pv": 38.0,
+          "csp": 0.4,
+          "other": 0.19,
+          "pumpedHydro": 3.98,
+          "electrochemical": 7.95
+        }
+      },
+      "generationShare": {
+        "coal": 31.48,
+        "hydro": 7.93,
+        "wind": 29.94,
+        "pv": 29.89,
+        "csp": 0.26,
+        "other": 0.5
+      },
+      "export": {
+        "gansu": 1833.1189,
+        "northwest": 11160.0,
+        "share": 16.4258,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1557.83,
+        "coal": 2334.96
+      },
+      "clean": {
+        "nonFossilGeneration": 68.36,
+        "nonHydroRenewableGeneration": 60.39,
+        "nonFossilCapacity": 78.89,
+        "nonHydroRenewableCapacity": 75.79
+      },
+      "emission": {
+        "totalEmission": 1.1615,
+        "capturedEmission": 0.2024,
+        "netEmission": 0.9591,
+        "unitEmission": 236.28
+      },
+      "costBySource": {
+        "coal": 500.3689,
+        "hydro": 44.4101,
+        "wind": 435.2835,
+        "pv": 408.9931,
+        "csp": 15.7623,
+        "other": 0.0,
+        "total": 1404.8179
+      },
+      "costByItem": {
+        "operation": 435.9022,
+        "fuel": 273.2164,
+        "depreciation": 490.8127,
+        "finance": 204.8866,
+        "ccus": 0.0,
+        "emission": 65.2706,
+        "total": 1597.0179
+      }
+    },
+    {
+      "year": 2036,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6924.3,
+          "hydro": 980.0,
+          "wind": 10277.42,
+          "pv": 13902.34,
+          "csp": 239.9,
+          "other": 67.3687,
+          "total": 32391.3287
+        },
+        "storage": {
+          "pumpedHydro": 1477.5455,
+          "electrochemical": 2903.7323
+        },
+        "withStorage": {
+          "coal": 6924.3,
+          "hydro": 980.0,
+          "wind": 10277.42,
+          "pv": 13902.34,
+          "csp": 239.9,
+          "other": 67.3687,
+          "pumpedHydro": 1477.5455,
+          "electrochemical": 2903.7323,
+          "total": 36772.6065
+        }
+      },
+      "generation": {
+        "coal": 1529.1991,
+        "hydro": 392.0,
+        "wind": 1513.2596,
+        "pv": 1510.8953,
+        "csp": 22.5459,
+        "other": 24.4929,
+        "total": 4992.3928
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.38,
+          "hydro": 3.03,
+          "wind": 31.73,
+          "pv": 42.92,
+          "csp": 0.74,
+          "other": 0.21
+        },
+        "withStorage": {
+          "coal": 18.83,
+          "hydro": 2.67,
+          "wind": 27.95,
+          "pv": 37.81,
+          "csp": 0.65,
+          "other": 0.18,
+          "pumpedHydro": 4.02,
+          "electrochemical": 7.9
+        }
+      },
+      "generationShare": {
+        "coal": 30.63,
+        "hydro": 7.85,
+        "wind": 30.31,
+        "pv": 30.26,
+        "csp": 0.45,
+        "other": 0.49
+      },
+      "export": {
+        "gansu": 1866.8471,
+        "northwest": 11880.0,
+        "share": 15.7142,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1536.91,
+        "coal": 2208.45
+      },
+      "clean": {
+        "nonFossilGeneration": 69.22,
+        "nonHydroRenewableGeneration": 61.33,
+        "nonFossilCapacity": 78.58,
+        "nonHydroRenewableCapacity": 75.55
+      },
+      "emission": {
+        "totalEmission": 1.1395,
+        "capturedEmission": 0.2085,
+        "netEmission": 0.931,
+        "unitEmission": 229.37
+      },
+      "costBySource": {
+        "coal": 502.795,
+        "hydro": 44.4702,
+        "wind": 431.3915,
+        "pv": 407.04,
+        "csp": 26.9903,
+        "other": 0.0,
+        "total": 1412.687
+      },
+      "costByItem": {
+        "operation": 450.4601,
+        "fuel": 267.6766,
+        "depreciation": 500.6097,
+        "finance": 193.9406,
+        "ccus": 0.0,
+        "emission": 75.294,
+        "total": 1617.1588
+      }
+    },
+    {
+      "year": 2037,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7224.3,
+          "hydro": 980.0,
+          "wind": 10426.07,
+          "pv": 14164.56,
+          "csp": 333.5,
+          "other": 67.3687,
+          "total": 33195.7987
+        },
+        "storage": {
+          "pumpedHydro": 1528.8101,
+          "electrochemical": 2955.6392
+        },
+        "withStorage": {
+          "coal": 7224.3,
+          "hydro": 980.0,
+          "wind": 10426.07,
+          "pv": 14164.56,
+          "csp": 333.5,
+          "other": 67.3687,
+          "pumpedHydro": 1528.8101,
+          "electrochemical": 2955.6392,
+          "total": 37680.248
+        }
+      },
+      "generation": {
+        "coal": 1502.5898,
+        "hydro": 392.0,
+        "wind": 1548.0504,
+        "pv": 1545.7623,
+        "csp": 32.3445,
+        "other": 24.4929,
+        "total": 5045.2399
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.76,
+          "hydro": 2.95,
+          "wind": 31.41,
+          "pv": 42.67,
+          "csp": 1.0,
+          "other": 0.2
+        },
+        "withStorage": {
+          "coal": 19.17,
+          "hydro": 2.6,
+          "wind": 27.67,
+          "pv": 37.59,
+          "csp": 0.89,
+          "other": 0.18,
+          "pumpedHydro": 4.06,
+          "electrochemical": 7.84
+        }
+      },
+      "generationShare": {
+        "coal": 29.78,
+        "hydro": 7.77,
+        "wind": 30.68,
+        "pv": 30.64,
+        "csp": 0.64,
+        "other": 0.49
+      },
+      "export": {
+        "gansu": 1901.1959,
+        "northwest": 12600.0,
+        "share": 15.0889,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1515.54,
+        "coal": 2079.91
+      },
+      "clean": {
+        "nonFossilGeneration": 70.07,
+        "nonHydroRenewableGeneration": 62.26,
+        "nonFossilCapacity": 78.19,
+        "nonHydroRenewableCapacity": 75.23
+      },
+      "emission": {
+        "totalEmission": 1.1177,
+        "capturedEmission": 0.2124,
+        "netEmission": 0.9053,
+        "unitEmission": 222.62
+      },
+      "costBySource": {
+        "coal": 506.1757,
+        "hydro": 44.5493,
+        "wind": 428.2785,
+        "pv": 405.1088,
+        "csp": 37.5475,
+        "other": 0.0,
+        "total": 1421.6598
+      },
+      "costByItem": {
+        "operation": 465.9454,
+        "fuel": 262.2764,
+        "depreciation": 510.8582,
+        "finance": 182.58,
+        "ccus": 0.0,
+        "emission": 85.8573,
+        "total": 1637.6398
+      }
+    },
+    {
+      "year": 2038,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7424.3,
+          "hydro": 980.0,
+          "wind": 10575.67,
+          "pv": 14430.03,
+          "csp": 423.2,
+          "other": 67.3687,
+          "total": 33900.5687
+        },
+        "storage": {
+          "pumpedHydro": 1581.8533,
+          "electrochemical": 3008.5003
+        },
+        "withStorage": {
+          "coal": 7424.3,
+          "hydro": 980.0,
+          "wind": 10575.67,
+          "pv": 14430.03,
+          "csp": 423.2,
+          "other": 67.3687,
+          "pumpedHydro": 1581.8533,
+          "electrochemical": 3008.5003,
+          "total": 38490.9223
+        }
+      },
+      "generation": {
+        "coal": 1475.2534,
+        "hydro": 392.0,
+        "wind": 1583.4613,
+        "pv": 1581.2479,
+        "csp": 42.3561,
+        "other": 24.4929,
+        "total": 5098.8116
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.9,
+          "hydro": 2.89,
+          "wind": 31.2,
+          "pv": 42.57,
+          "csp": 1.25,
+          "other": 0.2
+        },
+        "withStorage": {
+          "coal": 19.29,
+          "hydro": 2.55,
+          "wind": 27.48,
+          "pv": 37.49,
+          "csp": 1.1,
+          "other": 0.18,
+          "pumpedHydro": 4.11,
+          "electrochemical": 7.82
+        }
+      },
+      "generationShare": {
+        "coal": 28.93,
+        "hydro": 7.69,
+        "wind": 31.06,
+        "pv": 31.01,
+        "csp": 0.83,
+        "other": 0.48
+      },
+      "export": {
+        "gansu": 1936.1768,
+        "northwest": 13320.0,
+        "share": 14.5359,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1499.8,
+        "coal": 1987.06
+      },
+      "clean": {
+        "nonFossilGeneration": 70.93,
+        "nonHydroRenewableGeneration": 63.2,
+        "nonFossilCapacity": 78.06,
+        "nonHydroRenewableCapacity": 75.16
+      },
+      "emission": {
+        "totalEmission": 1.0961,
+        "capturedEmission": 0.2029,
+        "netEmission": 0.8932,
+        "unitEmission": 216.01
+      },
+      "costBySource": {
+        "coal": 505.4118,
+        "hydro": 44.6403,
+        "wind": 425.5986,
+        "pv": 404.4875,
+        "csp": 47.4028,
+        "other": 0.0,
+        "total": 1427.541
+      },
+      "costByItem": {
+        "operation": 479.4461,
+        "fuel": 257.0307,
+        "depreciation": 521.8532,
+        "finance": 169.2109,
+        "ccus": 0.0,
+        "emission": 97.1682,
+        "total": 1649.0227
+      }
+    },
+    {
+      "year": 2039,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7591.3,
+          "hydro": 980.0,
+          "wind": 10726.31,
+          "pv": 14698.91,
+          "csp": 508.9,
+          "other": 67.3687,
+          "total": 34572.7887
+        },
+        "storage": {
+          "pumpedHydro": 1636.7369,
+          "electrochemical": 3062.3356
+        },
+        "withStorage": {
+          "coal": 7591.3,
+          "hydro": 980.0,
+          "wind": 10726.31,
+          "pv": 14698.91,
+          "csp": 508.9,
+          "other": 67.3687,
+          "pumpedHydro": 1636.7369,
+          "electrochemical": 3062.3356,
+          "total": 39271.8611
+        }
+      },
+      "generation": {
+        "coal": 1447.2161,
+        "hydro": 392.0,
+        "wind": 1619.5153,
+        "pv": 1617.3759,
+        "csp": 52.5617,
+        "other": 24.4929,
+        "total": 5153.1619
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.96,
+          "hydro": 2.83,
+          "wind": 31.03,
+          "pv": 42.52,
+          "csp": 1.47,
+          "other": 0.19
+        },
+        "withStorage": {
+          "coal": 19.33,
+          "hydro": 2.5,
+          "wind": 27.31,
+          "pv": 37.43,
+          "csp": 1.3,
+          "other": 0.17,
+          "pumpedHydro": 4.17,
+          "electrochemical": 7.8
+        }
+      },
+      "generationShare": {
+        "coal": 28.08,
+        "hydro": 7.61,
+        "wind": 31.43,
+        "pv": 31.39,
+        "csp": 1.02,
+        "other": 0.48
+      },
+      "export": {
+        "gansu": 1971.8012,
+        "northwest": 14040.0,
+        "share": 14.0442,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1486.34,
+        "coal": 1906.41
+      },
+      "clean": {
+        "nonFossilGeneration": 71.78,
+        "nonHydroRenewableGeneration": 64.14,
+        "nonFossilCapacity": 78.0,
+        "nonHydroRenewableCapacity": 75.16
+      },
+      "emission": {
+        "totalEmission": 1.0736,
+        "capturedEmission": 0.1947,
+        "netEmission": 0.8789,
+        "unitEmission": 209.33
+      },
+      "costBySource": {
+        "coal": 503.3873,
+        "hydro": 44.7312,
+        "wind": 423.3728,
+        "pv": 404.4715,
+        "csp": 56.5707,
+        "other": 0.0,
+        "total": 1432.5335
+      },
+      "costByItem": {
+        "operation": 492.4046,
+        "fuel": 251.5387,
+        "depreciation": 531.5054,
+        "finance": 157.0847,
+        "ccus": 0.0,
+        "emission": 108.8611,
+        "total": 1660.6628
+      }
+    },
+    {
+      "year": 2040,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7758.8,
+          "hydro": 980.0,
+          "wind": 10877.91,
+          "pv": 14971.23,
+          "csp": 591.1,
+          "other": 67.3687,
+          "total": 35246.4087
+        },
+        "storage": {
+          "pumpedHydro": 1693.5247,
+          "electrochemical": 3117.1655
+        },
+        "withStorage": {
+          "coal": 7758.8,
+          "hydro": 980.0,
+          "wind": 10877.91,
+          "pv": 14971.23,
+          "csp": 591.1,
+          "other": 67.3687,
+          "pumpedHydro": 1693.5247,
+          "electrochemical": 3117.1655,
+          "total": 40057.0989
+        }
+      },
+      "generation": {
+        "coal": 1418.4038,
+        "hydro": 392.0,
+        "wind": 1656.2097,
+        "pv": 1654.1559,
+        "csp": 63.0034,
+        "other": 24.4929,
+        "total": 5208.2657
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 22.01,
+          "hydro": 2.78,
+          "wind": 30.86,
+          "pv": 42.48,
+          "csp": 1.68,
+          "other": 0.19
+        },
+        "withStorage": {
+          "coal": 19.37,
+          "hydro": 2.45,
+          "wind": 27.16,
+          "pv": 37.37,
+          "csp": 1.48,
+          "other": 0.17,
+          "pumpedHydro": 4.23,
+          "electrochemical": 7.78
+        }
+      },
+      "generationShare": {
+        "coal": 27.23,
+        "hydro": 7.53,
+        "wind": 31.8,
+        "pv": 31.76,
+        "csp": 1.21,
+        "other": 0.47
+      },
+      "export": {
+        "gansu": 2008.0811,
+        "northwest": 14760.0,
+        "share": 13.6049,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1473.54,
+        "coal": 1828.12
+      },
+      "clean": {
+        "nonFossilGeneration": 72.64,
+        "nonHydroRenewableGeneration": 65.08,
+        "nonFossilCapacity": 77.94,
+        "nonHydroRenewableCapacity": 75.16
+      },
+      "emission": {
+        "totalEmission": 1.0506,
+        "capturedEmission": 0.1867,
+        "netEmission": 0.8639,
+        "unitEmission": 202.67
+      },
+      "costBySource": {
+        "coal": 501.1763,
+        "hydro": 44.8183,
+        "wind": 421.4892,
+        "pv": 405.1431,
+        "csp": 65.2384,
+        "other": 0.0,
+        "total": 1437.8653
+      },
+      "costByItem": {
+        "operation": 505.5529,
+        "fuel": 245.9478,
+        "depreciation": 540.3276,
+        "finance": 146.0369,
+        "ccus": 0.0,
+        "emission": 120.8826,
+        "total": 1673.118
+      }
+    },
+    {
+      "year": 2041,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7926.3,
+          "hydro": 980.0,
+          "wind": 11072.74,
+          "pv": 15305.3,
+          "csp": 672.2,
+          "other": 67.3687,
+          "total": 36023.9087
+        },
+        "storage": {
+          "pumpedHydro": 1752.2828,
+          "electrochemical": 3196.1666
+        },
+        "withStorage": {
+          "coal": 7926.3,
+          "hydro": 980.0,
+          "wind": 11072.74,
+          "pv": 15305.3,
+          "csp": 672.2,
+          "other": 67.3687,
+          "pumpedHydro": 1752.2828,
+          "electrochemical": 3196.1666,
+          "total": 40972.3581
+        }
+      },
+      "generation": {
+        "coal": 1395.7094,
+        "hydro": 392.0,
+        "wind": 1700.0437,
+        "pv": 1698.0635,
+        "csp": 73.938,
+        "other": 24.4929,
+        "total": 5284.2475
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 22.0,
+          "hydro": 2.72,
+          "wind": 30.74,
+          "pv": 42.49,
+          "csp": 1.87,
+          "other": 0.19
+        },
+        "withStorage": {
+          "coal": 19.35,
+          "hydro": 2.39,
+          "wind": 27.02,
+          "pv": 37.36,
+          "csp": 1.64,
+          "other": 0.16,
+          "pumpedHydro": 4.28,
+          "electrochemical": 7.8
+        }
+      },
+      "generationShare": {
+        "coal": 26.41,
+        "hydro": 7.42,
+        "wind": 32.17,
+        "pv": 32.13,
+        "csp": 1.4,
+        "other": 0.46
+      },
+      "export": {
+        "gansu": 2045.0286,
+        "northwest": 15480.0,
+        "share": 13.2108,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1462.81,
+        "coal": 1760.86
+      },
+      "clean": {
+        "nonFossilGeneration": 73.46,
+        "nonHydroRenewableGeneration": 66.01,
+        "nonFossilCapacity": 77.96,
+        "nonHydroRenewableCapacity": 75.23
+      },
+      "emission": {
+        "totalEmission": 1.0322,
+        "capturedEmission": 0.1798,
+        "netEmission": 0.8524,
+        "unitEmission": 196.24
+      },
+      "costBySource": {
+        "coal": 500.4047,
+        "hydro": 44.9102,
+        "wind": 422.0162,
+        "pv": 408.1528,
+        "csp": 73.6363,
+        "other": 0.0,
+        "total": 1449.1202
+      },
+      "costByItem": {
+        "operation": 520.1014,
+        "fuel": 241.4478,
+        "depreciation": 545.4403,
+        "finance": 142.1306,
+        "ccus": 0.0,
+        "emission": 133.8346,
+        "total": 1693.1168
+      }
+    },
+    {
+      "year": 2042,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8121.3,
+          "hydro": 980.0,
+          "wind": 11269.64,
+          "pv": 15644.77,
+          "csp": 750.4,
+          "other": 67.3687,
+          "total": 36833.4787
+        },
+        "storage": {
+          "pumpedHydro": 1813.0795,
+          "electrochemical": 3277.0495
+        },
+        "withStorage": {
+          "coal": 8121.3,
+          "hydro": 980.0,
+          "wind": 11269.64,
+          "pv": 15644.77,
+          "csp": 750.4,
+          "other": 67.3687,
+          "pumpedHydro": 1813.0795,
+          "electrochemical": 3277.0495,
+          "total": 41923.6077
+        }
+      },
+      "generation": {
+        "coal": 1371.939,
+        "hydro": 392.0,
+        "wind": 1744.8181,
+        "pv": 1742.9076,
+        "csp": 85.1782,
+        "other": 24.4929,
+        "total": 5361.3358
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 22.05,
+          "hydro": 2.66,
+          "wind": 30.6,
+          "pv": 42.47,
+          "csp": 2.04,
+          "other": 0.18
+        },
+        "withStorage": {
+          "coal": 19.37,
+          "hydro": 2.34,
+          "wind": 26.88,
+          "pv": 37.32,
+          "csp": 1.79,
+          "other": 0.16,
+          "pumpedHydro": 4.32,
+          "electrochemical": 7.82
+        }
+      },
+      "generationShare": {
+        "coal": 25.59,
+        "hydro": 7.31,
+        "wind": 32.54,
+        "pv": 32.51,
+        "csp": 1.59,
+        "other": 0.46
+      },
+      "export": {
+        "gansu": 2082.6558,
+        "northwest": 15840.0,
+        "share": 13.1481,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1451.57,
+        "coal": 1689.31
+      },
+      "clean": {
+        "nonFossilGeneration": 74.29,
+        "nonHydroRenewableGeneration": 66.95,
+        "nonFossilCapacity": 77.91,
+        "nonHydroRenewableCapacity": 75.25
+      },
+      "emission": {
+        "totalEmission": 1.0133,
+        "capturedEmission": 0.1725,
+        "netEmission": 0.8408,
+        "unitEmission": 189.87
+      },
+      "costBySource": {
+        "coal": 500.7782,
+        "hydro": 45.0161,
+        "wind": 423.5637,
+        "pv": 411.6109,
+        "csp": 81.5739,
+        "other": 0.0,
+        "total": 1462.5428
+      },
+      "costByItem": {
+        "operation": 535.4982,
+        "fuel": 236.8953,
+        "depreciation": 550.918,
+        "finance": 139.2314,
+        "ccus": 0.0,
+        "emission": 147.0879,
+        "total": 1715.3167
+      }
+    },
+    {
+      "year": 2043,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8230.8,
+          "hydro": 980.0,
+          "wind": 11468.6,
+          "pv": 15989.8,
+          "csp": 825.7,
+          "other": 67.3687,
+          "total": 37562.2687
+        },
+        "storage": {
+          "pumpedHydro": 1875.9857,
+          "electrochemical": 3347.6432
+        },
+        "withStorage": {
+          "coal": 8230.8,
+          "hydro": 980.0,
+          "wind": 11468.6,
+          "pv": 15989.8,
+          "csp": 825.7,
+          "other": 67.3687,
+          "pumpedHydro": 1875.9857,
+          "electrochemical": 3347.6432,
+          "total": 42785.8975
+        }
+      },
+      "generation": {
+        "coal": 1347.244,
+        "hydro": 392.0,
+        "wind": 1790.5468,
+        "pv": 1788.7158,
+        "csp": 96.7218,
+        "other": 24.4929,
+        "total": 5439.7213
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.91,
+          "hydro": 2.61,
+          "wind": 30.53,
+          "pv": 42.57,
+          "csp": 2.2,
+          "other": 0.18
+        },
+        "withStorage": {
+          "coal": 19.24,
+          "hydro": 2.29,
+          "wind": 26.8,
+          "pv": 37.37,
+          "csp": 1.93,
+          "other": 0.16,
+          "pumpedHydro": 4.38,
+          "electrochemical": 7.82
+        }
+      },
+      "generationShare": {
+        "coal": 24.77,
+        "hydro": 7.21,
+        "wind": 32.92,
+        "pv": 32.88,
+        "csp": 1.78,
+        "other": 0.45
+      },
+      "export": {
+        "gansu": 2120.9754,
+        "northwest": 16200.0,
+        "share": 13.0924,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1444.26,
+        "coal": 1636.83
+      },
+      "clean": {
+        "nonFossilGeneration": 75.12,
+        "nonHydroRenewableGeneration": 67.88,
+        "nonFossilCapacity": 78.05,
+        "nonHydroRenewableCapacity": 75.43
+      },
+      "emission": {
+        "totalEmission": 0.993,
+        "capturedEmission": 0.1672,
+        "netEmission": 0.8258,
+        "unitEmission": 183.37
+      },
+      "costBySource": {
+        "coal": 498.1737,
+        "hydro": 45.1219,
+        "wind": 426.6671,
+        "pv": 416.3689,
+        "csp": 89.0795,
+        "other": 0.0,
+        "total": 1475.4111
+      },
+      "costByItem": {
+        "operation": 549.3058,
+        "fuel": 231.8863,
+        "depreciation": 548.1655,
+        "finance": 146.0535,
+        "ccus": 0.0,
+        "emission": 160.4814,
+        "total": 1738.2953
+      }
+    },
+    {
+      "year": 2044,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8397.8,
+          "hydro": 980.0,
+          "wind": 11669.7,
+          "pv": 16340.4,
+          "csp": 898.5,
+          "other": 67.3687,
+          "total": 38353.7687
+        },
+        "storage": {
+          "pumpedHydro": 1941.0744,
+          "electrochemical": 3419.6696
+        },
+        "withStorage": {
+          "coal": 8397.8,
+          "hydro": 980.0,
+          "wind": 11669.7,
+          "pv": 16340.4,
+          "csp": 898.5,
+          "other": 67.3687,
+          "pumpedHydro": 1941.0744,
+          "electrochemical": 3419.6696,
+          "total": 43714.5127
+        }
+      },
+      "generation": {
+        "coal": 1321.321,
+        "hydro": 392.0,
+        "wind": 1837.2577,
+        "pv": 1835.4987,
+        "csp": 108.6142,
+        "other": 24.4929,
+        "total": 5519.1845
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.9,
+          "hydro": 2.56,
+          "wind": 30.43,
+          "pv": 42.6,
+          "csp": 2.34,
+          "other": 0.18
+        },
+        "withStorage": {
+          "coal": 19.21,
+          "hydro": 2.24,
+          "wind": 26.7,
+          "pv": 37.38,
+          "csp": 2.06,
+          "other": 0.15,
+          "pumpedHydro": 4.44,
+          "electrochemical": 7.82
+        }
+      },
+      "generationShare": {
+        "coal": 23.94,
+        "hydro": 7.1,
+        "wind": 33.29,
+        "pv": 33.26,
+        "csp": 1.97,
+        "other": 0.44
+      },
+      "export": {
+        "gansu": 2160.0,
+        "northwest": 16560.0,
+        "share": 13.0435,
+        "channels": 6.0
+      },
+      "hours": {
+        "all": 1435.15,
+        "coal": 1573.41
+      },
+      "clean": {
+        "nonFossilGeneration": 75.95,
+        "nonHydroRenewableGeneration": 68.82,
+        "nonFossilCapacity": 78.07,
+        "nonHydroRenewableCapacity": 75.51
+      },
+      "emission": {
+        "totalEmission": 0.9724,
+        "capturedEmission": 0.1607,
+        "netEmission": 0.8117,
+        "unitEmission": 176.97
+      },
+      "costBySource": {
+        "coal": 497.6752,
+        "hydro": 45.2277,
+        "wind": 434.3718,
+        "pv": 422.9225,
+        "csp": 96.2265,
+        "other": 0.0,
+        "total": 1496.4237
+      },
+      "costByItem": {
+        "operation": 564.6289,
+        "fuel": 226.9108,
+        "depreciation": 555.5017,
+        "finance": 149.3823,
+        "ccus": 0.0,
+        "emission": 174.0733,
+        "total": 1768.9322
+      }
+    },
+    {
+      "year": 2045,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8532.3,
+          "hydro": 980.0,
+          "wind": 11859.8,
+          "pv": 16678.4,
+          "csp": 967.4,
+          "other": 67.3687,
+          "total": 39085.2687
+        },
+        "storage": {
+          "pumpedHydro": 2008.4214,
+          "electrochemical": 3493.1573
+        },
+        "withStorage": {
+          "coal": 8532.3,
+          "hydro": 980.0,
+          "wind": 11859.8,
+          "pv": 16678.4,
+          "csp": 967.4,
+          "other": 67.3687,
+          "pumpedHydro": 2008.4214,
+          "electrochemical": 3493.1573,
+          "total": 44586.8474
+        }
+      },
+      "generation": {
+        "coal": 1292.5622,
+        "hydro": 392.0,
+        "wind": 1882.8811,
+        "pv": 1881.2171,
+        "csp": 120.6815,
+        "other": 24.4929,
+        "total": 5593.8348
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.83,
+          "hydro": 2.51,
+          "wind": 30.34,
+          "pv": 42.67,
+          "csp": 2.48,
+          "other": 0.17
+        },
+        "withStorage": {
+          "coal": 19.14,
+          "hydro": 2.2,
+          "wind": 26.6,
+          "pv": 37.41,
+          "csp": 2.17,
+          "other": 0.15,
+          "pumpedHydro": 4.5,
+          "electrochemical": 7.83
+        }
+      },
+      "generationShare": {
+        "coal": 23.11,
+        "hydro": 7.01,
+        "wind": 33.66,
+        "pv": 33.63,
+        "csp": 2.16,
+        "other": 0.44
+      },
+      "export": {
+        "gansu": 2193.5545,
+        "northwest": 16740.0,
+        "share": 13.1037,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1427.38,
+        "coal": 1514.9
+      },
+      "clean": {
+        "nonFossilGeneration": 76.79,
+        "nonHydroRenewableGeneration": 69.75,
+        "nonFossilCapacity": 78.13,
+        "nonHydroRenewableCapacity": 75.62
+      },
+      "emission": {
+        "totalEmission": 0.9495,
+        "capturedEmission": 0.1547,
+        "netEmission": 0.7948,
+        "unitEmission": 170.49
+      },
+      "costBySource": {
+        "coal": 495.8256,
+        "hydro": 45.3336,
+        "wind": 444.4174,
+        "pv": 429.6303,
+        "csp": 102.8749,
+        "other": 0.0,
+        "total": 1518.0818
+      },
+      "costByItem": {
+        "operation": 579.114,
+        "fuel": 221.3656,
+        "depreciation": 560.5697,
+        "finance": 157.0325,
+        "ccus": 0.0,
+        "emission": 187.367,
+        "total": 1800.2236
+      }
+    },
+    {
+      "year": 2046,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8456.8,
+          "hydro": 980.0,
+          "wind": 12046.5,
+          "pv": 17014.1,
+          "csp": 1033.0,
+          "other": 67.3687,
+          "total": 39597.7687
+        },
+        "storage": {
+          "pumpedHydro": 2078.1051,
+          "electrochemical": 3564.9163
+        },
+        "withStorage": {
+          "coal": 8456.8,
+          "hydro": 980.0,
+          "wind": 12046.5,
+          "pv": 17014.1,
+          "csp": 1033.0,
+          "other": 67.3687,
+          "pumpedHydro": 2078.1051,
+          "electrochemical": 3564.9163,
+          "total": 45240.7901
+        }
+      },
+      "generation": {
+        "coal": 1261.8006,
+        "hydro": 392.0,
+        "wind": 1928.5972,
+        "pv": 1927.0217,
+        "csp": 132.9846,
+        "other": 24.4929,
+        "total": 5666.897
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 21.36,
+          "hydro": 2.47,
+          "wind": 30.42,
+          "pv": 42.97,
+          "csp": 2.61,
+          "other": 0.17
+        },
+        "withStorage": {
+          "coal": 18.69,
+          "hydro": 2.17,
+          "wind": 26.63,
+          "pv": 37.61,
+          "csp": 2.28,
+          "other": 0.15,
+          "pumpedHydro": 4.59,
+          "electrochemical": 7.88
+        }
+      },
+      "generationShare": {
+        "coal": 22.27,
+        "hydro": 6.92,
+        "wind": 34.03,
+        "pv": 34.0,
+        "csp": 2.35,
+        "other": 0.43
+      },
+      "export": {
+        "gansu": 2227.6303,
+        "northwest": 16920.0,
+        "share": 13.1657,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1427.36,
+        "coal": 1492.05
+      },
+      "clean": {
+        "nonFossilGeneration": 77.64,
+        "nonHydroRenewableGeneration": 70.69,
+        "nonFossilCapacity": 78.61,
+        "nonHydroRenewableCapacity": 76.13
+      },
+      "emission": {
+        "totalEmission": 0.9263,
+        "capturedEmission": 0.1524,
+        "netEmission": 0.7739,
+        "unitEmission": 164.17
+      },
+      "costBySource": {
+        "coal": 485.7729,
+        "hydro": 45.4394,
+        "wind": 450.0617,
+        "pv": 436.5623,
+        "csp": 107.026,
+        "other": 0.0,
+        "total": 1524.8623
+      },
+      "costByItem": {
+        "operation": 589.1488,
+        "fuel": 215.8498,
+        "depreciation": 563.0067,
+        "finance": 156.857,
+        "ccus": 0.0,
+        "emission": 200.772,
+        "total": 1818.9796
+      }
+    },
+    {
+      "year": 2047,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8296.8,
+          "hydro": 980.0,
+          "wind": 12234.8,
+          "pv": 17354.6,
+          "csp": 1096.1,
+          "other": 67.3687,
+          "total": 40029.6687
+        },
+        "storage": {
+          "pumpedHydro": 2150.2065,
+          "electrochemical": 3638.0448
+        },
+        "withStorage": {
+          "coal": 8296.8,
+          "hydro": 980.0,
+          "wind": 12234.8,
+          "pv": 17354.6,
+          "csp": 1096.1,
+          "other": 67.3687,
+          "pumpedHydro": 2150.2065,
+          "electrochemical": 3638.0448,
+          "total": 45817.92
+        }
+      },
+      "generation": {
+        "coal": 1230.0606,
+        "hydro": 392.0,
+        "wind": 1975.2072,
+        "pv": 1973.7192,
+        "csp": 145.6189,
+        "other": 24.4929,
+        "total": 5741.0988
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 20.73,
+          "hydro": 2.45,
+          "wind": 30.56,
+          "pv": 43.35,
+          "csp": 2.74,
+          "other": 0.17
+        },
+        "withStorage": {
+          "coal": 18.11,
+          "hydro": 2.14,
+          "wind": 26.7,
+          "pv": 37.88,
+          "csp": 2.39,
+          "other": 0.15,
+          "pumpedHydro": 4.69,
+          "electrochemical": 7.94
+        }
+      },
+      "generationShare": {
+        "coal": 21.43,
+        "hydro": 6.83,
+        "wind": 34.4,
+        "pv": 34.38,
+        "csp": 2.54,
+        "other": 0.43
+      },
+      "export": {
+        "gansu": 2262.2354,
+        "northwest": 17280.0,
+        "share": 13.0916,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1430.5,
+        "coal": 1482.57
+      },
+      "clean": {
+        "nonFossilGeneration": 78.48,
+        "nonHydroRenewableGeneration": 71.63,
+        "nonFossilCapacity": 79.24,
+        "nonHydroRenewableCapacity": 76.79
+      },
+      "emission": {
+        "totalEmission": 0.9019,
+        "capturedEmission": 0.1514,
+        "netEmission": 0.7505,
+        "unitEmission": 157.77
+      },
+      "costBySource": {
+        "coal": 472.8509,
+        "hydro": 45.5492,
+        "wind": 456.784,
+        "pv": 444.1382,
+        "csp": 112.9454,
+        "other": 0.0,
+        "total": 1532.2677
+      },
+      "costByItem": {
+        "operation": 597.636,
+        "fuel": 209.9076,
+        "depreciation": 566.0476,
+        "finance": 158.6765,
+        "ccus": 0.0,
+        "emission": 213.8068,
+        "total": 1838.8265
+      }
+    },
+    {
+      "year": 2048,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 8144.8,
+          "hydro": 980.0,
+          "wind": 12424.5,
+          "pv": 17699.8,
+          "csp": 1156.4,
+          "other": 67.3687,
+          "total": 40472.8687
+        },
+        "storage": {
+          "pumpedHydro": 2224.8095,
+          "electrochemical": 3712.5681
+        },
+        "withStorage": {
+          "coal": 8144.8,
+          "hydro": 980.0,
+          "wind": 12424.5,
+          "pv": 17699.8,
+          "csp": 1156.4,
+          "other": 67.3687,
+          "pumpedHydro": 2224.8095,
+          "electrochemical": 3712.5681,
+          "total": 46410.2464
+        }
+      },
+      "generation": {
+        "coal": 1197.2004,
+        "hydro": 392.0,
+        "wind": 2022.6923,
+        "pv": 2021.3067,
+        "csp": 158.5411,
+        "other": 24.4929,
+        "total": 5816.2334
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 20.12,
+          "hydro": 2.42,
+          "wind": 30.7,
+          "pv": 43.73,
+          "csp": 2.86,
+          "other": 0.17
+        },
+        "withStorage": {
+          "coal": 17.55,
+          "hydro": 2.11,
+          "wind": 26.77,
+          "pv": 38.14,
+          "csp": 2.49,
+          "other": 0.15,
+          "pumpedHydro": 4.79,
+          "electrochemical": 8.0
+        }
+      },
+      "generationShare": {
+        "coal": 20.58,
+        "hydro": 6.74,
+        "wind": 34.78,
+        "pv": 34.75,
+        "csp": 2.73,
+        "other": 0.42
+      },
+      "export": {
+        "gansu": 2297.378,
+        "northwest": 17640.0,
+        "share": 13.0237,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1433.4,
+        "coal": 1469.9
+      },
+      "clean": {
+        "nonFossilGeneration": 79.33,
+        "nonHydroRenewableGeneration": 72.56,
+        "nonFossilCapacity": 79.84,
+        "nonHydroRenewableCapacity": 77.42
+      },
+      "emission": {
+        "totalEmission": 0.8767,
+        "capturedEmission": 0.1501,
+        "netEmission": 0.7266,
+        "unitEmission": 151.37
+      },
+      "costBySource": {
+        "coal": 460.1788,
+        "hydro": 45.655,
+        "wind": 464.2732,
+        "pv": 452.3039,
+        "csp": 118.5199,
+        "other": 0.0,
+        "total": 1540.9308
+      },
+      "costByItem": {
+        "operation": 606.5132,
+        "fuel": 203.8207,
+        "depreciation": 568.2136,
+        "finance": 162.3832,
+        "ccus": 0.0,
+        "emission": 226.4969,
+        "total": 1859.3866
+      }
+    },
+    {
+      "year": 2049,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7946.8,
+          "hydro": 980.0,
+          "wind": 12615.9,
+          "pv": 18049.9,
+          "csp": 1214.2,
+          "other": 67.3687,
+          "total": 40874.1687
+        },
+        "storage": {
+          "pumpedHydro": 2302.001,
+          "electrochemical": 3788.5121
+        },
+        "withStorage": {
+          "coal": 7946.8,
+          "hydro": 980.0,
+          "wind": 12615.9,
+          "pv": 18049.9,
+          "csp": 1214.2,
+          "other": 67.3687,
+          "pumpedHydro": 2302.001,
+          "electrochemical": 3788.5121,
+          "total": 46964.6818
+        }
+      },
+      "generation": {
+        "coal": 1163.1807,
+        "hydro": 392.0,
+        "wind": 2071.1153,
+        "pv": 2069.8161,
+        "csp": 171.787,
+        "other": 24.4929,
+        "total": 5892.392
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 19.44,
+          "hydro": 2.4,
+          "wind": 30.87,
+          "pv": 44.16,
+          "csp": 2.97,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 16.92,
+          "hydro": 2.09,
+          "wind": 26.86,
+          "pv": 38.43,
+          "csp": 2.59,
+          "other": 0.14,
+          "pumpedHydro": 4.9,
+          "electrochemical": 8.07
+        }
+      },
+      "generationShare": {
+        "coal": 19.74,
+        "hydro": 6.65,
+        "wind": 35.15,
+        "pv": 35.13,
+        "csp": 2.92,
+        "other": 0.42
+      },
+      "export": {
+        "gansu": 2333.0667,
+        "northwest": 17820.0,
+        "share": 13.0924,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1437.97,
+        "coal": 1463.71
+      },
+      "clean": {
+        "nonFossilGeneration": 80.18,
+        "nonHydroRenewableGeneration": 73.5,
+        "nonFossilCapacity": 80.53,
+        "nonHydroRenewableCapacity": 78.12
+      },
+      "emission": {
+        "totalEmission": 0.8505,
+        "capturedEmission": 0.1495,
+        "netEmission": 0.701,
+        "unitEmission": 144.94
+      },
+      "costBySource": {
+        "coal": 445.9289,
+        "hydro": 45.7648,
+        "wind": 472.2764,
+        "pv": 461.4501,
+        "csp": 121.9375,
+        "other": 0.0,
+        "total": 1547.3577
+      },
+      "costByItem": {
+        "operation": 614.6593,
+        "fuel": 197.4119,
+        "depreciation": 567.2778,
+        "finance": 168.0088,
+        "ccus": 0.0,
+        "emission": 238.5443,
+        "total": 1877.4741
+      }
+    },
+    {
+      "year": 2050,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7689.8,
+          "hydro": 980.0,
+          "wind": 12808.8,
+          "pv": 18404.9,
+          "csp": 1269.5,
+          "other": 67.3687,
+          "total": 41220.3687
+        },
+        "storage": {
+          "pumpedHydro": 2381.8706,
+          "electrochemical": 3865.9031
+        },
+        "withStorage": {
+          "coal": 7689.8,
+          "hydro": 980.0,
+          "wind": 12808.8,
+          "pv": 18404.9,
+          "csp": 1269.5,
+          "other": 67.3687,
+          "pumpedHydro": 2381.8706,
+          "electrochemical": 3865.9031,
+          "total": 47468.1424
+        }
+      },
+      "generation": {
+        "coal": 1128.0166,
+        "hydro": 392.0,
+        "wind": 2120.4578,
+        "pv": 2119.2567,
+        "csp": 185.3528,
+        "other": 24.4929,
+        "total": 5969.5768
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 18.66,
+          "hydro": 2.38,
+          "wind": 31.07,
+          "pv": 44.65,
+          "csp": 3.08,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 16.2,
+          "hydro": 2.06,
+          "wind": 26.98,
+          "pv": 38.77,
+          "csp": 2.67,
+          "other": 0.14,
+          "pumpedHydro": 5.02,
+          "electrochemical": 8.14
+        }
+      },
+      "generationShare": {
+        "coal": 18.9,
+        "hydro": 6.57,
+        "wind": 35.52,
+        "pv": 35.5,
+        "csp": 3.1,
+        "other": 0.41
+      },
+      "export": {
+        "gansu": 2369.3097,
+        "northwest": 18000.0,
+        "share": 13.1628,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1444.63,
+        "coal": 1466.9
+      },
+      "clean": {
+        "nonFossilGeneration": 81.03,
+        "nonHydroRenewableGeneration": 74.43,
+        "nonFossilCapacity": 81.31,
+        "nonHydroRenewableCapacity": 78.93
+      },
+      "emission": {
+        "totalEmission": 0.8231,
+        "capturedEmission": 0.1498,
+        "netEmission": 0.6733,
+        "unitEmission": 138.45
+      },
+      "costBySource": {
+        "coal": 429.5978,
+        "hydro": 45.8745,
+        "wind": 481.6513,
+        "pv": 471.5234,
+        "csp": 126.3421,
+        "other": 0.0,
+        "total": 1554.9891
+      },
+      "costByItem": {
+        "operation": 621.788,
+        "fuel": 190.6426,
+        "depreciation": 565.9045,
+        "finance": 176.654,
+        "ccus": 0.0,
+        "emission": 249.8416,
+        "total": 1896.6023
+      }
+    },
+    {
+      "year": 2051,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7491.8,
+          "hydro": 980.0,
+          "wind": 12998.4,
+          "pv": 18757.8,
+          "csp": 1321.9,
+          "other": 67.3687,
+          "total": 41617.2687
+        },
+        "storage": {
+          "pumpedHydro": 2464.5114,
+          "electrochemical": 3917.4773
+        },
+        "withStorage": {
+          "coal": 7491.8,
+          "hydro": 980.0,
+          "wind": 12998.4,
+          "pv": 18757.8,
+          "csp": 1321.9,
+          "other": 67.3687,
+          "pumpedHydro": 2464.5114,
+          "electrochemical": 3917.4773,
+          "total": 47999.2574
+        }
+      },
+      "generation": {
+        "coal": 1091.1057,
+        "hydro": 392.0,
+        "wind": 2169.9324,
+        "pv": 2168.828,
+        "csp": 199.1735,
+        "other": 24.4929,
+        "total": 6045.5325
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 18.0,
+          "hydro": 2.35,
+          "wind": 31.23,
+          "pv": 45.07,
+          "csp": 3.18,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 15.61,
+          "hydro": 2.04,
+          "wind": 27.08,
+          "pv": 39.08,
+          "csp": 2.75,
+          "other": 0.14,
+          "pumpedHydro": 5.13,
+          "electrochemical": 8.16
+        }
+      },
+      "generationShare": {
+        "coal": 18.05,
+        "hydro": 6.48,
+        "wind": 35.89,
+        "pv": 35.87,
+        "csp": 3.29,
+        "other": 0.41
+      },
+      "export": {
+        "gansu": 2406.1157,
+        "northwest": 18180.0,
+        "share": 13.235,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1449.11,
+        "coal": 1456.4
+      },
+      "clean": {
+        "nonFossilGeneration": 81.88,
+        "nonHydroRenewableGeneration": 75.37,
+        "nonFossilCapacity": 81.97,
+        "nonHydroRenewableCapacity": 79.61
+      },
+      "emission": {
+        "totalEmission": 0.7949,
+        "capturedEmission": 0.1487,
+        "netEmission": 0.6462,
+        "unitEmission": 132.02
+      },
+      "costBySource": {
+        "coal": 415.0569,
+        "hydro": 45.9804,
+        "wind": 492.0581,
+        "pv": 478.7926,
+        "csp": 131.9126,
+        "other": 0.0,
+        "total": 1563.8006
+      },
+      "costByItem": {
+        "operation": 630.2861,
+        "fuel": 183.7873,
+        "depreciation": 566.909,
+        "finance": 182.8181,
+        "ccus": 0.0,
+        "emission": 248.9553,
+        "total": 1903.8705
+      }
+    },
+    {
+      "year": 2052,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7491.8,
+          "hydro": 980.0,
+          "wind": 13189.5,
+          "pv": 19115.6,
+          "csp": 1371.8,
+          "other": 67.3687,
+          "total": 42216.0687
+        },
+        "storage": {
+          "pumpedHydro": 2550.0195,
+          "electrochemical": 3969.6372
+        },
+        "withStorage": {
+          "coal": 7491.8,
+          "hydro": 980.0,
+          "wind": 13189.5,
+          "pv": 19115.6,
+          "csp": 1371.8,
+          "other": 67.3687,
+          "pumpedHydro": 2550.0195,
+          "electrochemical": 3969.6372,
+          "total": 48735.7254
+        }
+      },
+      "generation": {
+        "coal": 1052.9301,
+        "hydro": 392.0,
+        "wind": 2220.3415,
+        "pv": 2219.3422,
+        "csp": 213.2996,
+        "other": 24.4929,
+        "total": 6122.4063
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 17.75,
+          "hydro": 2.32,
+          "wind": 31.24,
+          "pv": 45.28,
+          "csp": 3.25,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 15.37,
+          "hydro": 2.01,
+          "wind": 27.06,
+          "pv": 39.22,
+          "csp": 2.81,
+          "other": 0.14,
+          "pumpedHydro": 5.23,
+          "electrochemical": 8.15
+        }
+      },
+      "generationShare": {
+        "coal": 17.2,
+        "hydro": 6.4,
+        "wind": 36.27,
+        "pv": 36.25,
+        "csp": 3.48,
+        "other": 0.4
+      },
+      "export": {
+        "gansu": 2443.4935,
+        "northwest": 18360.0,
+        "share": 13.3088,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1446.76,
+        "coal": 1405.44
+      },
+      "clean": {
+        "nonFossilGeneration": 82.73,
+        "nonHydroRenewableGeneration": 76.3,
+        "nonFossilCapacity": 82.23,
+        "nonHydroRenewableCapacity": 79.9
+      },
+      "emission": {
+        "totalEmission": 0.7671,
+        "capturedEmission": 0.1435,
+        "netEmission": 0.6236,
+        "unitEmission": 125.8
+      },
+      "costBySource": {
+        "coal": 407.2656,
+        "hydro": 46.0901,
+        "wind": 498.447,
+        "pv": 486.0246,
+        "csp": 135.9326,
+        "other": 0.0,
+        "total": 1573.7599
+      },
+      "costByItem": {
+        "operation": 643.3207,
+        "fuel": 177.3569,
+        "depreciation": 569.7417,
+        "finance": 183.3406,
+        "ccus": 0.0,
+        "emission": 247.6476,
+        "total": 1909.3342
+      }
+    },
+    {
+      "year": 2053,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7388.8,
+          "hydro": 980.0,
+          "wind": 13382.0,
+          "pv": 19478.2,
+          "csp": 1419.5,
+          "other": 67.3687,
+          "total": 42715.8687
+        },
+        "storage": {
+          "pumpedHydro": 2638.4943,
+          "electrochemical": 4022.3898
+        },
+        "withStorage": {
+          "coal": 7388.8,
+          "hydro": 980.0,
+          "wind": 13382.0,
+          "pv": 19478.2,
+          "csp": 1419.5,
+          "other": 67.3687,
+          "pumpedHydro": 2638.4943,
+          "electrochemical": 4022.3898,
+          "total": 49376.7528
+        }
+      },
+      "generation": {
+        "coal": 1013.6396,
+        "hydro": 392.0,
+        "wind": 2271.6823,
+        "pv": 2270.7968,
+        "csp": 227.7723,
+        "other": 24.4929,
+        "total": 6200.3839
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 17.3,
+          "hydro": 2.29,
+          "wind": 31.33,
+          "pv": 45.6,
+          "csp": 3.32,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 14.96,
+          "hydro": 1.98,
+          "wind": 27.1,
+          "pv": 39.45,
+          "csp": 2.87,
+          "other": 0.14,
+          "pumpedHydro": 5.34,
+          "electrochemical": 8.15
+        }
+      },
+      "generationShare": {
+        "coal": 16.35,
+        "hydro": 6.32,
+        "wind": 36.64,
+        "pv": 36.62,
+        "csp": 3.67,
+        "other": 0.4
+      },
+      "export": {
+        "gansu": 2481.4519,
+        "northwest": 18540.0,
+        "share": 13.3843,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1448.09,
+        "coal": 1371.86
+      },
+      "clean": {
+        "nonFossilGeneration": 83.59,
+        "nonHydroRenewableGeneration": 77.24,
+        "nonFossilCapacity": 82.68,
+        "nonHydroRenewableCapacity": 80.38
+      },
+      "emission": {
+        "totalEmission": 0.7379,
+        "capturedEmission": 0.1401,
+        "netEmission": 0.5978,
+        "unitEmission": 119.48
+      },
+      "costBySource": {
+        "coal": 396.2137,
+        "hydro": 46.1999,
+        "wind": 505.2922,
+        "pv": 494.7036,
+        "csp": 139.9087,
+        "other": 0.0,
+        "total": 1582.3181
+      },
+      "costByItem": {
+        "operation": 654.3971,
+        "fuel": 170.4444,
+        "depreciation": 569.9951,
+        "finance": 187.4814,
+        "ccus": 0.0,
+        "emission": 245.3367,
+        "total": 1913.4804
+      }
+    },
+    {
+      "year": 2054,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7250.8,
+          "hydro": 980.0,
+          "wind": 13576.0,
+          "pv": 19845.8,
+          "csp": 1464.9,
+          "other": 67.3687,
+          "total": 43184.8687
+        },
+        "storage": {
+          "pumpedHydro": 2730.0388,
+          "electrochemical": 4075.7417
+        },
+        "withStorage": {
+          "coal": 7250.8,
+          "hydro": 980.0,
+          "wind": 13576.0,
+          "pv": 19845.8,
+          "csp": 1464.9,
+          "other": 67.3687,
+          "pumpedHydro": 2730.0388,
+          "electrochemical": 4075.7417,
+          "total": 49990.6492
+        }
+      },
+      "generation": {
+        "coal": 973.0521,
+        "hydro": 392.0,
+        "wind": 2323.9861,
+        "pv": 2323.2244,
+        "csp": 242.5716,
+        "other": 24.4929,
+        "total": 6279.3271
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 16.79,
+          "hydro": 2.27,
+          "wind": 31.44,
+          "pv": 45.96,
+          "csp": 3.39,
+          "other": 0.16
+        },
+        "withStorage": {
+          "coal": 14.5,
+          "hydro": 1.96,
+          "wind": 27.16,
+          "pv": 39.7,
+          "csp": 2.93,
+          "other": 0.13,
+          "pumpedHydro": 5.46,
+          "electrochemical": 8.15
+        }
+      },
+      "generationShare": {
+        "coal": 15.5,
+        "hydro": 6.24,
+        "wind": 37.01,
+        "pv": 37.0,
+        "csp": 3.86,
+        "other": 0.39
+      },
+      "export": {
+        "gansu": 2520.0,
+        "northwest": 18720.0,
+        "share": 13.4615,
+        "channels": 7.0
+      },
+      "hours": {
+        "all": 1450.65,
+        "coal": 1341.99
+      },
+      "clean": {
+        "nonFossilGeneration": 84.44,
+        "nonHydroRenewableGeneration": 78.18,
+        "nonFossilCapacity": 83.18,
+        "nonHydroRenewableCapacity": 80.91
+      },
+      "emission": {
+        "totalEmission": 0.7077,
+        "capturedEmission": 0.1371,
+        "netEmission": 0.5706,
+        "unitEmission": 113.14
+      },
+      "costBySource": {
+        "coal": 383.9864,
+        "hydro": 46.3097,
+        "wind": 513.7945,
+        "pv": 501.9146,
+        "csp": 145.8383,
+        "other": 0.0,
+        "total": 1591.8435
+      },
+      "costByItem": {
+        "operation": 665.0078,
+        "fuel": 163.2388,
+        "depreciation": 570.7461,
+        "finance": 192.8507,
+        "ccus": 0.0,
+        "emission": 242.1052,
+        "total": 1917.9058
+      }
+    },
+    {
+      "year": 2055,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7145.8,
+          "hydro": 980.0,
+          "wind": 13809.5,
+          "pv": 20274.0,
+          "csp": 1512.4,
+          "other": 67.3687,
+          "total": 43789.0687
+        },
+        "storage": {
+          "pumpedHydro": 2824.7596,
+          "electrochemical": 4129.6998
+        },
+        "withStorage": {
+          "coal": 7145.8,
+          "hydro": 980.0,
+          "wind": 13809.5,
+          "pv": 20274.0,
+          "csp": 1512.4,
+          "other": 67.3687,
+          "pumpedHydro": 2824.7596,
+          "electrochemical": 4129.6998,
+          "total": 50743.528
+        }
+      },
+      "generation": {
+        "coal": 935.0452,
+        "hydro": 392.0,
+        "wind": 2383.8274,
+        "pv": 2383.1706,
+        "csp": 258.4431,
+        "other": 24.4929,
+        "total": 6376.9792
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 16.32,
+          "hydro": 2.24,
+          "wind": 31.54,
+          "pv": 46.3,
+          "csp": 3.45,
+          "other": 0.15
+        },
+        "withStorage": {
+          "coal": 14.08,
+          "hydro": 1.93,
+          "wind": 27.21,
+          "pv": 39.95,
+          "csp": 2.98,
+          "other": 0.13,
+          "pumpedHydro": 5.57,
+          "electrochemical": 8.14
+        }
+      },
+      "generationShare": {
+        "coal": 14.66,
+        "hydro": 6.15,
+        "wind": 37.38,
+        "pv": 37.37,
+        "csp": 4.05,
+        "other": 0.38
+      },
+      "export": {
+        "gansu": 2576.7119,
+        "northwest": 18900.0,
+        "share": 13.6334,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1452.94,
+        "coal": 1308.52
+      },
+      "clean": {
+        "nonFossilGeneration": 85.28,
+        "nonHydroRenewableGeneration": 79.11,
+        "nonFossilCapacity": 83.66,
+        "nonHydroRenewableCapacity": 81.41
+      },
+      "emission": {
+        "totalEmission": 0.6795,
+        "capturedEmission": 0.1336,
+        "netEmission": 0.5459,
+        "unitEmission": 106.97
+      },
+      "costBySource": {
+        "coal": 373.4129,
+        "hydro": 43.6483,
+        "wind": 522.9259,
+        "pv": 510.5609,
+        "csp": 150.7448,
+        "other": 0.0,
+        "total": 1601.2928
+      },
+      "costByItem": {
+        "operation": 677.9412,
+        "fuel": 156.5827,
+        "depreciation": 569.1031,
+        "finance": 197.6657,
+        "ccus": 0.0,
+        "emission": 239.0326,
+        "total": 1922.1886
+      }
+    },
+    {
+      "year": 2056,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7112.8,
+          "hydro": 980.0,
+          "wind": 14041.5,
+          "pv": 20703.4,
+          "csp": 1557.3,
+          "other": 67.3687,
+          "total": 44462.3687
+        },
+        "storage": {
+          "pumpedHydro": 2922.7667,
+          "electrochemical": 4183.936
+        },
+        "withStorage": {
+          "coal": 7112.8,
+          "hydro": 980.0,
+          "wind": 14041.5,
+          "pv": 20703.4,
+          "csp": 1557.3,
+          "other": 67.3687,
+          "pumpedHydro": 2922.7667,
+          "electrochemical": 4183.936,
+          "total": 51569.0714
+        }
+      },
+      "generation": {
+        "coal": 895.0399,
+        "hydro": 392.0,
+        "wind": 2444.2491,
+        "pv": 2443.7144,
+        "csp": 274.623,
+        "other": 24.4929,
+        "total": 6474.1193
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 16.0,
+          "hydro": 2.2,
+          "wind": 31.58,
+          "pv": 46.56,
+          "csp": 3.5,
+          "other": 0.15
+        },
+        "withStorage": {
+          "coal": 13.79,
+          "hydro": 1.9,
+          "wind": 27.23,
+          "pv": 40.15,
+          "csp": 3.02,
+          "other": 0.13,
+          "pumpedHydro": 5.67,
+          "electrochemical": 8.11
+        }
+      },
+      "generationShare": {
+        "coal": 13.82,
+        "hydro": 6.05,
+        "wind": 37.75,
+        "pv": 37.75,
+        "csp": 4.24,
+        "other": 0.38
+      },
+      "export": {
+        "gansu": 2634.7001,
+        "northwest": 19080.0,
+        "share": 13.8087,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1452.78,
+        "coal": 1258.35
+      },
+      "clean": {
+        "nonFossilGeneration": 86.12,
+        "nonHydroRenewableGeneration": 80.04,
+        "nonFossilCapacity": 83.98,
+        "nonHydroRenewableCapacity": 81.77
+      },
+      "emission": {
+        "totalEmission": 0.6503,
+        "capturedEmission": 0.1285,
+        "netEmission": 0.5218,
+        "unitEmission": 100.83
+      },
+      "costBySource": {
+        "coal": 364.9535,
+        "hydro": 43.6,
+        "wind": 524.2242,
+        "pv": 515.2355,
+        "csp": 156.2177,
+        "other": 0.0,
+        "total": 1604.2309
+      },
+      "costByItem": {
+        "operation": 692.6299,
+        "fuel": 149.7999,
+        "depreciation": 576.1773,
+        "finance": 185.6238,
+        "ccus": 0.0,
+        "emission": 235.0233,
+        "total": 1917.9786
+      }
+    },
+    {
+      "year": 2057,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7008.6,
+          "hydro": 980.0,
+          "wind": 14276.5,
+          "pv": 21140.5,
+          "csp": 1600.6,
+          "other": 67.3687,
+          "total": 45073.5687
+        },
+        "storage": {
+          "pumpedHydro": 3024.1743,
+          "electrochemical": 4249.2012
+        },
+        "withStorage": {
+          "coal": 7008.6,
+          "hydro": 980.0,
+          "wind": 14276.5,
+          "pv": 21140.5,
+          "csp": 1600.6,
+          "other": 67.3687,
+          "pumpedHydro": 3024.1743,
+          "electrochemical": 4249.2012,
+          "total": 52346.9441
+        }
+      },
+      "generation": {
+        "coal": 853.5552,
+        "hydro": 392.0,
+        "wind": 2506.045,
+        "pv": 2505.6313,
+        "csp": 291.2821,
+        "other": 24.4929,
+        "total": 6573.0065
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 15.55,
+          "hydro": 2.17,
+          "wind": 31.67,
+          "pv": 46.9,
+          "csp": 3.55,
+          "other": 0.15
+        },
+        "withStorage": {
+          "coal": 13.39,
+          "hydro": 1.87,
+          "wind": 27.27,
+          "pv": 40.39,
+          "csp": 3.06,
+          "other": 0.13,
+          "pumpedHydro": 5.78,
+          "electrochemical": 8.12
+        }
+      },
+      "generationShare": {
+        "coal": 12.99,
+        "hydro": 5.96,
+        "wind": 38.13,
+        "pv": 38.12,
+        "csp": 4.43,
+        "other": 0.37
+      },
+      "export": {
+        "gansu": 2693.9933,
+        "northwest": 19260.0,
+        "share": 13.9875,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1455.02,
+        "coal": 1217.87
+      },
+      "clean": {
+        "nonFossilGeneration": 86.97,
+        "nonHydroRenewableGeneration": 80.98,
+        "nonFossilCapacity": 84.43,
+        "nonHydroRenewableCapacity": 82.25
+      },
+      "emission": {
+        "totalEmission": 0.6197,
+        "capturedEmission": 0.1244,
+        "netEmission": 0.4953,
+        "unitEmission": 94.63
+      },
+      "costBySource": {
+        "coal": 354.1558,
+        "hydro": 43.3312,
+        "wind": 525.5015,
+        "pv": 520.0882,
+        "csp": 161.8189,
+        "other": 0.0,
+        "total": 1604.8956
+      },
+      "costByItem": {
+        "operation": 705.8984,
+        "fuel": 142.6075,
+        "depreciation": 582.5774,
+        "finance": 173.8123,
+        "ccus": 0.0,
+        "emission": 229.9591,
+        "total": 1911.0465
+      }
+    },
+    {
+      "year": 2058,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 7008.6,
+          "hydro": 980.0,
+          "wind": 14514.6,
+          "pv": 21585.5,
+          "csp": 1642.1,
+          "other": 67.3687,
+          "total": 45798.1687
+        },
+        "storage": {
+          "pumpedHydro": 3129.1003,
+          "electrochemical": 4315.5014
+        },
+        "withStorage": {
+          "coal": 7008.6,
+          "hydro": 980.0,
+          "wind": 14514.6,
+          "pv": 21585.5,
+          "csp": 1642.1,
+          "other": 67.3687,
+          "pumpedHydro": 3129.1003,
+          "electrochemical": 4315.5014,
+          "total": 53242.7704
+        }
+      },
+      "generation": {
+        "coal": 810.4944,
+        "hydro": 392.0,
+        "wind": 2569.2556,
+        "pv": 2568.9588,
+        "csp": 308.3876,
+        "other": 24.4929,
+        "total": 6673.5893
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 15.3,
+          "hydro": 2.14,
+          "wind": 31.69,
+          "pv": 47.13,
+          "csp": 3.59,
+          "other": 0.15
+        },
+        "withStorage": {
+          "coal": 13.16,
+          "hydro": 1.84,
+          "wind": 27.26,
+          "pv": 40.54,
+          "csp": 3.08,
+          "other": 0.13,
+          "pumpedHydro": 5.88,
+          "electrochemical": 8.11
+        }
+      },
+      "generationShare": {
+        "coal": 12.14,
+        "hydro": 5.87,
+        "wind": 38.5,
+        "pv": 38.49,
+        "csp": 4.62,
+        "other": 0.37
+      },
+      "export": {
+        "gansu": 2754.6209,
+        "northwest": 19440.0,
+        "share": 14.1699,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1453.96,
+        "coal": 1156.43
+      },
+      "clean": {
+        "nonFossilGeneration": 87.81,
+        "nonHydroRenewableGeneration": 81.91,
+        "nonFossilCapacity": 84.67,
+        "nonHydroRenewableCapacity": 82.53
+      },
+      "emission": {
+        "totalEmission": 0.5885,
+        "capturedEmission": 0.1181,
+        "netEmission": 0.4704,
+        "unitEmission": 88.51
+      },
+      "costBySource": {
+        "coal": 346.5317,
+        "hydro": 43.1231,
+        "wind": 527.0895,
+        "pv": 524.865,
+        "csp": 167.5511,
+        "other": 0.0,
+        "total": 1609.1604
+      },
+      "costByItem": {
+        "operation": 721.7901,
+        "fuel": 135.4131,
+        "depreciation": 589.9887,
+        "finance": 161.9685,
+        "ccus": 0.0,
+        "emission": 224.0367,
+        "total": 1905.5451
+      }
+    },
+    {
+      "year": 2059,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6938.6,
+          "hydro": 980.0,
+          "wind": 14755.8,
+          "pv": 22038.5,
+          "csp": 1681.9,
+          "other": 67.3687,
+          "total": 46462.1687
+        },
+        "storage": {
+          "pumpedHydro": 3237.6667,
+          "electrochemical": 4382.8554
+        },
+        "withStorage": {
+          "coal": 6938.6,
+          "hydro": 980.0,
+          "wind": 14755.8,
+          "pv": 22038.5,
+          "csp": 1681.9,
+          "other": 67.3687,
+          "pumpedHydro": 3237.6667,
+          "electrochemical": 4382.8554,
+          "total": 54082.6908
+        }
+      },
+      "generation": {
+        "coal": 766.013,
+        "hydro": 392.0,
+        "wind": 2633.9051,
+        "pv": 2633.7235,
+        "csp": 325.9596,
+        "other": 24.4929,
+        "total": 6776.0941
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 14.93,
+          "hydro": 2.11,
+          "wind": 31.76,
+          "pv": 47.43,
+          "csp": 3.62,
+          "other": 0.14
+        },
+        "withStorage": {
+          "coal": 12.83,
+          "hydro": 1.81,
+          "wind": 27.28,
+          "pv": 40.75,
+          "csp": 3.11,
+          "other": 0.12,
+          "pumpedHydro": 5.99,
+          "electrochemical": 8.1
+        }
+      },
+      "generationShare": {
+        "coal": 11.3,
+        "hydro": 5.79,
+        "wind": 38.87,
+        "pv": 38.87,
+        "csp": 4.81,
+        "other": 0.36
+      },
+      "export": {
+        "gansu": 2816.6129,
+        "northwest": 19620.0,
+        "share": 14.3558,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1455.25,
+        "coal": 1103.99
+      },
+      "clean": {
+        "nonFossilGeneration": 88.65,
+        "nonHydroRenewableGeneration": 82.85,
+        "nonFossilCapacity": 85.04,
+        "nonHydroRenewableCapacity": 82.93
+      },
+      "emission": {
+        "totalEmission": 0.556,
+        "capturedEmission": 0.1127,
+        "netEmission": 0.4433,
+        "unitEmission": 82.35
+      },
+      "costBySource": {
+        "coal": 336.6311,
+        "hydro": 43.0473,
+        "wind": 529.3229,
+        "pv": 530.4489,
+        "csp": 173.4465,
+        "other": 0.0,
+        "total": 1612.8967
+      },
+      "costByItem": {
+        "operation": 736.5522,
+        "fuel": 127.836,
+        "depreciation": 596.8915,
+        "finance": 151.617,
+        "ccus": 0.0,
+        "emission": 217.0155,
+        "total": 1898.9794
+      }
+    },
+    {
+      "year": 2060,
+      "capacity": {
+        "withoutStorage": {
+          "coal": 6738.6,
+          "hydro": 980.0,
+          "wind": 15000.1,
+          "pv": 22499.8,
+          "csp": 1720.1,
+          "other": 67.3687,
+          "total": 47005.9687
+        },
+        "storage": {
+          "pumpedHydro": 3350.0,
+          "electrochemical": 4451.2821
+        },
+        "withStorage": {
+          "coal": 6738.6,
+          "hydro": 980.0,
+          "wind": 15000.1,
+          "pv": 22499.8,
+          "csp": 1720.1,
+          "other": 67.3687,
+          "pumpedHydro": 3350.0,
+          "electrochemical": 4451.2821,
+          "total": 54807.2508
+        }
+      },
+      "generation": {
+        "coal": 719.7946,
+        "hydro": 392.0,
+        "wind": 2700.018,
+        "pv": 2699.976,
+        "csp": 344.02,
+        "other": 24.4929,
+        "total": 6880.3015
+      },
+      "capacityShare": {
+        "withoutStorage": {
+          "coal": 14.34,
+          "hydro": 2.08,
+          "wind": 31.91,
+          "pv": 47.87,
+          "csp": 3.66,
+          "other": 0.14
+        },
+        "withStorage": {
+          "coal": 12.3,
+          "hydro": 1.79,
+          "wind": 27.37,
+          "pv": 41.05,
+          "csp": 3.14,
+          "other": 0.12,
+          "pumpedHydro": 6.11,
+          "electrochemical": 8.12
+        }
+      },
+      "generationShare": {
+        "coal": 10.46,
+        "hydro": 5.7,
+        "wind": 39.24,
+        "pv": 39.24,
+        "csp": 5.0,
+        "other": 0.36
+      },
+      "export": {
+        "gansu": 2880.0,
+        "northwest": 19800.0,
+        "share": 14.5455,
+        "channels": 8.0
+      },
+      "hours": {
+        "all": 1460.59,
+        "coal": 1068.17
+      },
+      "clean": {
+        "nonFossilGeneration": 89.5,
+        "nonHydroRenewableGeneration": 83.78,
+        "nonFossilCapacity": 85.64,
+        "nonHydroRenewableCapacity": 83.56
+      },
+      "emission": {
+        "totalEmission": 0.5218,
+        "capturedEmission": 0.1091,
+        "netEmission": 0.4127,
+        "unitEmission": 76.11
+      },
+      "costBySource": {
+        "coal": 322.561,
+        "hydro": 42.9377,
+        "wind": 532.6329,
+        "pv": 536.2861,
+        "csp": 179.4931,
+        "other": 0.0,
+        "total": 1613.9108
+      },
+      "costByItem": {
+        "operation": 748.9017,
+        "fuel": 119.7292,
+        "depreciation": 602.6233,
+        "finance": 142.6566,
+        "ccus": 0.0,
+        "emission": 208.733,
+        "total": 1889.47
+      }
+    }
+  ]
+}
