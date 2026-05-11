@@ -1674,7 +1674,7 @@ function unitLifecycleStatus(unit, year) {
   if (Number.isFinite(retirementYear) && targetYear >= retirementYear) {
     return { key: 'retired', label: '已退役' };
   }
-  return { key: 'active', label: '投运中' };
+  return { key: 'active', label: '在役' };
 }
 
 function isUnitActiveAt(unit, year) {
