@@ -82,6 +82,8 @@ const MODULES = {
 };
 
 const $ = (selector) => document.querySelector(selector);
+const ACCESS_PASSWORD = 'state_grid';
+const AUTH_SESSION_KEY = 'gansu-dashboard-authorized';
 const fmt = (value, digits) => {
   const num = Number(value || 0);
   const d = digits != null ? digits : 2;
@@ -161,6 +163,44 @@ function showError(error) {
   const box = $('#error');
   box.hidden = false;
   box.innerHTML = `<strong>数据加载失败</strong><p>${error.message || error}</p><p>请在当前目录启动本地服务：<code>python -m http.server 8000</code>，然后打开 <code>http://localhost:8000</code>。</p>`;
+}
+
+function unlockDashboard() {
+  document.body.classList.remove('auth-locked');
+  const gate = $('#authGate');
+  if (gate) gate.hidden = true;
+  loadData();
+}
+
+function initAuthGate() {
+  const gate = $('#authGate');
+  const form = $('#authForm');
+  const input = $('#authPassword');
+  const error = $('#authError');
+
+  if (!gate || !form || !input) {
+    loadData();
+    return;
+  }
+
+  if (sessionStorage.getItem(AUTH_SESSION_KEY) === 'true') {
+    unlockDashboard();
+    return;
+  }
+
+  input.focus();
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const password = input.value.trim();
+    if (password === ACCESS_PASSWORD) {
+      sessionStorage.setItem(AUTH_SESSION_KEY, 'true');
+      unlockDashboard();
+      return;
+    }
+    if (error) error.hidden = false;
+    input.value = '';
+    input.focus();
+  });
 }
 
 async function loadData() {
@@ -2540,7 +2580,7 @@ function renderSingleLineChart(containerId, { getData, unit, color, label, digit
   const minYear = rows[0].year, maxYear = rows[rows.length - 1].year;
   const width = 720, height = 430, pad = { left: 94, right: 24, top: 56, bottom: 48 };
   const plotW = width - pad.left - pad.right, plotH = height - pad.top - pad.bottom;
-  const ticks = chartTicks(minValue, maxValue, rawMax, { tickStep });
+  const ticks = chartTicks(minValue, maxValue, Number.isFinite(fixedMax) ? maxValue : rawMax, { tickStep });
   const axis = axisBoundsFromTicks(ticks, minValue, maxValue);
   const x = yv => pad.left + ((yv - minYear) / (maxYear - minYear)) * plotW;
   const y = v => pad.top + plotH - ((Number(v || 0) - axis.min) / (axis.max - axis.min || 1)) * plotH;
@@ -2625,11 +2665,11 @@ function renderExportCharts() {
   ], '亿千瓦时', 700, 400);
   renderSingleLineChart('exportShareChart', {
     getData: row => row.export?.share || 0,
-    unit: '%', color: '#18a389', label: '甘肃占西北外送比例', digits: 1, fixedMin: 0, fixedMax: 100,
+    unit: '%', color: '#18a389', label: '甘肃占西北外送比例', digits: 1, fixedMin: 0, fixedMax: 50, tickStep: 10,
   });
   renderSingleLineChart('exportChannelChart', {
     getData: row => row.export?.channels || 0,
-    unit: '条', color: '#d8a21d', label: '已建设外送通道', digits: 0,
+    unit: '条', color: '#d8a21d', label: '已建设外送通道', digits: 0, fixedMin: 0, fixedMax: 10, tickStep: 2,
   });
 }
 
@@ -3274,7 +3314,7 @@ function renderRegionalMatrix() {
   `;
 }
 
-loadData();
+initAuthGate();
 
 
 

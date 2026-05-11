@@ -8,7 +8,22 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="app.js" defer></script>
 </head>
-<body>
+<body class="auth-locked">
+  <section class="auth-gate" id="authGate" aria-labelledby="authTitle">
+    <div class="auth-card">
+      <p class="eyebrow auth-card__eyebrow">Protected Research Dashboard</p>
+      <h2 id="authTitle">请输入访问密码</h2>
+      <p class="auth-card__lead">该成果展示页面已启用访问验证，输入密码后即可浏览完整内容。</p>
+      <form class="auth-form" id="authForm">
+        <label for="authPassword">访问密码</label>
+        <div class="auth-form__row">
+          <input id="authPassword" name="password" type="password" autocomplete="current-password" placeholder="请输入密码" />
+          <button class="primary-button" type="submit">进入展示</button>
+        </div>
+        <p class="auth-form__error" id="authError" role="alert" hidden>密码不正确，请重新输入。</p>
+      </form>
+    </div>
+  </section>
   <div class="page-shell">
     <header class="hero">
       <div class="hero__copy">
