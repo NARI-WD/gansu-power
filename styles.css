@@ -416,47 +416,50 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
 }
 .province-line-grid .cost-structure-card {
   margin-top: 0;
+  min-height: 640px;
 }
 .cost-structure-chart {
-  min-height: 380px;
-  max-width: 700px;
+  min-height: 520px;
+  width: min(1040px, 100%);
+  max-width: none;
   margin: 0 auto;
+  padding: 8px 10px 0;
 }
 .cost-bar-row {
   display: grid;
-  grid-template-columns: 100px minmax(80px, 1fr) 100px 60px;
-  gap: 14px;
+  grid-template-columns: 132px minmax(320px, 1fr) 128px 78px;
+  gap: 18px;
   align-items: center;
-  margin: 10px 0;
+  margin: 14px 0;
 }
 .cost-bar-label {
   color: var(--muted);
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 900;
   text-align: right;
 }
 .cost-bar-track {
-  height: 26px;
+  height: 38px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
   background: rgba(20,32,51,.08);
 }
 .cost-bar-fill {
   height: 100%;
-  border-radius: 8px;
-  min-width: 4px;
+  border-radius: 12px;
+  min-width: 8px;
   transition: width .4s ease;
 }
 .cost-bar-value {
   font-weight: 900;
-  font-size: 15px;
+  font-size: 20px;
   text-align: right;
   color: var(--ink);
 }
 .cost-bar-share {
   color: var(--muted);
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 900;
   text-align: right;
 }
 
@@ -2750,6 +2753,11 @@ input[type="range"] { width: 100%; accent-color: var(--gold); }
   .year-control { min-width: 0; width: 100%; }
   .cost-row { grid-template-columns: 104px minmax(56px, 1fr) max-content; }
   .cost-row__share { display: none; }
+  .cost-bar-row { grid-template-columns: 96px minmax(160px, 1fr) 92px 58px; gap: 10px; }
+  .cost-bar-label,
+  .cost-bar-value { font-size: 15px; }
+  .cost-bar-share { font-size: 13px; }
+  .cost-bar-track { height: 28px; }
   .scenario-chart { max-width: none; }
   .scenario-chart-pane { max-width: none; }
   .scenario-chart-with-notes .scenario-chart { min-height: 360px; }

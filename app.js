@@ -3209,14 +3209,14 @@ function renderCostStructureBar() {
   }).join('');
 
   container.innerHTML = `
-    <div style="text-align:center;margin-bottom:16px;font-size:18px;font-weight:850;color:var(--ink);">
+    <div style="text-align:center;margin-bottom:22px;font-size:28px;line-height:1.22;font-weight:950;color:var(--ink);">
       ${year} 年发电成本结构 · 总成本 ${fmt(total, 0)} 亿元
     </div>
-    <div style="display:grid;grid-template-columns:100px minmax(80px,1fr) 100px 60px;gap:14px;margin-bottom:8px;padding:0 4px;">
-      <span style="color:var(--muted);font-size:13px;font-weight:800;text-align:right;">成本项</span>
-      <span style="color:var(--muted);font-size:13px;font-weight:800;">占比</span>
-      <span style="color:var(--muted);font-size:13px;font-weight:800;text-align:right;">金额</span>
-      <span style="color:var(--muted);font-size:13px;font-weight:800;text-align:right;">占比%</span>
+    <div style="display:grid;grid-template-columns:132px minmax(320px,1fr) 128px 78px;gap:18px;margin-bottom:10px;padding:0 4px;">
+      <span style="color:var(--muted);font-size:18px;font-weight:900;text-align:right;">成本项</span>
+      <span style="color:var(--muted);font-size:18px;font-weight:900;">占比</span>
+      <span style="color:var(--muted);font-size:18px;font-weight:900;text-align:right;">金额</span>
+      <span style="color:var(--muted);font-size:18px;font-weight:900;text-align:right;">占比%</span>
     </div>
     ${rows}
   `;
