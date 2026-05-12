@@ -3012,7 +3012,11 @@ function renderCleanCharts() {
     { key: 'captured', label: '发电碳捕集量', color: '#08d5c5', get: r => r.emission?.capturedEmission || 0 },
     { key: 'net', label: '发电净排放量', color: '#f04e2f', get: r => r.emission?.netEmission || 0 },
   ];
-  renderMultiSeriesLine('emissionChart', emissionSeries, '亿吨', 700, 400);
+  renderMultiSeriesLine('emissionChart', emissionSeries, '亿吨', 700, 400, 1, {
+    fixedMin: 0,
+    fixedMax: 1.6,
+    tickStep: 0.4,
+  });
 
   // Unit emission - single line
   renderSingleLineChart('unitEmissionChart', {
